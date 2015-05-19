@@ -21,8 +21,8 @@ public class SelfEnhancement extends Value {
 	/**
 	 * The constructor.
 	 */
-	public SelfEnhancement(double strength) {
-		super(strength, CFG.SELFE_beta(), CFG.SELFE_k()); //Different implementation of using constuctor than before.
+	public SelfEnhancement(double strengthWeigth) {
+		super(strengthWeigth, CFG.SELFE_beta(), CFG.SELFE_k()); //Different implementation of using constuctor than before.
 		this.weightMeatEating = CFG.SELFE_actionWeight();
 	}
 	
@@ -32,5 +32,10 @@ public class SelfEnhancement extends Value {
 		double connectedFeaturesWeightedSum = feature1;
 		
 		super.updateSatisfactionFunction(connectedFeaturesWeightedSum);
+	}
+
+	@Override
+	public double getStrengthAvarage() {
+		return CFG.SELFE_AVG_STRENGTH();
 	}
 }

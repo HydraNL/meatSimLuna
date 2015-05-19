@@ -19,30 +19,42 @@ import main.Helper;
  */
 public abstract class Value {
 	private double satisfaction;
-	private double threshold;
-	private double strength;
+	private double strengthWeight;
 	private double beta;
 	private double k;
 
 	/**
 	 * The constructor.
 	 */
-	public Value(double strength, double beta, double k){
-		this.strength = strength;
-		this.threshold = strength;
-		this.satisfaction = RandomHelper.nextDoubleFromTo(0, 1); //begin on threshold
+	public Value(double strengthWeight, double beta, double k){
+		this.strengthWeight = strengthWeight;
+		this.satisfaction = RandomHelper.nextDoubleFromTo(0, 2*getStrengthAvarage()); //Any satisfaction within 0 and boundry
 		this.beta = beta;
 		this.k = k;
 	}
 	
+	public abstract double getStrengthAvarage();
+	
+	public double getStrength() {
+		return strengthWeight * getStrengthAvarage();
+	}
+	
+	public double getThreshold(){
+		return getStrength();		
+	}
+
 	/**
 	 * Description of the method getNeed.
 	 */
 	public double getNeed() {
 		if(satisfaction < 0) satisfaction = 0.01; //does it give a overflow?
-		return threshold/satisfaction;  //only works if satisfaction stays positive, else the Needs get lower when satisfaction gets lower
+		return getThreshold()/satisfaction;  //only works if satisfaction stays positive, else the Needs get lower when satisfaction gets lower
 	}
-	 
+	
+	
+	
+	
+	
 	/**
 	 * Description of the method equals.
 	 */
@@ -68,7 +80,5 @@ public abstract class Value {
 		this.k = k;
 	}
 
-	public double getStrength() {
-		return strength;
-	}
+	
 }

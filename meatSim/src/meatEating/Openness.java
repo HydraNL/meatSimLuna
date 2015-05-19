@@ -3,6 +3,7 @@
  *******************************************************************************/
 package meatEating;
 
+import main.CFG;
 import framework.SocialPractice;
 import framework.Value;
 
@@ -21,8 +22,8 @@ public class Openness extends Value {
 	/**
 	 * The constructor.
 	 */
-	public Openness(double strength) {
-		super(strength, 0, 0); //Different implementation of using constuctor than before.
+	public Openness(double strengthWeigth) {
+		super(strengthWeigth, 0, 0); //Different implementation of using constuctor than before.
 	}
 	// Start of user code (user defined methods for Openness)
 
@@ -31,6 +32,12 @@ public class Openness extends Value {
 	public void updateSatisfaction(SocialPractice myAction) {
 		// TODO Auto-generated method stub
 		
+	}
+
+
+	@Override
+	public double getStrengthAvarage() {
+		return CFG.OPENNESS_AVG_STRENGTH();
 	}
 	
 	// End of user code

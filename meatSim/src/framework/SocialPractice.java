@@ -87,14 +87,6 @@ public abstract class SocialPractice {
 			Helper.mapAdd(performanceHistoryMap, a, add);
 		}	
 	}
-
-	/**
-	 * Description of the method updateEvaluation.
-	 */
-	public void updateEvaluation() {
-		// Start of user code for method updateEvaluation
-		// End of user code
-	}
 	
 	protected void addAffordance(PContext affordance){
 		getAffordances().add(affordance);

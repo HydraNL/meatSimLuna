@@ -3,6 +3,7 @@
  *******************************************************************************/
 package meatEating;
 
+import main.CFG;
 import framework.SocialPractice;
 import framework.Value;
 
@@ -21,8 +22,8 @@ public class Conservation extends Value {
 	/**
 	 * The constructor.
 	 */
-	public Conservation(double strength) {
-		super(strength, 0, 0);
+	public Conservation(double strengthWeight) {
+		super(strengthWeight, 0, 0);
 	}
 
 	@Override
@@ -30,10 +31,11 @@ public class Conservation extends Value {
 		// TODO Auto-generated method stub
 		
 	}
-	
-	// Start of user code (user defined methods for Conservation)
-	
-	// End of user code
+
+	@Override
+	public double getStrengthAvarage() {
+		return CFG.CONSERVATION_AVG_STRENGTH();
+	}
 
 
 }

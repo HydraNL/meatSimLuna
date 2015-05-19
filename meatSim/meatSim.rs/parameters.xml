@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <parameters>
-
-				<parameter name="randomSeed" displayName="Default Random Seed" type="int" 
-						defaultValue="__NULL__"
+					<parameter name="SELFT_AVG_STRENGTH" displayName="SelfTransendence:  Avarage Strength" type="double" 
+						defaultValue="0.5" 
 						isReadOnly="false" 
-						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
 		/>
-					<parameter name="vegetarianVenueCount" displayName="Vegetarian Venue Count" type="int" 
+				<parameter name="vegetarianVenueCount" displayName="Vegetarian Venue Count" type="int" 
 						defaultValue="1" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
@@ -55,10 +54,28 @@
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
 		/>
+				<parameter name="OPENNESS_AVG_STRENGTH" displayName="Openness: Avarage Strength" type="double" 
+						defaultValue="0.5" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
 				<parameter name="isEvaluated" displayName="Use Evaluation" type="boolean" 
 						defaultValue="true" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+									
+		/>
+				<parameter name="randomSeed" displayName="Default Random Seed" type="int" 
+						defaultValue="__NULL__"
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="SELFE_AVG_STRENGTH" displayName="SelfEnhancement: Avarage Strength" type="double" 
+						defaultValue="0.5" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
 		/>
 				<parameter name="selfEbeta" displayName="SelfEnhancement: beta" type="double" 
@@ -81,6 +98,12 @@
 		/>
 				<parameter name="HABIT_THRESHOLD" displayName="Habit Threshold" type="double" 
 						defaultValue="0.7" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+				<parameter name="CONSERVATION_AVG_STRENGTH" displayName="Conservation: Avarage Strength" type="double" 
+						defaultValue="0.5" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									

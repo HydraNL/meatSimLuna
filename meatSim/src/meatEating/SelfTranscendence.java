@@ -20,8 +20,8 @@ public class SelfTranscendence extends Value {
 	/**
 	 * The constructor.
 	 */
-	public SelfTranscendence(double strength) {
-		super(strength, CFG.SELFT_beta(), CFG.SELFT_k()); //Different implementation of using constuctor than before.
+	public SelfTranscendence(double strengthWeight) {
+		super(strengthWeight, CFG.SELFT_beta(), CFG.SELFT_k()); //Different implementation of using constuctor than before.
 		this.weightVegEating = CFG.SELFT_actionWeight();
 	}
 	
@@ -31,5 +31,10 @@ public class SelfTranscendence extends Value {
 		double connectedFeaturesWeightedSum = feature1;
 		
 		super.updateSatisfactionFunction(connectedFeaturesWeightedSum);
+	}
+
+	@Override
+	public double getStrengthAvarage() {
+		return CFG.SELFT_AVG_STRENGTH();
 	}
 }

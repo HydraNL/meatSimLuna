@@ -1,7 +1,6 @@
 <repast.simphony.data2.engine.DataSetDescriptor>
-  <name>Needs</name>
-  <type>NON_AGGREGATE</type>
-  <sourceType>framework.Agent</sourceType>
+  <name>Meat vs Veg Action Agg</name>
+  <type>AGGREGATE</type>
   <inclTick>true</inclTick>
   <inclBatchRun>false</inclBatchRun>
   <inclRandomSeed>false</inclRandomSeed>
@@ -12,32 +11,26 @@
     <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>276965778</hashCode>
+    <hashCode>2068055787</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
     <entry>
-      <string>ID</string>
+      <string>meat</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>ID</id>
-        <className>framework.Agent</className>
-        <methodName>getID</methodName>
+        <id>meat</id>
+        <className>main.DataCollector</className>
+        <methodName>countMeatAction</methodName>
+        <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>meatNeed</string>
+      <string>veg</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>meatNeed</id>
-        <className>framework.Agent</className>
-        <methodName>meatNeed</methodName>
-      </repast.simphony.data2.engine.MethodDataSourceDefinition>
-    </entry>
-    <entry>
-      <string>vegNeed</string>
-      <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>vegNeed</id>
-        <className>framework.Agent</className>
-        <methodName>vegNeed</methodName>
+        <id>veg</id>
+        <className>main.DataCollector</className>
+        <methodName>countVegAction</methodName>
+        <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
   </methodDataSources>

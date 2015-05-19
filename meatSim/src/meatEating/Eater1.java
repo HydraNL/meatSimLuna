@@ -27,16 +27,9 @@ public class Eater1 extends Agent {
 		super(candidateContexts, grid);
 		addSocialPractice(new MeatEatingPractice());
 		addSocialPractice(new VegEatingPractice());
-		addValue(new SelfEnhancement(RandomHelper.nextDoubleFromTo(0, 1)));
-		addValue(new SelfTranscendence(RandomHelper.nextDoubleFromTo(0, 1)));
-		addValue(new Openness(RandomHelper.nextDoubleFromTo(0, 1)));
-		addValue(new Conservation(RandomHelper.nextDoubleFromTo(0, 1)));
+		addValue(new SelfEnhancement(RandomHelper.nextDoubleFromTo(0, 2))); //0 to 2 because this gives the wished avg strength
+		addValue(new SelfTranscendence(RandomHelper.nextDoubleFromTo(0, 2)));
+		addValue(new Openness(RandomHelper.nextDoubleFromTo(0, 2)));
+		addValue(new Conservation(RandomHelper.nextDoubleFromTo(0, 2)));
 	}
-
-	
-	// Start of user code (user defined methods for Eater1)
-	
-	// End of user code
-
-
 }

@@ -56,6 +56,23 @@ public class CFG {
 		return RunEnvironment.getInstance().getParameters().getDouble("OUTSIDE_CONTEXT");
 	}
 	
+	/*Value Strength*/
+	public static double SELFT_AVG_STRENGTH(){
+		return RunEnvironment.getInstance().getParameters().getDouble("SELFT_AVG_STRENGTH");
+	}
+	
+	public static double SELFE_AVG_STRENGTH(){
+		return RunEnvironment.getInstance().getParameters().getDouble("SELFE_AVG_STRENGTH");
+	}
+	
+	public static double OPENNESS_AVG_STRENGTH(){
+		return RunEnvironment.getInstance().getParameters().getDouble("OPENNESS_AVG_STRENGTH");
+		
+	}
+	public static double CONSERVATION_AVG_STRENGTH(){
+		return RunEnvironment.getInstance().getParameters().getDouble("CONSERVATION_AVG_STRENGTH");
+	}
+	
 	/*Satisfaction parameters*/
 	public static double SELFT_k(){
 		return RunEnvironment.getInstance().getParameters().getDouble("selfTk");
