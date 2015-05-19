@@ -1,0 +1,35 @@
+/*******************************************************************************
+ * 2015, All rights reserved.
+ *******************************************************************************/
+package meatEating;
+
+import main.CFG;
+import framework.SocialPractice;
+import framework.Value;
+
+// End of user code
+
+/**
+ * Description of SelfTranscendence.
+ * 
+ * @author rijk
+ */
+public class SelfTranscendence extends Value {
+	private double weightVegEating;
+	
+	/**
+	 * The constructor.
+	 */
+	public SelfTranscendence(double strength) {
+		super(strength, CFG.SELFT_beta(), CFG.SELFT_k()); //Different implementation of using constuctor than before.
+		this.weightVegEating = CFG.SELFT_actionWeight();
+	}
+	
+	public void updateSatisfaction(SocialPractice actionDone){
+		double eatenVeg = (actionDone instanceof VegEatingPractice) ? 1:0;
+		double feature1 = weightVegEating * eatenVeg;
+		double connectedFeaturesWeightedSum = feature1;
+		
+		super.updateSatisfactionFunction(connectedFeaturesWeightedSum);
+	}
+}
