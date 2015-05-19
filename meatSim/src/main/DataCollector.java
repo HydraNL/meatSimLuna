@@ -1,6 +1,7 @@
 package main;
 
 
+import repast.simphony.random.RandomHelper;
 import meatEating.MeatEatingPractice;
 import meatEating.VegEatingPractice;
 import framework.Agent;
@@ -8,8 +9,11 @@ import framework.Agent;
 //Needs to be added to the context to be able to collect data from.
 public class DataCollector {
 	AbstractBuilder main;
+	Agent oneAgent;
+	
 	public DataCollector(AbstractBuilder abstractBuilder) {
 		main = abstractBuilder;
+		oneAgent = main.agents.get(RandomHelper.nextIntFromTo(0, main.agents.size()-1));
 	}
 	
 	public int countVegAction(){
@@ -26,5 +30,9 @@ public class DataCollector {
 			if(a.getMyAction() instanceof MeatEatingPractice) c++;
 		}
 		return c;
+	}
+	
+	public int actionOnAgent(){
+		return (int) oneAgent.dataMyAction();
 	}
 }

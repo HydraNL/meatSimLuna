@@ -19,6 +19,7 @@ import main.SocialPracticeConverter;
 import main.CFG;
 import main.Helper;
 import meatEating.Conservation;
+import meatEating.MeatEatingPractice;
 import meatEating.SelfEnhancement;
 import meatEating.SelfTranscendence;
 import repast.simphony.engine.schedule.ScheduledMethod;
@@ -295,6 +296,10 @@ public abstract class Agent {
 	public double vegNeed(){
 		double need = myValues.get(SelfTranscendence.class).getNeed();
 		return (need<100) ? need:100;
+	}
+	
+	public double dataMyAction(){
+		return (getMyAction() instanceof MeatEatingPractice) ? 1:-1;
 	}
 
 

@@ -56,9 +56,7 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		locations=new ArrayList<Location>();
 		pContexts=new ArrayList<PContext>();
 		
-		myDataCollector=new DataCollector(this);
-		context.add(myDataCollector);
-		
+
 		setCFG();
 		
 		setID();
@@ -66,6 +64,9 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		addAgents();
 		addEnvironment();
 		
+		//after making agents
+		myDataCollector=new DataCollector(this);
+		context.add(myDataCollector);
 		/*Schedules a performance context task each timestep.*/
 		ISchedule schedule = RunEnvironment.getInstance().getCurrentSchedule();
 		ScheduleParameters params = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.FIRST_PRIORITY);

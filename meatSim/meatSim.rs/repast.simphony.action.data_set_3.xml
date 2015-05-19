@@ -1,5 +1,5 @@
 <repast.simphony.data2.engine.DataSetDescriptor>
-  <name>Needs</name>
+  <name>Individual Actions</name>
   <type>NON_AGGREGATE</type>
   <sourceType>framework.Agent</sourceType>
   <inclTick>true</inclTick>
@@ -12,7 +12,7 @@
     <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>276965778</hashCode>
+    <hashCode>-40218177</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
@@ -25,19 +25,11 @@
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>meatNeed</string>
+      <string>MyAction</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>meatNeed</id>
+        <id>MyAction</id>
         <className>framework.Agent</className>
-        <methodName>meatNeed</methodName>
-      </repast.simphony.data2.engine.MethodDataSourceDefinition>
-    </entry>
-    <entry>
-      <string>vegNeed</string>
-      <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>vegNeed</id>
-        <className>framework.Agent</className>
-        <methodName>vegNeed</methodName>
+        <methodName>dataMyAction</methodName>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
   </methodDataSources>
