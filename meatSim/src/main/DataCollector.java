@@ -32,7 +32,11 @@ public class DataCollector {
 		return c;
 	}
 	
-	public int actionOnAgent(){
-		return (int) oneAgent.dataMyAction();
+	public int eatingTypeOneAgent(){
+		return (int) oneAgent.dataEatingType();
+	}
+	
+	public int deliberativeTypeOneAgent(){
+		return oneAgent.dataOneAgent();
 	}
 }

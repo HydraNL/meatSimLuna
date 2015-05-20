@@ -13,12 +13,21 @@ package framework;
 public class Evaluation {
 	private double grade;
 	private PContext currentContext;
+	private double Iweight;
+	private double indE;
+	private double Sweight;
+	private double socE;
+
 
 	/**
 	 * The constructor.
 	 */
-	public Evaluation(double grade, PContext myContext) {
-		this.grade= grade;
+	public Evaluation(double Iweight, double indE, double Sweight, double socE, PContext myContext) {
+		this.Iweight =Iweight;
+		this.indE = indE;
+		this.Sweight =Sweight;
+		this.socE = socE;
+		this.grade = Iweight * indE + Sweight * socE;
 		this.currentContext = myContext;
 	}
 
@@ -28,6 +37,22 @@ public class Evaluation {
 
 	public double getGrade() {
 		return grade;
+	}
+
+	public double getIweight() {
+		return Iweight;
+	}
+
+	public double getIndE() {
+		return indE;
+	}
+
+	public double getSweight() {
+		return Sweight;
+	}
+
+	public double getSocE() {
+		return socE;
 	}
 	
 	

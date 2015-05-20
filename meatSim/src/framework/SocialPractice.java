@@ -129,8 +129,11 @@ public abstract class SocialPractice {
 		evaluationSum+= ev.getGrade();
 	}
 
-	public double getEvaluation(){
+	public double getEvaluationAvarage(){
 		return evaluationSum/ (double) evaluations.size();
 	}
 
+	public Evaluation getLastEvaluation(){
+		return evaluations.get(evaluations.size() -1);
+	}
 }

@@ -1,9 +1,9 @@
 <repast.simphony.chart2.engine.TimeSeriesChartDescriptor>
-  <name>Needs</name>
-  <dataSet>Needs</dataSet>
+  <name>Time Series Chart</name>
+  <dataSet>Evaluation</dataSet>
   <xAxisLabel>Tick Count</xAxisLabel>
-  <yAxisLabel></yAxisLabel>
-  <chartTitle>Needs</chartTitle>
+  <yAxisLabel>Evaluation Index</yAxisLabel>
+  <chartTitle>Evaluations</chartTitle>
   <type>TIME_SERIES</type>
   <background>
     <red>192</red>
@@ -28,8 +28,8 @@
     </entry>
   </seriesIds>
   <dataValueIds>
-    <string>meatNeed</string>
-    <string>vegNeed</string>
+    <string>dataEvIndividual</string>
+    <string>dataEvSocial</string>
   </dataValueIds>
   <plotRangeLength>-1</plotRangeLength>
 </repast.simphony.chart2.engine.TimeSeriesChartDescriptor>

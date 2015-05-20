@@ -22,6 +22,7 @@ import meatEating.Conservation;
 import meatEating.MeatEatingPractice;
 import meatEating.SelfEnhancement;
 import meatEating.SelfTranscendence;
+import meatEating.VegEatingPractice;
 import repast.simphony.engine.schedule.ScheduledMethod;
 import repast.simphony.parameter.Parameter;
 import repast.simphony.random.RandomHelper;
@@ -40,16 +41,30 @@ public abstract class Agent {
 	private Grid<Object> myGrid;
 	private ArrayList<PContext> candidateContexts; //Consider giving him candidateLocations
 	private PContext myContext;
-	private ArrayList<SocialPractice> mySocialPractices =new ArrayList<SocialPractice>(); //check with reseting model
-	private HashMap<Class, Value> myValues=new HashMap<Class, Value>();
+	private ArrayList<SocialPractice> mySocialPractices; //check with reseting model
+	private HashMap<Class, Value> myValues;
 	private int ID;
 	private SocialPractice myAction;
+	HashMap<SocialPractice, Double> frequencies; //TODO: Might be nicer to put it in the SocialPractice
+	HashMap<SocialPractice, Double> habitStrengths=new HashMap<SocialPractice, Double>();
+	
+	
+	ActionType actionType;
+	private enum ActionType{
+		AFFORDED,
+		HABITUAL,
+		INTENTIONAL
+	}
+	
 	
 
 	public Agent(ArrayList<PContext> candidateContexts, Grid<Object> grid) {
 		this.myGrid = grid;
 		this.candidateContexts = candidateContexts;
 		this.ID = CFG.getAgentID(); //for repast
+		
+		mySocialPractices=new ArrayList<SocialPractice>();
+		myValues =new HashMap<Class, Value>();
 	}
 	
 	
@@ -98,17 +113,26 @@ public abstract class Agent {
 		
 		if(CFG.isFilteredOnAffordances()){
 			filterOnAffordances(candidateSocialPractices);
-			if(candidateSocialPractices.size() == 1) return candidateSocialPractices.get(0);
+			if(candidateSocialPractices.size() == 1){
+				actionType = ActionType.AFFORDED;
+				return candidateSocialPractices.get(0);
+			}
 		}
 		
 		if(CFG.isFilteredOnHabits()){
 			previousCandidates = (ArrayList<SocialPractice>) candidateSocialPractices.clone();
 			filterOnTriggers(candidateSocialPractices);
-			if(candidateSocialPractices.size() == 1)	return candidateSocialPractices.get(0);
+			if(candidateSocialPractices.size() == 1){
+				actionType = ActionType.HABITUAL;
+				return candidateSocialPractices.get(0);
+			}
 			if(candidateSocialPractices.size() < 1) candidateSocialPractices = previousCandidates; //Return to Afforded
 		}
 		
-		if(CFG.isIntentional()) chosenAction = chooseOnIntentions(candidateSocialPractices);
+		if(CFG.isIntentional()){
+			actionType = ActionType.INTENTIONAL;
+			chosenAction = chooseOnIntentions(candidateSocialPractices);
+		}
 		else{																						//Choose Randomly
 			chosenAction = candidateSocialPractices.get(RandomHelper.nextIntFromTo(0, candidateSocialPractices.size()-1));
 		}
@@ -148,8 +172,8 @@ public abstract class Agent {
 	 */
 	private void filterOnTriggers(
 			ArrayList<SocialPractice> candidateSocialPractices) {
-		HashMap<SocialPractice, Double> frequencies=new HashMap<SocialPractice, Double>();
-		HashMap<SocialPractice, Double> habitStrengths =new HashMap<SocialPractice, Double>();
+		frequencies=new HashMap<SocialPractice, Double>();
+		habitStrengths =new HashMap<SocialPractice, Double>();
 		double totalFrequency = 0;
 		
 		for(SocialPractice sp: mySocialPractices){					//Consider all practices when calculating freqeuency
@@ -236,9 +260,8 @@ public abstract class Agent {
 	private void evaluate() {
 		double Iweight = myValues.get(SelfEnhancement.class).getStrength();	//SelfEnhancement
 		double Sweight = (myValues.get(Conservation.class).getStrength() + myValues.get(SelfTranscendence.class).getStrength()) /2; //Conservation + selfTranscendence
-		double grade = Iweight * individualEvaluation()+ Sweight * socialEvaluation();
-		System.out.println("Evaluation :" + Iweight + " " + individualEvaluation() + " " + Sweight + " " + socialEvaluation());
-		myAction.addEvaluation(new Evaluation(grade, myContext));
+		//System.out.println("Evaluation :" + Iweight + " " + individualEvaluation() + " " + Sweight + " " + socialEvaluation());
+		myAction.addEvaluation(new Evaluation(Iweight, individualEvaluation(), Sweight, socialEvaluation(), myContext));
 	}
 	
 	
@@ -287,22 +310,83 @@ public abstract class Agent {
 	}
 	
 	/*Datacollectors*/
-	public double meatNeed(){ 
-		//System.out.println("needfuncmeat:" + myValues.get(SelfEnhancement.class).getNeed());
-		double need = myValues.get(SelfEnhancement.class).getNeed();
+	/*Aggregate*/
+	public int dataMeatAction(){
+		return (getMyAction() instanceof MeatEatingPractice) ? 1:0;
+	}
+	public int dataVegAction(){
+		return (getMyAction() instanceof VegEatingPractice) ? 1:0;
+	}
+	public int dataAffAction(){
+		return (actionType == ActionType.AFFORDED) ? 1:0;
+	}
+	public int dataHabitual(){
+		return (actionType == ActionType.HABITUAL) ? 1:0;
+	}
+	public int dataIntentional(){
+		return (actionType == ActionType.INTENTIONAL) ? 1:0;
+	}
+
+	/*Graph1*/
+	public int dataEatingType(){
+		return dataMeatAction() - dataVegAction(); 
+	}
+	
+	/*Crosspoints*/
+	public int dataMeatAfforded(){
+		return (dataMeatAction() + dataAffAction() == 2) ? 1:0;
+	}
+	public int dataMeatHabitual(){
+		return (dataMeatAction() + dataHabitual() == 2) ? 1:0;
+	}
+	public int dataMeatIntentional(){
+		return (dataMeatAction() + dataIntentional() == 2) ? 1:0;
+	}
+	
+	public int dataVegIntentional(){
+		return (dataVegAction() + dataIntentional() == 2) ? 1:0;
+	}
+	public int dataVegHabitual(){
+		return (dataVegAction() + dataHabitual() == 2) ? 1:0;
+	}
+	public int dataVegAfforded(){
+		return (dataVegAction() + dataAffAction() == 2) ? 1:0;
+	}
+	
+	/*Individual*/
+	/*Graph 6*/
+	public int dataOneAgent(){
+		if(dataMeatAfforded() == 1) return 1;
+		if(dataMeatHabitual() == 1) return 2;
+		if(dataMeatIntentional() == 1) return 3;
+		if(dataVegAfforded() == 1) return -1;
+		if(dataVegHabitual() == 1) return -2;
+		if(dataVegIntentional() == 1) return -3;
+		return 0; //Should never get here.
+	}
+	
+	/*Habitual Params*/
+	public double dataHabitStrength(Class spClass){
+		for(SocialPractice sp: habitStrengths.keySet()){
+			if(sp.getClass()==spClass) return habitStrengths.get(sp);
+		}
+		return 0.0;
+	}
+	
+	/*Intentional Params*/
+	public double dataNeed(Class spClass){
+		double need = myValues.get(spClass).getNeed();
 		return (need<100) ? need:100;
 	}
 	
-	public double vegNeed(){
-		double need = myValues.get(SelfTranscendence.class).getNeed();
-		return (need<100) ? need:100;
+	/*Evaluation params*/
+	public double dataEvIndividual(){
+		return myAction.getLastEvaluation().getIndE() *myAction.getLastEvaluation().getIweight();
+	}
+	public double dataEvSocial(){
+		return myAction.getLastEvaluation().getSocE() *myAction.getLastEvaluation().getSweight();
 	}
 	
-	public double dataMyAction(){
-		return (getMyAction() instanceof MeatEatingPractice) ? 1:-1;
-	}
-
-
 	public int getID() {
 		return ID;
 	}

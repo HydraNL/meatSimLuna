@@ -32,4 +32,19 @@ public class Eater1 extends Agent {
 		addValue(new Openness(RandomHelper.nextDoubleFromTo(0, 2)));
 		addValue(new Conservation(RandomHelper.nextDoubleFromTo(0, 2)));
 	}
+	
+	/*DataCollectors*/
+	public double dataHabitStrengthMeat(){
+		return dataHabitStrength(MeatEatingPractice.class);
+	}
+	public double dataHabitStrengthVeg(){
+		return dataHabitStrength(VegEatingPractice.class);
+	}
+	public double dataNeedSelfEnhancement(){
+		return dataNeed(SelfEnhancement.class);
+	}
+	public double dataNeedSelfTranscendence(){
+		return dataNeed(SelfTranscendence.class);
+	}
+	
 }
