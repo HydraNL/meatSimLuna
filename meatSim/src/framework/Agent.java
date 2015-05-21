@@ -46,9 +46,7 @@ public abstract class Agent {
 	private int ID;
 	private SocialPractice myAction;
 	HashMap<SocialPractice, Double> frequencies; //TODO: Might be nicer to put it in the SocialPractice
-	HashMap<SocialPractice, Double> habitStrengths=new HashMap<SocialPractice, Double>();
-	
-	
+	HashMap<SocialPractice, Double> habitStrengths;
 	ActionType actionType;
 	private enum ActionType{
 		AFFORDED,
@@ -65,6 +63,8 @@ public abstract class Agent {
 		
 		mySocialPractices=new ArrayList<SocialPractice>();
 		myValues =new HashMap<Class, Value>();
+		frequencies=new HashMap<SocialPractice, Double>();
+		habitStrengths=new HashMap<SocialPractice, Double>();
 	}
 	
 	
@@ -180,15 +180,14 @@ public abstract class Agent {
 			frequencies.put(sp, sp.calculateFrequency(myContext));
 		}
 		totalFrequency = Helper.sumDouble(frequencies.values());
-		
-		for(SocialPractice sp: candidateSocialPractices){			//Consider only affordad practices when determining habitStrength
-			habitStrengths.put(sp, calculateHabitStrength(frequencies.get(sp), totalFrequency));
+		System.out.println("Frequency: " + frequencies.toString());
+		if(totalFrequency*CFG.HABIT_THRESHOLD_ABSOLUTE() > RandomHelper.nextDoubleFromTo(0, 100)){ //After about 100 iterations, your frequency is 20
+			for(SocialPractice sp: candidateSocialPractices){			//Consider only affordad practices when determining habitStrength
+				habitStrengths.put(sp, calculateHabitStrength(frequencies.get(sp), totalFrequency));
+			}
+			//System.out.println("Habits: " + habitStrengths.toString());
+			Helper.filter(candidateSocialPractices, habitStrengths, CFG.HABIT_THRESHOLD_RELATIVE());	
 		}
-		
-		System.out.println("Habits: " + habitStrengths.toString());
-		
-		Helper.filter(candidateSocialPractices, habitStrengths, CFG.HABIT_THRESHOLD());
-		
 	}
 	
 	/*
@@ -250,10 +249,6 @@ public abstract class Agent {
 			
 		}
 	}
-	 
-	
-
-
 	/**
 	 * Description of the method evaluate.
 	 */
@@ -263,9 +258,6 @@ public abstract class Agent {
 		//System.out.println("Evaluation :" + Iweight + " " + individualEvaluation() + " " + Sweight + " " + socialEvaluation());
 		myAction.addEvaluation(new Evaluation(Iweight, individualEvaluation(), Sweight, socialEvaluation(), myContext));
 	}
-	
-	
-	//TODO: not working yet, always 1
 	private double socialEvaluation() {
 		double simAgents = 0;	//amount of similar agents
 		for(Agent a: myContext.getMyAgents()){
@@ -276,26 +268,19 @@ public abstract class Agent {
 		
 		return 0.5 + 0.5 * Math.tanh((x-CFG.a)/CFG.b);
 	}
-
-
 	private double individualEvaluation() {
 		return myValues.get(myAction.getPurpose()).getStrength();
 	}
-
-
 	public void updateHistory(){
 			myAction.updatePerformanceHistory(myContext);
 	}
-	
 	private void updateHistoryEvaluative() {
 		myAction.updatePerformanceHistoryEvaluative(myContext);
 		
 	}
-	 
 	protected void addSocialPractice(SocialPractice sp){
 		mySocialPractices.add(sp);
 	}
-	
 	protected void addValue(Value val){
 		myValues.put(val.getClass(), val);
 	}
@@ -372,6 +357,12 @@ public abstract class Agent {
 		}
 		return 0.0;
 	}
+	public double dataFrequencyIndex(Class spClass){
+		for(SocialPractice sp: frequencies.keySet()){
+			if(sp.getClass()==spClass) return frequencies.get(sp);
+		}
+		return 0.0;
+	}
 	
 	/*Intentional Params*/
 	public double dataNeed(Class spClass){
@@ -385,6 +376,9 @@ public abstract class Agent {
 	}
 	public double dataEvSocial(){
 		return myAction.getLastEvaluation().getSocE() *myAction.getLastEvaluation().getSweight();
+	}
+	public double dataEvaluation(){
+		return myAction.getLastEvaluation().getGrade();
 	}
 	
 	public int getID() {

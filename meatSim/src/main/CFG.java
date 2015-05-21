@@ -49,11 +49,14 @@ public class CFG {
 	}
 	
 	/*Habitual Parameters*/
-	public static double HABIT_THRESHOLD(){
-		return RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD"); //An action has to be done 70% in this context to become habitual.
+	public static double HABIT_THRESHOLD_RELATIVE(){
+		return RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD_RELATIVE"); //An action has to be done 70% in this context to become habitual.
 	}
 	public static double OUTSIDE_CONTEXT(){
 		return RunEnvironment.getInstance().getParameters().getDouble("OUTSIDE_CONTEXT");
+	}
+	public static double HABIT_THRESHOLD_ABSOLUTE() {
+		return RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD_ABSOLUTE");
 	}
 	
 	/*Value Strength*/
@@ -118,6 +121,8 @@ public class CFG {
 
 	private static int agentID = 0;
 	private static int locationID = 0;
+
+	
 	
 
 

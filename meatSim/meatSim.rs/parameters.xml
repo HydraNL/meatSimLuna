@@ -91,13 +91,19 @@
 									
 		/>
 				<parameter name="OUTSIDE_CONTEXT" displayName="Habit Outside Context Weight" type="double" 
-						defaultValue="0.5" 
+						defaultValue="0.25" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
 		/>
-				<parameter name="HABIT_THRESHOLD" displayName="Habit Threshold" type="double" 
+				<parameter name="HABIT_THRESHOLD_RELATIVE" displayName="Habit Threshold Relative" type="double" 
 						defaultValue="0.7" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+				<parameter name="HABIT_THRESHOLD_ABSOLUTE" displayName="Habit Threshold Absolute" type="double" 
+						defaultValue="5" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									

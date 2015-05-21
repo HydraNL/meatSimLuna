@@ -40,11 +40,22 @@ public class Eater1 extends Agent {
 	public double dataHabitStrengthVeg(){
 		return dataHabitStrength(VegEatingPractice.class);
 	}
+	public double dataFrequencyIndexMeat(){
+		return dataFrequencyIndex(MeatEatingPractice.class);
+	}
+	public double dataFrequencyIndexVeg(){
+		return dataFrequencyIndex(VegEatingPractice.class);
+	}
 	public double dataNeedSelfEnhancement(){
 		return dataNeed(SelfEnhancement.class);
 	}
 	public double dataNeedSelfTranscendence(){
 		return dataNeed(SelfTranscendence.class);
 	}
-	
+	public double dataMeatEvaluation(){
+		return dataMeatAction() * dataEvaluation();
+	}
+	public double dataVegEvaluation(){
+		return dataVegAction() *dataEvaluation();
+	}
 }
