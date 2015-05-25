@@ -51,8 +51,10 @@ public abstract class Agent {
 	private enum ActionType{
 		AFFORDED,
 		HABITUAL,
-		INTENTIONAL
+		INTENTIONAL,
+		NOACTION
 	}
+	private boolean isDiningOut;
 	
 	
 
@@ -74,19 +76,25 @@ public abstract class Agent {
 	 */
 	@ScheduledMethod(start = 1, interval = 1, priority = 3)
 	public void step1() {
-		move();
+		isDiningOut = (RandomHelper.nextDoubleFromTo(0,100) <= 16);
+		if(isDiningOut) move();
+		//Maybe move to another location
 	}
 	
 	@ScheduledMethod(start = 1, interval = 1, priority = 2)
 	public void step2() {
-		myAction = chooseAction();
+		if(isDiningOut) myAction = chooseAction();
+		else{
+			myAction = new NoAction(); //Maybe change to just new Social Practice which will not be an instance of either;
+			actionType = ActionType.NOACTION;
+		}
 		act();
 		updateValues();
 	}
 	
 	@ScheduledMethod(start = 1, interval = 1, priority = 1)
 	public void step3(){
-		learn();
+		if(isDiningOut) learn();
 	}
 	
 	
@@ -98,7 +106,8 @@ public abstract class Agent {
 	private void move() {
 		int randomIndex = RandomHelper.nextIntFromTo(0, candidateContexts.size() - 1) ;
 		
-		myContext = candidateContexts.get(randomIndex);
+		myContext = candidateContexts.get(randomIndex); //How can this work, doesn't this list get infinite.
+														//No the reference to the list is given, and the list cleared everytimestep.
 		myContext.addAgent(this);
 		Helper.moveToObject(myGrid, this, myContext);
 	}
@@ -180,7 +189,7 @@ public abstract class Agent {
 			frequencies.put(sp, sp.calculateFrequency(myContext));
 		}
 		totalFrequency = Helper.sumDouble(frequencies.values());
-		System.out.println("Frequency: " + frequencies.toString());
+		//System.out.println("Frequency: " + frequencies.toString());
 		if(totalFrequency*CFG.HABIT_THRESHOLD_ABSOLUTE() > RandomHelper.nextDoubleFromTo(0, 100)){ //After about 100 iterations, your frequency is 20
 			for(SocialPractice sp: candidateSocialPractices){			//Consider only affordad practices when determining habitStrength
 				habitStrengths.put(sp, calculateHabitStrength(frequencies.get(sp), totalFrequency));
@@ -212,7 +221,7 @@ public abstract class Agent {
 		}
 		double totalNeed = Helper.sumDouble(needs.values()); //satisfaction can get <0, so need as well, so maybe not getting in while loop
 		double randomDeterminer = RandomHelper.nextDoubleFromTo(0, totalNeed);
-		System.out.println("Needs:" + needs);
+		//System.out.println("Needs:" + needs);
 		
 		Iterator it = needs.entrySet().iterator();
 		while(randomDeterminer > 0) {
@@ -241,7 +250,7 @@ public abstract class Agent {
 	 */
 	private void learn() {
 		if(CFG.isEvaluated()) evaluate();
-		if(CFG.isFilteredOnHabits()){
+		if(CFG.isUpdatedPerformanceHistory()){
 			if(CFG.isEvaluated()) updateHistoryEvaluative();
 			else{
 				updateHistory();
@@ -380,7 +389,6 @@ public abstract class Agent {
 	public double dataEvaluation(){
 		return myAction.getLastEvaluation().getGrade();
 	}
-	
 	public int getID() {
 		return ID;
 	}

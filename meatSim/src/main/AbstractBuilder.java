@@ -111,7 +111,7 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 	
 	//@ScheduledMethod(start = 1, interval = 1)
 	public void createPContexts() {
-		pContexts.clear();
+		pContexts.clear(); //List doesn't become infinite, there are new pContexts every time step.
 		
 		for(int i =0; i < locations.size(); i++){
 			Location location = locations.get(i);

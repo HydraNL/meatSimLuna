@@ -65,7 +65,7 @@ public abstract class Value {
 	
 	public void updateSatisfactionFunction(double connectedFeaturesSum){
 		double increment = Math.tanh( beta * (connectedFeaturesSum - k));
-		System.out.println("Increment: " + this + "by: "+ increment);
+		//System.out.println("Increment: " + this + "by: "+ increment);
 		satisfaction += increment;
 	}
 	

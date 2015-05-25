@@ -29,7 +29,11 @@ public class CFG {
 	}
 	public static boolean isIntentional() {
 		return RunEnvironment.getInstance().getParameters().getBoolean("isIntentional");
+	}	
+	public static boolean isUpdatedPerformanceHistory() {
+		return RunEnvironment.getInstance().getParameters().getBoolean("isUpdatedPHistory");
 	}
+
 	
 	/*Agent and Venue Counts*/
 	public static int agentCount(){
@@ -118,12 +122,7 @@ public class CFG {
 		return locationID++;
 	}
 
-
+	//How to reset
 	private static int agentID = 0;
 	private static int locationID = 0;
-
-	
-	
-
-
 }

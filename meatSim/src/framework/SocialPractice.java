@@ -57,12 +57,12 @@ public abstract class SocialPractice {
 	 * Description of the method updatePerformanceHistory.
 	 */
 	public void updatePerformanceHistory(PContext currentContext) {
-		performanceHistory.add(currentContext);
+		//performanceHistory.add(currentContext); <- requires space
 		updatePerformanceHistoryMap(currentContext);
 	}
 	
 	public void updatePerformanceHistoryEvaluative(PContext currentContext){
-		performanceHistory.add(currentContext);
+		//performanceHistory.add(currentContext); <- requires space
 		double grade = evaluations.get(evaluations.size() -1).getGrade();
 		updatePerformanceHistoryMap(currentContext, grade);
 	}
@@ -132,8 +132,13 @@ public abstract class SocialPractice {
 	public double getEvaluationAvarage(){
 		return evaluationSum/ (double) evaluations.size();
 	}
-
+	/*
+	 * If Evaluation isn't use return a 0-Evaluation.
+	 */
 	public Evaluation getLastEvaluation(){
-		return evaluations.get(evaluations.size() -1);
+		if(evaluations.isEmpty()) return new Evaluation(0,0,0,0, null);
+		else{
+			return evaluations.get(evaluations.size() -1);
+		}
 	}
 }

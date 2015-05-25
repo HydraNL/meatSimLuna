@@ -13,7 +13,7 @@
 									
 		/>
 				<parameter name="mixedVenueCount" displayName="Mixed venue Count" type="int" 
-						defaultValue="5" 
+						defaultValue="6" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
 									
@@ -43,7 +43,7 @@
 									
 		/>
 				<parameter name="eater1Count" displayName="Eater1 Count" type="int" 
-						defaultValue="30" 
+						defaultValue="2000" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
 									
@@ -85,6 +85,12 @@
 									
 		/>
 				<parameter name="filterOnHabits" displayName="Filter On Habits" type="boolean" 
+						defaultValue="true" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+									
+		/>
+				<parameter name="isUpdatedPHistory" displayName="Update Performance History" type="boolean" 
 						defaultValue="true" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
