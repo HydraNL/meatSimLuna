@@ -67,7 +67,7 @@ public abstract class SocialPractice {
 		updatePerformanceHistoryMap(currentContext, grade);
 	}
 	 
-	//TODO: update mapAdd st it adds not 1 but the amount of grade points to the location and agents
+	
 	private void updatePerformanceHistoryMap(PContext currentContext) {
 		Helper.mapAdd(performanceHistoryMap, currentContext.getMyLocation());
 

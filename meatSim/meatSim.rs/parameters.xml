@@ -13,7 +13,7 @@
 									
 		/>
 				<parameter name="mixedVenueCount" displayName="Mixed venue Count" type="int" 
-						defaultValue="6" 
+						defaultValue="2" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
 									
@@ -43,7 +43,13 @@
 									
 		/>
 				<parameter name="eater1Count" displayName="Eater1 Count" type="int" 
-						defaultValue="2000" 
+						defaultValue="30" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="diningOutPercent" displayName="Percentage Dining Out" type="int" 
+						defaultValue="100" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
 									

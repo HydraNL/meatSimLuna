@@ -125,4 +125,8 @@ public class CFG {
 	//How to reset
 	private static int agentID = 0;
 	private static int locationID = 0;
+
+	public static int diningOutPercent() {
+		return RunEnvironment.getInstance().getParameters().getInteger("diningOutPercent");
+	}
 }

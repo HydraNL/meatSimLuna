@@ -76,7 +76,7 @@ public abstract class Agent {
 	 */
 	@ScheduledMethod(start = 1, interval = 1, priority = 3)
 	public void step1() {
-		isDiningOut = (RandomHelper.nextDoubleFromTo(0,100) <= 16);
+		isDiningOut = (RandomHelper.nextIntFromTo(0,100) <= CFG.diningOutPercent());
 		if(isDiningOut) move();
 		//Maybe move to another location
 	}
