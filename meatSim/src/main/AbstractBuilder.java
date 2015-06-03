@@ -67,10 +67,15 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		//after making agents
 		myDataCollector=new DataCollector(this);
 		context.add(myDataCollector);
+		
 		/*Schedules a performance context task each timestep.*/
 		ISchedule schedule = RunEnvironment.getInstance().getCurrentSchedule();
 		ScheduleParameters params = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.FIRST_PRIORITY);
 		schedule.schedule(params, this, "createPContexts");
+		
+		/*Specifies simulation endTime*/
+		RunEnvironment.getInstance().endAt(CFG.endTime());
+		
 		return context;
 	}
 	 

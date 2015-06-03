@@ -52,7 +52,8 @@ public abstract class Agent {
 		AFFORDED,
 		HABITUAL,
 		INTENTIONAL,
-		NOACTION
+		NOACTION,
+		RANDOM
 	}
 	private boolean isDiningOut;
 	
@@ -142,7 +143,8 @@ public abstract class Agent {
 			actionType = ActionType.INTENTIONAL;
 			chosenAction = chooseOnIntentions(candidateSocialPractices);
 		}
-		else{																						//Choose Randomly
+		else{			
+			actionType = ActionType.RANDOM;//Choose Randomly
 			chosenAction = candidateSocialPractices.get(RandomHelper.nextIntFromTo(0, candidateSocialPractices.size()-1));
 		}
 		return chosenAction;
@@ -360,12 +362,15 @@ public abstract class Agent {
 	}
 	
 	/*Habitual Params*/
+	//Now only returns habitStrength if agent has just done a habitualaction.
+	//
 	public double dataHabitStrength(Class spClass){
 		for(SocialPractice sp: habitStrengths.keySet()){
-			if(sp.getClass()==spClass) return habitStrengths.get(sp);
+			if(actionType == ActionType.HABITUAL && sp.getClass()==spClass) return habitStrengths.get(sp);
 		}
-		return 0.0;
+		return -1.0;
 	}
+	
 	public double dataFrequencyIndex(Class spClass){
 		for(SocialPractice sp: frequencies.keySet()){
 			if(sp.getClass()==spClass) return frequencies.get(sp);

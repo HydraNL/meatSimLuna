@@ -213,3 +213,160 @@ Caused by: java.io.FileNotFoundException: C:\Users\rijk\git\meatSimLuna\meatSim\
 WARN  [AWT-EventQueue-0] 2015-05-26 11:45:16,971 repast.simphony.engine.environment.ProjectionRegistry - Duplicate projection typegeography
 WARN  [AWT-EventQueue-0] 2015-05-26 11:45:16,971 repast.simphony.visualization.engine.VisualizationRegistry - Duplicate visualization typeGIS
 WARN  [AWT-EventQueue-0] 2015-05-26 11:45:16,979 repast.simphony.visualization.engine.VisualizationRegistry - Duplicate visualization typeGIS 3D
+INFO  [AWT-EventQueue-0] 2015-05-26 12:04:38,024 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-05-26 12:04:38,602 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2015-05-26 12:05:50,066 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-05-26 12:05:50,066 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:06:41,294 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost2439150274518184233.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1432605998693 ...
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:06:41,356 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:06:41,387 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0444
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:06:41,387 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1432605998693\rijk_localhost2439150274518184233.zip
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:06:44,469 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-3-thread-1] 2015-05-26 12:07:44,516 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432605998693 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:07:44,516 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,0522
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:07:44,625 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1432605998693
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:07:44,672 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:07:44,688 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0029
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-26 12:07:44,688 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,1007
+INFO  [AWT-EventQueue-0] 2015-05-28 12:30:23,041 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-05-28 12:30:23,666 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2015-05-28 12:31:33,587 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-05-28 12:31:33,587 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:32:15,603 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost1344893205868718865.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1432780332547 ...
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:32:15,949 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:32:15,964 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0567
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:32:15,964 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1432780332547\rijk_localhost1344893205868718865.zip
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:32:20,104 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-3-thread-1] 2015-05-28 12:33:20,159 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432780332547 for DONE:  no
+INFO  [pool-3-thread-1] 2015-05-28 12:34:20,167 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432780332547 for DONE:  no
+INFO  [pool-3-thread-1] 2015-05-28 12:35:20,182 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432780332547 for DONE:  no
+INFO  [pool-3-thread-1] 2015-05-28 12:36:20,182 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432780332547 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:36:20,182 repast.simphony.batch.ssh.SessionsDriver - Run Time: 4,0703
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:36:20,323 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1432780332547
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:36:20,370 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:36:20,588 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0068
+INFO  [SwingWorker-pool-2-thread-2] 2015-05-28 12:36:20,588 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 4,1387
+INFO  [AWT-EventQueue-0] 2015-05-28 13:11:39,401 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-05-28 13:11:39,401 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:12:37,968 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost8706788265713614214.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1432782755135 ...
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:12:38,015 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:12:38,015 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0480
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:12:38,015 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1432782755135\rijk_localhost8706788265713614214.zip
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:12:39,875 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-4-thread-1] 2015-05-28 13:13:39,889 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432782755135 for DONE:  no
+INFO  [pool-4-thread-1] 2015-05-28 13:14:39,896 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432782755135 for DONE:  no
+INFO  [pool-4-thread-1] 2015-05-28 13:15:39,900 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432782755135 for DONE:  no
+INFO  [pool-4-thread-1] 2015-05-28 13:16:39,901 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432782755135 for DONE:  no
+INFO  [pool-4-thread-1] 2015-05-28 13:17:39,906 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432782755135 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:17:39,906 repast.simphony.batch.ssh.SessionsDriver - Run Time: 5,0315
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:17:39,922 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1432782755135
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:17:39,922 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:17:40,171 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0044
+INFO  [SwingWorker-pool-2-thread-3] 2015-05-28 13:17:40,171 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 5,0902
+INFO  [AWT-EventQueue-0] 2015-05-28 14:21:25,594 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-05-28 14:21:25,594 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:21:46,731 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost8008754786674458452.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 ...
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:21:46,779 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:21:46,779 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0454
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:21:46,779 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053\rijk_localhost8008754786674458452.zip
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:21:51,917 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-5-thread-1] 2015-05-28 14:22:51,918 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  no
+INFO  [pool-5-thread-1] 2015-05-28 14:23:51,919 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  no
+INFO  [pool-5-thread-1] 2015-05-28 14:24:51,920 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  no
+INFO  [pool-5-thread-1] 2015-05-28 14:25:51,920 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  no
+INFO  [pool-5-thread-1] 2015-05-28 14:26:51,921 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  no
+INFO  [pool-5-thread-1] 2015-05-28 14:27:51,921 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  no
+INFO  [pool-5-thread-1] 2015-05-28 14:28:51,922 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  no
+INFO  [pool-5-thread-1] 2015-05-28 14:29:51,922 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  no
+INFO  [pool-5-thread-1] 2015-05-28 14:30:51,922 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:30:51,945 repast.simphony.batch.ssh.SessionsDriver - Run Time: 9,0857
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:30:51,954 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1432786904053
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:30:51,958 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:30:52,284 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0056
+INFO  [SwingWorker-pool-2-thread-4] 2015-05-28 14:30:52,284 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 9,1436
+INFO  [AWT-EventQueue-0] 2015-06-01 14:31:02,250 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-06-01 14:31:02,590 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:31:29,190 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost2541025088088435528.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188 ...
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:31:29,394 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:31:29,489 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0534
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:31:29,489 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188\rijk_localhost2541025088088435528.zip
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:31:44,056 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-3-thread-1] 2015-06-01 14:32:44,079 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-01 14:33:44,080 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-01 14:34:44,080 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-01 14:35:44,084 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-01 14:36:44,085 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-01 14:37:44,099 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:37:44,099 repast.simphony.batch.ssh.SessionsDriver - Run Time: 6,2435
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:37:44,240 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1433133086188
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:37:44,287 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:37:44,427 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0055
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-01 14:37:44,427 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 6,3082
+INFO  [AWT-EventQueue-0] 2015-06-02 12:41:37,014 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-06-02 12:41:37,534 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:42:29,957 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost4957050219407985972.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097 ...
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:42:30,051 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:42:30,082 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0492
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:42:30,082 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097\rijk_localhost4957050219407985972.zip
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:42:37,241 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-3-thread-1] 2015-06-02 12:43:37,288 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 12:44:37,288 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 12:45:37,289 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 12:46:37,289 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 12:47:37,289 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 12:48:37,290 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:48:37,291 repast.simphony.batch.ssh.SessionsDriver - Run Time: 6,1202
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:48:37,353 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1433212947097
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:48:37,386 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:48:37,804 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0085
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 12:48:37,804 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 6,1831
+INFO  [AWT-EventQueue-0] 2015-06-02 15:44:54,648 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-06-02 15:44:55,116 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:45:21,264 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost6138590521508765844.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453 ...
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:45:21,309 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:45:21,310 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0476
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:45:21,310 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453\rijk_localhost6138590521508765844.zip
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:45:28,066 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-3-thread-1] 2015-06-02 15:46:28,088 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 15:47:28,089 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 15:48:28,091 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 15:49:28,091 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 15:50:28,092 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-02 15:51:28,092 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:51:28,093 repast.simphony.batch.ssh.SessionsDriver - Run Time: 6,1130
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:51:28,185 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1433223918453
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:51:28,219 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:51:28,525 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0072
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-02 15:51:28,525 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 6,1795

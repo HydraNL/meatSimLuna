@@ -116,7 +116,8 @@ public class CFG {
 
 	
 	public static int getAgentID() {
-		return agentID++;
+		agentID++;
+		return agentID%agentCount();
 	}
 	public static int getLocationID() {
 		return locationID++;
@@ -128,5 +129,8 @@ public class CFG {
 
 	public static int diningOutPercent() {
 		return RunEnvironment.getInstance().getParameters().getInteger("diningOutPercent");
+	}
+	public static double endTime() {
+		return RunEnvironment.getInstance().getParameters().getDouble("endTime");
 	}
 }

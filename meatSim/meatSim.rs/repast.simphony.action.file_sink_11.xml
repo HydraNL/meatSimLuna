@@ -1,0 +1,15 @@
+<repast.simphony.data2.engine.FileSinkDescriptor>
+  <name>WarmUp</name>
+  <dataSet>MR and HR</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>run</string>
+    <string>random_seed</string>
+    <string>tick</string>
+    <string>MeatMean</string>
+    <string>HabitualMean</string>
+  </sourceIds>
+  <fileName>DetermineWarmup.txt</fileName>
+  <addTimeStamp>true</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>
