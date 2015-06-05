@@ -1,9 +1,9 @@
 <repast.simphony.chart2.engine.TimeSeriesChartDescriptor>
-  <name>Habits</name>
-  <dataSet>Habits</dataSet>
+  <name>Afforded - Habitual - Intentional</name>
+  <dataSet>Aggregate Eater Data (M,V,A,H,I)</dataSet>
   <xAxisLabel>Tick Count</xAxisLabel>
-  <yAxisLabel>HabitStrength</yAxisLabel>
-  <chartTitle>Habits</chartTitle>
+  <yAxisLabel>Action Frequency</yAxisLabel>
+  <chartTitle>Afforded -Habitual - Inentional</chartTitle>
   <type>TIME_SERIES</type>
   <background>
     <red>192</red>
@@ -21,15 +21,42 @@
   <showLegend>true</showLegend>
   <seriesIds>
     <entry>
-      <string>ID</string>
+      <string>Afforded </string>
       <SeriesData>
-        <label></label>
+        <label>Afforded </label>
+        <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+          <alpha>255</alpha>
+        </color>
+      </SeriesData>
+    </entry>
+    <entry>
+      <string>Intentional </string>
+      <SeriesData>
+        <label>Intentional </label>
+        <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+          <alpha>255</alpha>
+        </color>
+      </SeriesData>
+    </entry>
+    <entry>
+      <string>Habitual </string>
+      <SeriesData>
+        <label>Habitual </label>
+        <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+          <alpha>255</alpha>
+        </color>
       </SeriesData>
     </entry>
   </seriesIds>
-  <dataValueIds>
-    <string>dataHabitStrengthMeat</string>
-    <string>dataHabitStrengthVeg</string>
-  </dataValueIds>
+  <dataValueIds/>
   <plotRangeLength>-1</plotRangeLength>
 </repast.simphony.chart2.engine.TimeSeriesChartDescriptor>

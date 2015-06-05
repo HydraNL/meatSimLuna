@@ -65,6 +65,7 @@ public class CFG {
 	
 	/*Value Strength*/
 	public static double SELFT_AVG_STRENGTH(){
+		if(getTime() > INTERVENTION_TIME()) return RunEnvironment.getInstance().getParameters().getDouble("SELFT_INTERVENTION_STRENGTH");
 		return RunEnvironment.getInstance().getParameters().getDouble("SELFT_AVG_STRENGTH");
 	}
 	
@@ -130,7 +131,15 @@ public class CFG {
 	public static int diningOutPercent() {
 		return RunEnvironment.getInstance().getParameters().getInteger("diningOutPercent");
 	}
+	
+	//Simulation parameters
 	public static double endTime() {
 		return RunEnvironment.getInstance().getParameters().getDouble("endTime");
+	}
+	private static double INTERVENTION_TIME() {
+		return RunEnvironment.getInstance().getParameters().getDouble("INTERVENTION_TIME");
+	}
+	public static double getTime(){
+		return RunEnvironment.getInstance().getCurrentSchedule().getTickCount();
 	}
 }

@@ -383,6 +383,12 @@ public abstract class Agent {
 		double need = myValues.get(spClass).getNeed();
 		return (need<100) ? need:100;
 	}
+	public double dataThreshold(Class spClass){
+		return myValues.get(spClass).getThreshold();
+	}
+	public double dataSatisfaction(Class spClass){
+		return myValues.get(spClass).getSatisfaction();
+	}
 	
 	/*Evaluation params*/
 	public double dataEvIndividual(){

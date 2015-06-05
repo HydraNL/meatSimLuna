@@ -29,6 +29,7 @@ public class SelfEnhancement extends Value {
 	public void updateSatisfaction(SocialPractice actionDone){
 		double eatenMeat = (actionDone instanceof MeatEatingPractice) ? 1:0;
 		double feature1 = weightMeatEating * eatenMeat;
+		//Room for more features.
 		double connectedFeaturesWeightedSum = feature1;
 		
 		super.updateSatisfactionFunction(connectedFeaturesWeightedSum);

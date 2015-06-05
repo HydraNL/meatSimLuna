@@ -28,7 +28,7 @@ public abstract class Value {
 	 */
 	public Value(double strengthWeight, double beta, double k){
 		this.strengthWeight = strengthWeight;
-		this.satisfaction = RandomHelper.nextDoubleFromTo(0, 2*getStrengthAvarage()); //Any satisfaction within 0 and boundry
+		this.satisfaction = RandomHelper.nextDoubleFromTo(0, 2*getThreshold()); //Any satisfaction within 0 and boundry
 		this.beta = beta;
 		this.k = k;
 	}
@@ -78,6 +78,11 @@ public abstract class Value {
 	
 	protected void setK(double k){
 		this.k = k;
+	}
+	
+	//for data purposes
+	public double getSatisfaction() {
+		return satisfaction;
 	}
 
 	
