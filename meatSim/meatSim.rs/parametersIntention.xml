@@ -95,13 +95,13 @@
 									
 		/>
 				<parameter name="selfTk" displayName="SelfTransdence: K" type="double" 
-						defaultValue="0.25" 
+						defaultValue="0.5" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
 		/>
 				<parameter name="selfTbeta" displayName="SelfTransdence: beta" type="double" 
-						defaultValue="0.1" 
+						defaultValue="0.01" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
@@ -113,13 +113,13 @@
 									
 		/>
 				<parameter name="selfEk" displayName="SelfEnhanchement: k" type="double" 
-						defaultValue="0.25" 
+						defaultValue="0.5" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
 		/>
 				<parameter name="selfEbeta" displayName="SelfEnhancement: beta" type="double" 
-						defaultValue="0.1" 
+						defaultValue="0.01" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
@@ -178,5 +178,3 @@
 									
 		/>
 		</parameters>
-
-

@@ -154,3 +154,30 @@ WARN  [SwingWorker-pool-2-thread-4] 2015-06-03 14:58:51,857 repast.simphony.batc
 INFO  [SwingWorker-pool-2-thread-4] 2015-06-03 14:58:51,857 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
 INFO  [SwingWorker-pool-2-thread-4] 2015-06-03 14:58:51,888 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0005
 INFO  [SwingWorker-pool-2-thread-4] 2015-06-03 14:58:51,888 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,1324
+INFO  [AWT-EventQueue-0] 2015-06-10 12:28:17,690 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-06-10 12:28:18,239 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params_needs.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2015-06-10 12:29:06,842 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-06-10 12:29:06,842 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params_needs.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:30:01,117 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost5141898213725354614.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448 ...
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:30:01,179 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:30:01,226 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0455
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:30:01,226 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448\rijk_localhost5141898213725354614.zip
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:30:11,168 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-3-thread-1] 2015-06-10 12:31:11,239 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-10 12:32:11,250 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-10 12:33:11,258 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-10 12:34:11,261 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-10 12:35:11,262 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-10 12:36:11,263 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448 for DONE:  no
+INFO  [pool-3-thread-1] 2015-06-10 12:37:11,263 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:37:11,280 repast.simphony.batch.ssh.SessionsDriver - Run Time: 7,1676
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:37:11,585 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1433903398448
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:37:11,632 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:45:34,057 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 8,3796
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-10 12:45:34,057 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 15,5958

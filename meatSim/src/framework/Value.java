@@ -64,11 +64,16 @@ public abstract class Value {
 	}
 	
 	public void updateSatisfactionFunction(double connectedFeaturesSum){
-		double increment = Math.tanh( beta * (connectedFeaturesSum - k));
-		//System.out.println("Increment: " + this + "by: "+ increment);
+		double increment = Math.tanh( beta * (connectedFeaturesSum - getK()));
+		System.out.println("Increment: " + this + "by: "+ increment);
 		satisfaction += increment;
 	}
 	
+	private double getK() {
+		double modifier = getStrength();
+		return getStrength() * k;
+	}
+
 	//Might give problems later as each value needs its own parameters when updating.
 	public abstract void updateSatisfaction(SocialPractice myAction);
 	

@@ -1,7 +1,6 @@
 <repast.simphony.data2.engine.DataSetDescriptor>
-  <name>Evaluation</name>
-  <type>NON_AGGREGATE</type>
-  <sourceType>framework.Agent</sourceType>
+  <name>Evaluation Aggregate</name>
+  <type>AGGREGATE</type>
   <inclTick>true</inclTick>
   <inclBatchRun>false</inclBatchRun>
   <inclRandomSeed>false</inclRandomSeed>
@@ -12,32 +11,44 @@
     <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>-146340271</hashCode>
+    <hashCode>-1831502885</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
     <entry>
-      <string>dataEvIndividual</string>
+      <string>Veg Evaluation</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>dataEvIndividual</id>
-        <className>framework.Agent</className>
-        <methodName>dataEvIndividual</methodName>
+        <id>Veg Evaluation</id>
+        <className>meatEating.Eater1</className>
+        <methodName>dataVegEvaluation</methodName>
+        <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>dataEvSocial</string>
+      <string>Meat Evaluation</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>dataEvSocial</id>
-        <className>framework.Agent</className>
+        <id>Meat Evaluation</id>
+        <className>meatEating.Eater1</className>
+        <methodName>dataMeatEvaluation</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Social Evaluation</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Social Evaluation</id>
+        <className>meatEating.Eater1</className>
         <methodName>dataEvSocial</methodName>
+        <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>ID</string>
+      <string>Individual Evaluation</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>ID</id>
-        <className>framework.Agent</className>
-        <methodName>getID</methodName>
+        <id>Individual Evaluation</id>
+        <className>meatEating.Eater1</className>
+        <methodName>dataEvIndividual</methodName>
+        <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
   </methodDataSources>

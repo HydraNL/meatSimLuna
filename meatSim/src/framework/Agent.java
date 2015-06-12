@@ -56,6 +56,13 @@ public abstract class Agent {
 		RANDOM
 	}
 	private boolean isDiningOut;
+	public double avarageValueStrength(){
+		double sum =0.0;
+		for(Value v: myValues.values()){
+			sum += v.getStrength();
+		}
+		return sum/ (double) myValues.values().size();
+	}
 	
 	
 

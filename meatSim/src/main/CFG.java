@@ -82,11 +82,14 @@ public class CFG {
 	}
 	
 	/*Satisfaction parameters*/
+	public static double beta(){
+		return RunEnvironment.getInstance().getParameters().getDouble("beta");
+	}
 	public static double SELFT_k(){
 		return RunEnvironment.getInstance().getParameters().getDouble("selfTk");
 	}
 	public static double SELFT_beta(){ //achievementdrive
-		return RunEnvironment.getInstance().getParameters().getDouble("selfTbeta");
+		return beta();
 	}
 	public static double SELFT_actionWeight(){
 		return RunEnvironment.getInstance().getParameters().getDouble("weightVegEatingAction");
@@ -95,7 +98,8 @@ public class CFG {
 		return RunEnvironment.getInstance().getParameters().getDouble("selfEk");
 	}
 	public static double SELFE_beta(){ //achievementdrive
-		return RunEnvironment.getInstance().getParameters().getDouble("selfEbeta");
+		return beta();
+		//return RunEnvironment.getInstance().getParameters().getDouble("selfEbeta");
 	}
 	public static double SELFE_actionWeight(){
 		return RunEnvironment.getInstance().getParameters().getDouble("weightMeatEatingAction");

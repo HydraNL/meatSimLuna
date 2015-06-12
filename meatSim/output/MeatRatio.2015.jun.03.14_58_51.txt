@@ -1,1 +1,0 @@
-"run","random_seed","tick","MeatMean"
