@@ -89,7 +89,7 @@
 		
 		
 					<parameter name="SELFT_AVG_STRENGTH" displayName="SelfTransendence:  Avarage Strength" type="double" 
-						defaultValue="0.5" 
+						defaultValue="1.0" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
@@ -107,7 +107,7 @@
 									
 		/>
 				<parameter name="SELFE_AVG_STRENGTH" displayName="SelfEnhancement: Avarage Strength" type="double" 
-						defaultValue="0.5" 
+						defaultValue="1.0" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
@@ -142,7 +142,7 @@
 		
 		
 				<parameter name="INTERVENTION_TIME" displayName="Intervention: time" type="double" 
-						defaultValue="150.0" 
+						defaultValue="600.0" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									

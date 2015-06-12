@@ -1,0 +1,1 @@
+"run","random_seed","tick","MeatNeedMean (MNM)","VegNeedMean (VNM) "
