@@ -27,8 +27,9 @@ public abstract class Value {
 	 * The constructor.
 	 */
 	public Value(double strengthWeight, double beta, double k){
+		System.out.println(strengthWeight);
 		this.strengthWeight = strengthWeight;
-		this.satisfaction = RandomHelper.nextDoubleFromTo(0, 2*getThreshold()); //Any satisfaction within 0 and boundry
+		this.satisfaction = RandomHelper.getNormal().nextDouble() * getThreshold();
 		this.beta = beta;
 		this.k = k;
 	}
@@ -47,7 +48,6 @@ public abstract class Value {
 	 * Description of the method getNeed.
 	 */
 	public double getNeed() {
-		if(satisfaction < 0) satisfaction = 0.01; //does it give a overflow?
 		return getThreshold()/satisfaction;  //only works if satisfaction stays positive, else the Needs get lower when satisfaction gets lower
 	}
 	
@@ -61,8 +61,10 @@ public abstract class Value {
 	
 	public void updateSatisfactionFunction(double connectedFeaturesSum){
 				double increment = Math.tanh( beta * (connectedFeaturesSum - getK()));
-				System.out.println("Increment: " + this + "by: "+ increment);
+				//System.out.println("Increment: " + this + "by: "+ increment);
 		 		satisfaction += increment;
+		 		if(satisfaction > 5 * getStrengthAvarage()) satisfaction = 5*getStrengthAvarage();
+		 		if(satisfaction < 0.2 * getStrengthAvarage()) satisfaction = 0.2 * getStrengthAvarage();
 		 	}
 		 	
 			private double getK() {

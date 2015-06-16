@@ -20,6 +20,7 @@ import repast.simphony.engine.schedule.PriorityType;
 import repast.simphony.engine.schedule.ScheduleParameters;
 import repast.simphony.engine.schedule.ScheduledMethod;
 import repast.simphony.parameter.Parameters;
+import repast.simphony.random.RandomHelper;
 import repast.simphony.space.grid.Grid;
 import repast.simphony.space.grid.GridBuilderParameters;
 import repast.simphony.space.grid.GridPoint;
@@ -55,7 +56,7 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		agents=new ArrayList<Agent>();
 		locations=new ArrayList<Location>();
 		pContexts=new ArrayList<PContext>();
-		
+		RandomHelper.createNormal(1, 0.25);
 
 		setCFG();
 		

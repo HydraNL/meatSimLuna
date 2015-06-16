@@ -86,7 +86,7 @@ public class CFG {
 		return RunEnvironment.getInstance().getParameters().getDouble("selfTk");
 	}
 	public static double SELFT_beta(){ //achievementdrive
-		return RunEnvironment.getInstance().getParameters().getDouble("selfTbeta");
+		return RunEnvironment.getInstance().getParameters().getDouble("selfEbeta"); //NB: changed to selFEBETA!!!
 	}
 	public static double SELFT_actionWeight(){
 		return RunEnvironment.getInstance().getParameters().getDouble("weightVegEatingAction");

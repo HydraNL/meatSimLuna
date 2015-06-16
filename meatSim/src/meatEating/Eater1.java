@@ -27,10 +27,10 @@ public class Eater1 extends Agent {
 		super(candidateContexts, grid);
 		addSocialPractice(new MeatEatingPractice());
 		addSocialPractice(new VegEatingPractice());
-		addValue(new SelfEnhancement(RandomHelper.nextDoubleFromTo(0, 2))); //0 to 2 because this gives the wished avg strength
-		addValue(new SelfTranscendence(RandomHelper.nextDoubleFromTo(0, 2)));
-		addValue(new Openness(RandomHelper.nextDoubleFromTo(0, 2)));
-		addValue(new Conservation(RandomHelper.nextDoubleFromTo(0, 2)));
+		addValue(new SelfEnhancement(RandomHelper.getNormal().nextDouble())); //ND, 1, 0.25 (maybe higher sigma?)
+		addValue(new SelfTranscendence(RandomHelper.getNormal().nextDouble()));
+		addValue(new Openness(RandomHelper.getNormal().nextDouble()));
+		addValue(new Conservation(RandomHelper.getNormal().nextDouble()));
 	}
 	
 	/*DataCollectors*/
