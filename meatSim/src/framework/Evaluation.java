@@ -3,6 +3,8 @@
  *******************************************************************************/
 package framework;
 
+import main.CFG;
+
 
 
 /**
@@ -27,7 +29,7 @@ public class Evaluation {
 		this.indE = indE;
 		this.Sweight =Sweight;
 		this.socE = socE;
-		this.grade = Iweight * indE + Sweight * socE;
+		this.grade = CFG.complexEvaluation() ?  Iweight * indE + Sweight * socE:socE;
 		this.currentContext = myContext;
 	}
 

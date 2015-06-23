@@ -33,7 +33,9 @@ public class CFG {
 	public static boolean isUpdatedPerformanceHistory() {
 		return RunEnvironment.getInstance().getParameters().getBoolean("isUpdatedPHistory");
 	}
-
+	public static boolean complexEvaluation() {
+		return RunEnvironment.getInstance().getParameters().getBoolean("isComplexEvaluated");
+	}
 	
 	/*Agent and Venue Counts*/
 	public static int agentCount(){
@@ -53,13 +55,13 @@ public class CFG {
 	}
 	
 	/*Habitual Parameters*/
-	public static double HABIT_THRESHOLD_RELATIVE(){
+	public static double HTR(){
 		return RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD_RELATIVE"); //An action has to be done 70% in this context to become habitual.
 	}
 	public static double OUTSIDE_CONTEXT(){
 		return RunEnvironment.getInstance().getParameters().getDouble("OUTSIDE_CONTEXT");
 	}
-	public static double HABIT_THRESHOLD_ABSOLUTE() {
+	public static double HTA() {
 		return RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD_ABSOLUTE");
 	}
 	
@@ -114,7 +116,6 @@ public class CFG {
 		//b = Math.sqrt(0.5 *a);
 		b = Math.sqrt(0.5 * 0.5 * (agentCount() -1) * (1 / (double) venueCount()) *2 );
 	}
-
 	
 	public static int getAgentID() {
 		agentID++;
@@ -142,4 +143,5 @@ public class CFG {
 	public static double getTime(){
 		return RunEnvironment.getInstance().getCurrentSchedule().getTickCount();
 	}
+	
 }

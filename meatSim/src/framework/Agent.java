@@ -43,6 +43,8 @@ public abstract class Agent {
 	private PContext myContext;
 	private ArrayList<SocialPractice> mySocialPractices; //check with reseting model
 	private HashMap<Class, Value> myValues;
+	
+	//For Data Projection
 	private int ID;
 	private SocialPractice myAction;
 	HashMap<SocialPractice, Double> frequencies; //TODO: Might be nicer to put it in the SocialPractice
@@ -117,35 +119,39 @@ public abstract class Agent {
 	 * Description of the method chooseAction.
 	 */
 	private SocialPractice chooseAction() {
-		ArrayList<SocialPractice> candidateSocialPractices = (ArrayList<SocialPractice>) mySocialPractices.clone();
+		ArrayList<SocialPractice> candidateSocialPractices = (ArrayList<SocialPractice>) mySocialPractices
+				.clone();
 		ArrayList<SocialPractice> previousCandidates;
 		SocialPractice chosenAction;
-		
-		if(CFG.isFilteredOnAffordances()){
+
+		if (CFG.isFilteredOnAffordances()) {
 			filterOnAffordances(candidateSocialPractices);
-			if(candidateSocialPractices.size() == 1){
+			if (candidateSocialPractices.size() == 1) {
 				actionType = ActionType.AFFORDED;
 				return candidateSocialPractices.get(0);
 			}
 		}
-		
-		if(CFG.isFilteredOnHabits()){
-			previousCandidates = (ArrayList<SocialPractice>) candidateSocialPractices.clone();
-			filterOnTriggers(candidateSocialPractices);
-			if(candidateSocialPractices.size() == 1){
+
+		if (CFG.isFilteredOnHabits()) {
+			previousCandidates = (ArrayList<SocialPractice>) candidateSocialPractices
+					.clone();
+			candidateSocialPractices = filterOnTriggers(candidateSocialPractices);
+			if (candidateSocialPractices.size() == 1) {
 				actionType = ActionType.HABITUAL;
 				return candidateSocialPractices.get(0);
 			}
-			if(candidateSocialPractices.size() < 1) candidateSocialPractices = previousCandidates; //Return to Afforded
+			if (candidateSocialPractices.size() < 1)
+				candidateSocialPractices = previousCandidates; // Return to
+																// Afforded
 		}
-		
-		if(CFG.isIntentional()){
+
+		if (CFG.isIntentional()) {
 			actionType = ActionType.INTENTIONAL;
 			chosenAction = chooseOnIntentions(candidateSocialPractices);
-		}
-		else{			
-			actionType = ActionType.RANDOM;//Choose Randomly
-			chosenAction = candidateSocialPractices.get(RandomHelper.nextIntFromTo(0, candidateSocialPractices.size()-1));
+		} else {
+			actionType = ActionType.RANDOM;// Choose Randomly
+			chosenAction = candidateSocialPractices.get(RandomHelper
+					.nextIntFromTo(0, candidateSocialPractices.size() - 1));
 		}
 		return chosenAction;
 	}
@@ -156,56 +162,67 @@ public abstract class Agent {
 	/**
 	 * Description of the method checkAffordances.
 	 */
-	private void filterOnAffordances(ArrayList<SocialPractice> candidateSocialPractices) {
-		Iterator<SocialPractice> iter = candidateSocialPractices.iterator();		//use of iterator so one can remove from list
-		
-		while (iter.hasNext()){
+	private void filterOnAffordances(
+			ArrayList<SocialPractice> candidateSocialPractices) {
+		Iterator<SocialPractice> iter = candidateSocialPractices.iterator();
+		while (iter.hasNext()) {
 			SocialPractice sp = iter.next();
 			boolean contextAffordsSP = false;
-			
-			for(PContext affordance: sp.getAffordances()){ 
-				
-				/*check affordance location matches with current location*/
-				Location locationToCheck = affordance.getPhysical().getMyLocation();
+
+			for (PContext affordance : sp.getAffordances()) {
+
+				/* check affordance location matches with current location */
+				Location locationToCheck = affordance.getPhysical()
+						.getMyLocation();
 				Location l = getMyLocation();
-				if(getMyLocation().getClass() == locationToCheck.getClass()) contextAffordsSP = true;
-				//TODO: change affordances to list of classes. Problem though, it is a context object right now.
-				/*check affordance social matches with current socialcontext*/
+				if (getMyLocation().getClass() == locationToCheck.getClass())
+					contextAffordsSP = true;
+				// TODO: change affordances to list of classes. Problem though,
+				// it is a context object right now.
+				/* check affordance social matches with current socialcontext */
 			}
-			if(!contextAffordsSP) iter.remove();
+			if (!contextAffordsSP)
+				iter.remove();
 		}
 	}
+	
 	/*Filter candidate Social Practices on their relative Habit Strength by:
 	 * 1. Calculate frequency per Social Practice
 	 * 2. Calculate totalFrequency
 	 * 3. Calculate Habit Strength per Social Practice
 	 * 
 	 */
-	private void filterOnTriggers(
+	private ArrayList<SocialPractice> filterOnTriggers(
 			ArrayList<SocialPractice> candidateSocialPractices) {
-		frequencies=new HashMap<SocialPractice, Double>();
-		habitStrengths =new HashMap<SocialPractice, Double>();
-		double totalFrequency = 0;
-		
-		for(SocialPractice sp: mySocialPractices){					//Consider all practices when calculating freqeuency
-			frequencies.put(sp, sp.calculateFrequency(myContext));
+		ArrayList<SocialPractice> newCandidates = new ArrayList<SocialPractice>();
+		frequencies.clear();
+		habitStrengths.clear();
+
+		double totalF = 0;
+		for (SocialPractice sp : mySocialPractices) {
+			double F = sp.calculateFrequency(myContext);
+			frequencies.put(sp, F);
+			totalF += F;
 		}
-		totalFrequency = Helper.sumDouble(frequencies.values());
-		//System.out.println("Frequency: " + frequencies.toString());
-		if(totalFrequency*CFG.HABIT_THRESHOLD_ABSOLUTE() > RandomHelper.nextDoubleFromTo(0, 100)){ //After about 100 iterations, your frequency is 20
-			for(SocialPractice sp: candidateSocialPractices){			//Consider only affordad practices when determining habitStrength
-				habitStrengths.put(sp, calculateHabitStrength(frequencies.get(sp), totalFrequency));
+		for (SocialPractice sp : candidateSocialPractices) {
+			habitStrengths.put(sp, habitStrength(frequencies.get(sp), totalF));
+		}
+		for (SocialPractice sp : candidateSocialPractices) {
+			if (frequencies.get(sp) > RandomHelper.nextDoubleFromTo(0, 2)
+					* CFG.HTA()) { // t = 25 -> F = 5
+				if (habitStrengths.get(sp) > CFG.HTR()) {
+					newCandidates.add(sp);
+				}
 			}
-			//System.out.println("Habits: " + habitStrengths.toString());
-			Helper.filter(candidateSocialPractices, habitStrengths, CFG.HABIT_THRESHOLD_RELATIVE());	
 		}
+		return newCandidates;
 	}
 	
 	/*
 	 * 
 	 * If the practice has never been done before return 1.
 	 */
-	private double calculateHabitStrength(Double spFrequency, double totalFrequency) {
+	private double habitStrength(Double spFrequency, double totalFrequency) {
 		return totalFrequency ==0 ? 1:spFrequency/totalFrequency;
 	}
 	 
