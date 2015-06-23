@@ -125,6 +125,7 @@ public abstract class SocialPractice {
 	}
 
 	public void addEvaluation(Evaluation ev) {
+		//System.out.println("Evaluation: "+ev.getGrade());
 		evaluations.add(ev); //TODO: Maybe save per context
 		evaluationSum+= ev.getGrade();
 	}
