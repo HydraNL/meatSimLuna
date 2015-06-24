@@ -294,7 +294,7 @@ public abstract class Agent {
 		double dissimAgents = myContext.getMyAgents().size() - simAgents; //amount of dissimilar agents
 		double x = simAgents - dissimAgents;
 		//System.out.print("thisev: " + 0.5 + 0.5 * Math.tanh((x-CFG.a)/CFG.b));
-		return 0.5 + 0.5 * Math.tanh((x-CFG.a)/CFG.b);
+		return 1 + 0.5 * Math.tanh((x-CFG.a)/CFG.b);
 	}
 	private double individualEvaluation() {
 		return myValues.get(myAction.getPurpose()).getStrength();

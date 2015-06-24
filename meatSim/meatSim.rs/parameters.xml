@@ -42,24 +42,29 @@
 									
 		/>
 				<parameter name="filterOnHabits" displayName="Filter On Habits" type="boolean" 
-						defaultValue="false" 
-						isReadOnly="false" 
-						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
-									
-		/>
-				<parameter name="isUpdatedPHistory" displayName="Update Performance History" type="boolean" 
-						defaultValue="false" 
-						isReadOnly="false" 
-						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
-									
-		/>
-				<parameter name="isIntentional" displayName="Choose Intentionally (false = choose Random)" type="boolean" 
 						defaultValue="true" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
 									
 		/>
+				<parameter name="isUpdatedPHistory" displayName="Update Performance History" type="boolean" 
+						defaultValue="true" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+									
+		/>
+				<parameter name="isIntentional" displayName="Choose Intentionally (false = choose Random)" type="boolean" 
+						defaultValue="false" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+									
+		/>
 				<parameter name="isEvaluated" displayName="Use Evaluation" type="boolean" 
+						defaultValue="true" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+		/>	
+				<parameter name="isComplexEvaluated" displayName="Use Complex Evaluation" type="boolean" 
 						defaultValue="false" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
@@ -178,5 +183,3 @@
 									
 		/>
 		</parameters>
-
-

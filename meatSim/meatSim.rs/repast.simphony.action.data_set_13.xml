@@ -1,7 +1,6 @@
 <repast.simphony.data2.engine.DataSetDescriptor>
-  <name>Individual Actions</name>
-  <type>NON_AGGREGATE</type>
-  <sourceType>meatEating.Eater1</sourceType>
+  <name>Evaluation Sums</name>
+  <type>AGGREGATE</type>
   <inclTick>true</inclTick>
   <inclBatchRun>false</inclBatchRun>
   <inclRandomSeed>false</inclRandomSeed>
@@ -12,32 +11,35 @@
     <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>479421858</hashCode>
+    <hashCode>90417845</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
     <entry>
-      <string>ID</string>
+      <string>Evaluation Meat</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>ID</id>
+        <id>Evaluation Meat</id>
         <className>meatEating.Eater1</className>
-        <methodName>getID</methodName>
+        <methodName>dataMeatEvaluation</methodName>
+        <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>dataVegAction</string>
+      <string>Evaluation Veg</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>dataVegAction</id>
+        <id>Evaluation Veg</id>
         <className>meatEating.Eater1</className>
-        <methodName>dataVegAction</methodName>
+        <methodName>dataVegEvaluation</methodName>
+        <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>dataMeatAction</string>
+      <string>Evaluation</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>dataMeatAction</id>
+        <id>Evaluation</id>
         <className>meatEating.Eater1</className>
-        <methodName>dataMeatAction</methodName>
+        <methodName>dataEvaluation</methodName>
+        <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
   </methodDataSources>

@@ -63,6 +63,11 @@
 						defaultValue="false" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+		/>	
+				<parameter name="isComplexEvaluated" displayName="Use Complex Evaluation" type="boolean" 
+						defaultValue="false" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
 		/>		
 		
 		

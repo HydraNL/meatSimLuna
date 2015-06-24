@@ -39,14 +39,14 @@ public class Eater1 extends Agent {
 	public double[] correlated(){
 		double[] means = {1,1};
 		double variance = 0.0625;
-		double correlation = -0.8;
+		double correlation = -0.8; //Could be normally distributed
 		//double correlation = Math.min(0, Math.max(-1, RandomHelper.getNormal().nextDouble() - 1.5)); //I'm not sure if the correlation, should differ, that seems strange.
 		double[][] covariance_matrix = {{variance, variance * correlation},{variance*correlation, variance}};
 		MultivariateNormalDistribution m= new MultivariateNormalDistribution(means,covariance_matrix);
 		double[] l =m.sample();
 		l[0] = Math.max(0, Math.min(2, l[0]));
 		l[1] = Math.max(0, Math.min(2, l[1]));
-		System.out.println("correlation: " + correlation + "gives strengtWeight:" + l[0] + "and"+ l[1]);
+		//System.out.println("correlation: " + correlation + "gives strengtWeight:" + l[0] + "and"+ l[1]);
 		return l;
 		/*
 		double correlation = RandomHelper.getNormal().nextDouble() -1.5;

@@ -27,7 +27,7 @@ public abstract class Value {
 	 * The constructor.
 	 */
 	public Value(double strengthWeight, double beta, double k){
-		System.out.println(strengthWeight);
+		//System.out.println(strengthWeight);
 		this.strengthWeight = strengthWeight;
 		this.satisfaction = RandomHelper.getNormal().nextDouble() * getThreshold();
 		this.beta = beta;

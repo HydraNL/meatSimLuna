@@ -16,38 +16,29 @@
   <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
     <entry>
-      <string>Veg Evaluation</string>
+      <string>E</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>Veg Evaluation</id>
+        <id>E</id>
         <className>meatEating.Eater1</className>
-        <methodName>dataVegEvaluation</methodName>
+        <methodName>dataEvaluation</methodName>
         <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>Meat Evaluation</string>
+      <string>M</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>Meat Evaluation</id>
+        <id>M</id>
         <className>meatEating.Eater1</className>
         <methodName>dataMeatEvaluation</methodName>
         <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>Social Evaluation</string>
+      <string>V</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>Social Evaluation</id>
+        <id>V</id>
         <className>meatEating.Eater1</className>
-        <methodName>dataEvSocial</methodName>
-        <aggType>MEAN</aggType>
-      </repast.simphony.data2.engine.MethodDataSourceDefinition>
-    </entry>
-    <entry>
-      <string>Individual Evaluation</string>
-      <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>Individual Evaluation</id>
-        <className>meatEating.Eater1</className>
-        <methodName>dataEvIndividual</methodName>
+        <methodName>dataVegEvaluation</methodName>
         <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>

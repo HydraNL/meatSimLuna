@@ -1,682 +1,828 @@
-INFO  [Thread-4] 2015-06-16 11:59:10,680 repast.simphony.batch.ssh.LocalSession - 0.8943497840106468
-INFO  [Thread-4] 2015-06-16 11:59:10,680 repast.simphony.batch.ssh.LocalSession - 0.6947624830573146
-INFO  [Thread-4] 2015-06-16 11:59:10,680 repast.simphony.batch.ssh.LocalSession - 0.7721062344731483
-INFO  [Thread-4] 2015-06-16 11:59:10,680 repast.simphony.batch.ssh.LocalSession - 0.8899201152534252
-INFO  [Thread-4] 2015-06-16 11:59:10,680 repast.simphony.batch.ssh.LocalSession - 0.422900385539424
-INFO  [Thread-4] 2015-06-16 11:59:10,680 repast.simphony.batch.ssh.LocalSession - 0.8148448963161343
-INFO  [Thread-4] 2015-06-16 11:59:10,680 repast.simphony.batch.ssh.LocalSession - 0.8773491594749471
-INFO  [Thread-4] 2015-06-16 11:59:10,680 repast.simphony.batch.ssh.LocalSession - 1.0082590416969652
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.2742190780589733
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.830014985505844
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.6103602572224067
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.9712146726020312
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.226761447605163
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.1726632728448774
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.3597950468599662
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.6858600422367906
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0726117020214732
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.4422642245435603
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.977824454903105
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.012047980348247
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.6739392805862376
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.8754320243422178
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0401972095359786
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.411892979177888
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.2535265097249184
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.2774671422355888
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.2311725510516347
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.73776644244952
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.9847325037861552
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.8005203834581054
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.5447953286521614
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.2076280261023833
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.1385733239466185
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.7513182494811769
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.9315915751762404
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.6087331595749979
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.8858051595407597
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0661459365145907
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.5825931677528655
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.128053356615615
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.9668285938068368
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.648648981665929
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.6755798823503287
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.7162701714395736
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.9128855834283756
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0509077769478932
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.2734830903692265
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.5448010527125894
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.6206427729133157
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0371997639904527
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0794799268177524
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.4285120542805463
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.3249502287595294
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.9308894586070844
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.7417215894969632
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0957212645412628
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.1484704770265908
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.9677384182390524
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.775941795369277
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0028336541336775
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.1343020643717932
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 0.968201776299936
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.051518605248506
-INFO  [Thread-4] 2015-06-16 11:59:10,681 repast.simphony.batch.ssh.LocalSession - 1.0456056688586888
-INFO  [Thread-4] 2015-06-16 11:59:10,682 repast.simphony.batch.ssh.LocalSession - 1.1075455889916355
-INFO  [Thread-4] 2015-06-16 11:59:10,682 repast.simphony.batch.ssh.LocalSession - 0.7942985376692033
-INFO  [Thread-4] 2015-06-16 11:59:10,682 repast.simphony.batch.ssh.LocalSession - 0.8485982831529605
-INFO  [Thread-4] 2015-06-16 11:59:10,682 repast.simphony.batch.ssh.LocalSession - 0.9633271311458411
-INFO  [Thread-4] 2015-06-16 11:59:10,801 repast.simphony.batch.ssh.LocalSession - 1.1292918588821819
-INFO  [Thread-4] 2015-06-16 11:59:10,801 repast.simphony.batch.ssh.LocalSession - 1.1660371655727981
-INFO  [Thread-4] 2015-06-16 11:59:10,801 repast.simphony.batch.ssh.LocalSession - 1.3195503581399044
-INFO  [Thread-4] 2015-06-16 11:59:10,801 repast.simphony.batch.ssh.LocalSession - 1.1633032991883097
-INFO  [Thread-4] 2015-06-16 11:59:10,801 repast.simphony.batch.ssh.LocalSession - 0.9958038682370501
-INFO  [Thread-4] 2015-06-16 11:59:10,801 repast.simphony.batch.ssh.LocalSession - 0.9141546681024981
-INFO  [Thread-4] 2015-06-16 11:59:10,801 repast.simphony.batch.ssh.LocalSession - 0.9920051287548604
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.046355947839219
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.3982231927280808
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.9003998767090081
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.9620207299825665
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.9667215262743357
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.8320123148151989
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.1468475545072918
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.17280253934026
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.2007354311138474
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.9732675443497932
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.923350721525345
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.0076800124667233
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.6039474238518583
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.2862940261552855
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.8397766251852112
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.0346249458219074
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.1054095672243385
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.2111774317605684
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.870106115829378
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.8720113766635778
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.0624995981237464
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.327448774793423
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.73708774829512
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.5175226642504902
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.8210422030210561
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.029474100292874
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.4426898359066116
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.1684105142534904
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.5237667071112571
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.7587609622894987
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 1.3526648396588032
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.865396620116603
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.874208025571791
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.5795531050927527
-INFO  [Thread-4] 2015-06-16 11:59:10,802 repast.simphony.batch.ssh.LocalSession - 0.8730174708545457
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.2114617689910003
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.9599077649860099
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.713872102836618
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8505086519304788
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.0066391487048327
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.3863385940476158
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8382148437018443
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8315864974838039
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.9592510771740465
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8501405803577851
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8943497840106468
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.6947624830573146
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.7721062344731483
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8899201152534252
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.422900385539424
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8148448963161343
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8773491594749471
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.0082590416969652
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.2742190780589733
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.830014985505844
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.6103602572224067
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.9712146726020312
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.226761447605163
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.1726632728448774
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.3597950468599662
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.6858600422367906
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.0726117020214732
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.4422642245435603
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.977824454903105
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.012047980348247
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.6739392805862376
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8754320243422178
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.0401972095359786
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.411892979177888
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.2535265097249184
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.2774671422355888
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.2311725510516347
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.73776644244952
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.9847325037861552
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.8005203834581054
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.5447953286521614
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.2076280261023833
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 1.1385733239466185
-INFO  [Thread-4] 2015-06-16 11:59:10,803 repast.simphony.batch.ssh.LocalSession - 0.7513182494811769
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.9315915751762404
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.6087331595749979
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.8858051595407597
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.0661459365145907
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.5825931677528655
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.128053356615615
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.9668285938068368
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.648648981665929
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.6755798823503287
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.7162701714395736
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.9128855834283756
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.0509077769478932
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.2734830903692265
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.5448010527125894
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.6206427729133157
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.0371997639904527
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.0794799268177524
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.4285120542805463
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.3249502287595294
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.9308894586070844
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.7417215894969632
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.0957212645412628
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.1484704770265908
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.9677384182390524
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.775941795369277
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.0028336541336775
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.1343020643717932
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.968201776299936
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.051518605248506
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.0456056688586888
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 1.1075455889916355
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.7942985376692033
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.8485982831529605
-INFO  [Thread-4] 2015-06-16 11:59:10,804 repast.simphony.batch.ssh.LocalSession - 0.9633271311458411
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.1292918588821819
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.1660371655727981
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.3195503581399044
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.1633032991883097
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.9958038682370501
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.9141546681024981
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.9920051287548604
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.046355947839219
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.3982231927280808
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.9003998767090081
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.9620207299825665
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.9667215262743357
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.8320123148151989
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.1468475545072918
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.17280253934026
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.2007354311138474
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.9732675443497932
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.923350721525345
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.0076800124667233
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.6039474238518583
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.2862940261552855
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 0.8397766251852112
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.0346249458219074
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.1054095672243385
-INFO  [Thread-4] 2015-06-16 11:59:10,920 repast.simphony.batch.ssh.LocalSession - 1.2111774317605684
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.870106115829378
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8720113766635778
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.0624995981237464
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.327448774793423
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.73708774829512
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.5175226642504902
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8210422030210561
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.029474100292874
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.4426898359066116
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.1684105142534904
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.5237667071112571
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.7587609622894987
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.3526648396588032
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.865396620116603
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.874208025571791
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.5795531050927527
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8730174708545457
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.2114617689910003
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.9599077649860099
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.713872102836618
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8505086519304788
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.0066391487048327
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.3863385940476158
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8382148437018443
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8315864974838039
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.9592510771740465
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8501405803577851
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8943497840106468
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.6947624830573146
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.7721062344731483
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8899201152534252
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.422900385539424
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8148448963161343
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8773491594749471
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.0082590416969652
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.2742190780589733
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.830014985505844
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.6103602572224067
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.9712146726020312
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.226761447605163
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.1726632728448774
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.3597950468599662
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.6858600422367906
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.0726117020214732
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.4422642245435603
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.977824454903105
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.012047980348247
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.6739392805862376
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8754320243422178
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.0401972095359786
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.411892979177888
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.2535265097249184
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.2774671422355888
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.2311725510516347
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.73776644244952
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.9847325037861552
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8005203834581054
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.5447953286521614
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.2076280261023833
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.1385733239466185
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.7513182494811769
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.9315915751762404
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.6087331595749979
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.8858051595407597
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.0661459365145907
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.5825931677528655
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 1.128053356615615
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.9668285938068368
-INFO  [Thread-4] 2015-06-16 11:59:10,936 repast.simphony.batch.ssh.LocalSession - 0.648648981665929
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.6755798823503287
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.7162701714395736
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.9128855834283756
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.0509077769478932
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.2734830903692265
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.5448010527125894
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.6206427729133157
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.0371997639904527
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.0794799268177524
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.4285120542805463
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.3249502287595294
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.9308894586070844
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.7417215894969632
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.0957212645412628
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.1484704770265908
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.9677384182390524
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.775941795369277
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.0028336541336775
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.1343020643717932
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.968201776299936
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.051518605248506
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.0456056688586888
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 1.1075455889916355
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.7942985376692033
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.8485982831529605
-INFO  [Thread-4] 2015-06-16 11:59:10,951 repast.simphony.batch.ssh.LocalSession - 0.9633271311458411
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.1292918588821819
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.1660371655727981
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.3195503581399044
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.1633032991883097
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9958038682370501
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9141546681024981
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9920051287548604
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.046355947839219
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.3982231927280808
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9003998767090081
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9620207299825665
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9667215262743357
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8320123148151989
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.1468475545072918
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.17280253934026
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.2007354311138474
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9732675443497932
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.923350721525345
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.0076800124667233
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.6039474238518583
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.2862940261552855
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8397766251852112
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.0346249458219074
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.1054095672243385
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.2111774317605684
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.870106115829378
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8720113766635778
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.0624995981237464
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.327448774793423
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.73708774829512
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.5175226642504902
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8210422030210561
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.029474100292874
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.4426898359066116
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.1684105142534904
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.5237667071112571
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.7587609622894987
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.3526648396588032
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.865396620116603
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.874208025571791
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.5795531050927527
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8730174708545457
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.2114617689910003
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9599077649860099
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.713872102836618
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8505086519304788
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.0066391487048327
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.3863385940476158
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8382148437018443
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8315864974838039
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9592510771740465
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8501405803577851
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8943497840106468
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.6947624830573146
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.7721062344731483
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8899201152534252
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.422900385539424
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8148448963161343
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.8773491594749471
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.0082590416969652
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.2742190780589733
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.830014985505844
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.6103602572224067
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 0.9712146726020312
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.226761447605163
-INFO  [Thread-4] 2015-06-16 11:59:10,967 repast.simphony.batch.ssh.LocalSession - 1.1726632728448774
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.3597950468599662
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.6858600422367906
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0726117020214732
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.4422642245435603
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.977824454903105
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.012047980348247
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.6739392805862376
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.8754320243422178
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0401972095359786
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.411892979177888
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.2535265097249184
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.2774671422355888
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.2311725510516347
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.73776644244952
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.9847325037861552
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.8005203834581054
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.5447953286521614
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.2076280261023833
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.1385733239466185
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.7513182494811769
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.9315915751762404
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.6087331595749979
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.8858051595407597
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0661459365145907
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.5825931677528655
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.128053356615615
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.9668285938068368
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.648648981665929
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.6755798823503287
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.7162701714395736
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.9128855834283756
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0509077769478932
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.2734830903692265
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.5448010527125894
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.6206427729133157
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0371997639904527
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0794799268177524
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.4285120542805463
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.3249502287595294
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.9308894586070844
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.7417215894969632
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0957212645412628
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.1484704770265908
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.9677384182390524
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.775941795369277
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0028336541336775
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.1343020643717932
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.968201776299936
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.051518605248506
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.0456056688586888
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 1.1075455889916355
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.7942985376692033
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.8485982831529605
-INFO  [Thread-4] 2015-06-16 11:59:10,983 repast.simphony.batch.ssh.LocalSession - 0.9633271311458411
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1292918588821819
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1660371655727981
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.3195503581399044
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1633032991883097
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9958038682370501
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9141546681024981
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9920051287548604
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.046355947839219
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.3982231927280808
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9003998767090081
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9620207299825665
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9667215262743357
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8320123148151989
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1468475545072918
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.17280253934026
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2007354311138474
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9732675443497932
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.923350721525345
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0076800124667233
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.6039474238518583
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2862940261552855
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8397766251852112
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0346249458219074
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1054095672243385
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2111774317605684
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.870106115829378
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8720113766635778
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0624995981237464
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.327448774793423
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.73708774829512
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.5175226642504902
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8210422030210561
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.029474100292874
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.4426898359066116
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1684105142534904
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.5237667071112571
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.7587609622894987
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.3526648396588032
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.865396620116603
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.874208025571791
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.5795531050927527
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8730174708545457
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2114617689910003
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9599077649860099
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.713872102836618
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8505086519304788
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0066391487048327
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.3863385940476158
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8382148437018443
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8315864974838039
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9592510771740465
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8501405803577851
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8943497840106468
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.6947624830573146
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.7721062344731483
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8899201152534252
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.422900385539424
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8148448963161343
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8773491594749471
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0082590416969652
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2742190780589733
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.830014985505844
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.6103602572224067
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9712146726020312
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.226761447605163
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1726632728448774
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.3597950468599662
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.6858600422367906
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0726117020214732
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.4422642245435603
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.977824454903105
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.012047980348247
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.6739392805862376
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8754320243422178
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0401972095359786
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.411892979177888
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2535265097249184
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2774671422355888
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2311725510516347
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.73776644244952
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9847325037861552
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8005203834581054
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.5447953286521614
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2076280261023833
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1385733239466185
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.7513182494811769
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9315915751762404
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.6087331595749979
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8858051595407597
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0661459365145907
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.5825931677528655
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.128053356615615
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9668285938068368
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.648648981665929
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.6755798823503287
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.7162701714395736
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9128855834283756
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0509077769478932
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.2734830903692265
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.5448010527125894
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.6206427729133157
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0371997639904527
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0794799268177524
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.4285120542805463
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.3249502287595294
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9308894586070844
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.7417215894969632
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0957212645412628
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1484704770265908
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9677384182390524
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.775941795369277
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0028336541336775
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1343020643717932
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.968201776299936
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.051518605248506
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.0456056688586888
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 1.1075455889916355
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.7942985376692033
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.8485982831529605
-INFO  [Thread-4] 2015-06-16 11:59:11,045 repast.simphony.batch.ssh.LocalSession - 0.9633271311458411
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1292918588821819
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1660371655727981
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.3195503581399044
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1633032991883097
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9958038682370501
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9141546681024981
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9920051287548604
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.046355947839219
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.3982231927280808
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9003998767090081
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9620207299825665
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9667215262743357
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8320123148151989
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1468475545072918
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.17280253934026
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2007354311138474
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9732675443497932
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.923350721525345
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0076800124667233
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.6039474238518583
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2862940261552855
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8397766251852112
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0346249458219074
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1054095672243385
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2111774317605684
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.870106115829378
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8720113766635778
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0624995981237464
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.327448774793423
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.73708774829512
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.5175226642504902
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8210422030210561
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.029474100292874
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.4426898359066116
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1684105142534904
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.5237667071112571
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.7587609622894987
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.3526648396588032
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.865396620116603
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.874208025571791
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.5795531050927527
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8730174708545457
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2114617689910003
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9599077649860099
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.713872102836618
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8505086519304788
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0066391487048327
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.3863385940476158
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8382148437018443
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8315864974838039
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9592510771740465
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8501405803577851
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8943497840106468
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.6947624830573146
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.7721062344731483
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8899201152534252
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.422900385539424
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8148448963161343
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8773491594749471
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0082590416969652
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2742190780589733
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.830014985505844
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.6103602572224067
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9712146726020312
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.226761447605163
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1726632728448774
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.3597950468599662
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.6858600422367906
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0726117020214732
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.4422642245435603
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.977824454903105
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.012047980348247
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.6739392805862376
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8754320243422178
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0401972095359786
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.411892979177888
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2535265097249184
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2774671422355888
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2311725510516347
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.73776644244952
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9847325037861552
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8005203834581054
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.5447953286521614
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2076280261023833
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1385733239466185
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.7513182494811769
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9315915751762404
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.6087331595749979
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8858051595407597
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0661459365145907
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.5825931677528655
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.128053356615615
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9668285938068368
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.648648981665929
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.6755798823503287
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.7162701714395736
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9128855834283756
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0509077769478932
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.2734830903692265
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.5448010527125894
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.6206427729133157
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0371997639904527
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0794799268177524
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.4285120542805463
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.3249502287595294
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9308894586070844
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.7417215894969632
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0957212645412628
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1484704770265908
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9677384182390524
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.775941795369277
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0028336541336775
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1343020643717932
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.968201776299936
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.051518605248506
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.0456056688586888
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 1.1075455889916355
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.7942985376692033
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.8485982831529605
-INFO  [Thread-4] 2015-06-16 11:59:11,467 repast.simphony.batch.ssh.LocalSession - 0.9633271311458411
-INFO  [pool-3-thread-1] 2015-06-16 11:59:46,364 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266 for DONE:  yes
-INFO  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,365 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,0081
-INFO  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,475 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266
-WARN  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}MNI_and_VNI*.batch_param_map.txt in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266\instance_1
-WARN  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}MNI_and_VNI*.txt in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266\instance_1
-WARN  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}MNI_and_VNI*.batch_param_map.txt in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266\instance_2
-WARN  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}MNI_and_VNI*.txt in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266\instance_2
-WARN  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}MNI_and_VNI*.batch_param_map.txt in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266\instance_3
-WARN  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}MNI_and_VNI*.txt in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266\instance_3
-WARN  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}MNI_and_VNI*.batch_param_map.txt in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266\instance_4
-WARN  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}MNI_and_VNI*.txt in C:\Users\rijk\AppData\Local\Temp\simphony_model_1434419923266\instance_4
-INFO  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,522 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
-INFO  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,688 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0054
-INFO  [SwingWorker-pool-2-thread-1] 2015-06-16 11:59:46,688 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,0578
+INFO  [Thread-15] 2015-06-24 10:38:59,204 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8511315090807925and1.1234281338113543
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.8511315090807925
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.1234281338113543
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.464029987241794
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.782808920293084
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0699738677992057and0.75795802656392
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.0699738677992057
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.75795802656392
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.113505959358908
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.950209011691052
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1285429764513362and1.1287501680841923
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.1285429764513362
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.1287501680841923
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.8566837072900991
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.2786339634979607
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8206723039339858and1.1026332403724934
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.8206723039339858
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.1026332403724934
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.4115956984619249
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.44022947907540155
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3548188737433264and0.7235137788764967
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.3548188737433264
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.7235137788764967
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.7071740268122515
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.9723615411096173
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0501447259686143and0.9657858954341244
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.0501447259686143
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.9657858954341244
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.8701207017025856
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.9446237116249327
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8670419205626504and1.0934492247110528
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.8670419205626504
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.0934492247110528
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.0600171989070064
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.9397527826144507
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0910559951154435and0.8243464860901183
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.0910559951154435
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.8243464860901183
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.9184205945460593
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.7992095650733315
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2624104621249201and0.8374765188583176
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.2624104621249201
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.8374765188583176
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.3856231361882265
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 1.136851699692604
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7875883342607719and0.9381457002562809
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.7875883342607719
+INFO  [Thread-15] 2015-06-24 10:38:59,205 repast.simphony.batch.ssh.LocalSession - 0.9381457002562809
+INFO  [Thread-15] 2015-06-24 10:38:59,206 repast.simphony.batch.ssh.LocalSession - 0.8830626915890322
+INFO  [Thread-15] 2015-06-24 10:38:59,206 repast.simphony.batch.ssh.LocalSession - 1.0328589618162236
+INFO  [Thread-15] 2015-06-24 10:38:59,206 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.5785620001159716and1.3872891374083585
+INFO  [Thread-15] 2015-06-24 10:38:59,206 repast.simphony.batch.ssh.LocalSession - 0.5785620001159716
+INFO  [Thread-15] 2015-06-24 10:38:59,206 repast.simphony.batch.ssh.LocalSession - 1.3872891374083585
+INFO  [Thread-15] 2015-06-24 10:38:59,206 repast.simphony.batch.ssh.LocalSession - 1.022256905754028
+INFO  [Thread-15] 2015-06-24 10:38:59,206 repast.simphony.batch.ssh.LocalSession - 0.7820754826191685
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8137734838036351and1.286731714306524
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - 0.8137734838036351
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - 1.286731714306524
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - 1.1571128144981893
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - 1.0428172747486846
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9262645909430617and1.1447748958663369
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - 0.9262645909430617
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - 1.1447748958663369
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - 1.0685997565795886
+INFO  [Thread-15] 2015-06-24 10:38:59,230 repast.simphony.batch.ssh.LocalSession - 1.2256591454440546
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9790282703347508and0.6981344721015118
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.9790282703347508
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.6981344721015118
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.3393687035551594
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.8858476714064232
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.09305614050453and0.7945558189609441
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.09305614050453
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.7945558189609441
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.0438110208837963
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.6614594696062578
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0378383891238074and1.2803032724113579
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.0378383891238074
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.2803032724113579
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.2812163358541389
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.7576240011570534
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9481802464546465and1.0598156220465011
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.9481802464546465
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.0598156220465011
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.2068106972362507
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.0565874272996518
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9125856044573001and1.0509584602025936
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.9125856044573001
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.0509584602025936
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.7256493820506004
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.8873060121811713
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7105261105774651and1.0887368827105173
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.7105261105774651
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.0887368827105173
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.8522508955989205
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.3074107598474236
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9568301458805321and1.1641802646218098
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.9568301458805321
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.1641802646218098
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 1.1232144610774069
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - 0.8582230481651019
+INFO  [Thread-15] 2015-06-24 10:38:59,231 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2746770147741804and0.6390947080719714
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 1.2746770147741804
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 0.6390947080719714
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 0.955680630199685
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 1.0350994488156138
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9407817576844254and1.1384742015926306
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 0.9407817576844254
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 1.1384742015926306
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 0.6029803580187374
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 1.0576995396913111
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2395507241325443and0.7871630140062953
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 1.2395507241325443
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 0.7871630140062953
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 1.212694606699604
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 0.9055238067171459
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.5600039009254038and1.2778934381940115
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 0.5600039009254038
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 1.2778934381940115
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 1.1766282434658477
+INFO  [Thread-15] 2015-06-24 10:38:59,232 repast.simphony.batch.ssh.LocalSession - 0.9161451594422836
+INFO  [Thread-15] 2015-06-24 10:38:59,233 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0608135177306501and1.0868510476909528
+INFO  [Thread-15] 2015-06-24 10:38:59,233 repast.simphony.batch.ssh.LocalSession - 1.0608135177306501
+INFO  [Thread-15] 2015-06-24 10:38:59,233 repast.simphony.batch.ssh.LocalSession - 1.0868510476909528
+INFO  [Thread-15] 2015-06-24 10:38:59,233 repast.simphony.batch.ssh.LocalSession - 0.7865938327696967
+INFO  [Thread-15] 2015-06-24 10:38:59,233 repast.simphony.batch.ssh.LocalSession - 0.8900536385555722
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7686784677589606and1.0114916248753245
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 0.7686784677589606
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.0114916248753245
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.1211238905582124
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 0.6358047521906295
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.137622026244526and0.8230438304682877
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.137622026244526
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 0.8230438304682877
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.5056447966202668
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 0.624429016391456
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1231152565666553and1.2267962792272282
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.1231152565666553
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.2267962792272282
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 0.883144402449396
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.4150010677495777
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0376400944499096and1.0918886687772194
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.0376400944499096
+INFO  [Thread-15] 2015-06-24 10:38:59,234 repast.simphony.batch.ssh.LocalSession - 1.0918886687772194
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 0.7838747549555717
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.1671549177493472
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8028952354852501and0.9693163370830877
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 0.8028952354852501
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 0.9693163370830877
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.1125341687037835
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 0.6840928436391215
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.015177824052326and1.1304753750503809
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.015177824052326
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.1304753750503809
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.2905230975170912
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.3966242903077464
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9864926560536208and1.1563231927808955
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 0.9864926560536208
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.1563231927808955
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.1092765109674263
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.257251755212153
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2941873979452416and0.7124772869884498
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.2941873979452416
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 0.7124772869884498
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.0076781510983193
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.1461938161984884
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9716166682610139and1.0155781325022981
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 0.9716166682610139
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.0155781325022981
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 1.2774813035379529
+INFO  [Thread-15] 2015-06-24 10:38:59,235 repast.simphony.batch.ssh.LocalSession - 0.9827053515370082
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1974029835438251and0.6037602393755253
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 1.1974029835438251
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 0.6037602393755253
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 1.2058560541552867
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 0.9032605756949337
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0729063127826546and0.9408982783390107
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 1.0729063127826546
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 0.9408982783390107
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 0.7908752186078762
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 0.8329686817777833
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.201332912147095and0.9782245602417975
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 1.201332912147095
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 0.9782245602417975
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 0.8388089417266
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - 1.2543791261785622
+INFO  [Thread-15] 2015-06-24 10:38:59,236 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8005527718901565and1.0359147030410418
+INFO  [Thread-15] 2015-06-24 10:38:59,237 repast.simphony.batch.ssh.LocalSession - 0.8005527718901565
+INFO  [Thread-15] 2015-06-24 10:38:59,237 repast.simphony.batch.ssh.LocalSession - 1.0359147030410418
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 0.9079750202828889
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.5363193777245576
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0960822538455701and1.160300600287127
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.0960822538455701
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.160300600287127
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 0.9776644338338396
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 0.9838183438254029
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.198572738473257and1.0072118954143607
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.198572738473257
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.0072118954143607
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.1666028922008456
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 0.6697145250593615
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.494607839889771and0.6091171682060239
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.494607839889771
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 0.6091171682060239
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.099650519692344
+INFO  [Thread-15] 2015-06-24 10:38:59,238 repast.simphony.batch.ssh.LocalSession - 1.0965462787870544
+INFO  [Thread-15] 2015-06-24 10:38:59,278 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1570067072523946and1.1308590254412298
+INFO  [Thread-15] 2015-06-24 10:38:59,278 repast.simphony.batch.ssh.LocalSession - 1.1570067072523946
+INFO  [Thread-15] 2015-06-24 10:38:59,278 repast.simphony.batch.ssh.LocalSession - 1.1308590254412298
+INFO  [Thread-15] 2015-06-24 10:38:59,278 repast.simphony.batch.ssh.LocalSession - 1.2687710707814668
+INFO  [Thread-15] 2015-06-24 10:38:59,278 repast.simphony.batch.ssh.LocalSession - 0.7887111196306273
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9768744574360166and1.139096798005614
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.9768744574360166
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.139096798005614
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.5186836478116699
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.0321579673453662
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.5613672213169537and1.09693387156075
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.5613672213169537
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.09693387156075
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.9325049621940996
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.9664416109349043
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7747375511526904and1.508432739637106
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.7747375511526904
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.508432739637106
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.0187606890809209
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.2694498623322246
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0419557488626359and0.9352061097448114
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.0419557488626359
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.9352061097448114
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.9981184106377823
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.0716820721697864
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1573551637060198and0.9442832349902617
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.1573551637060198
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.9442832349902617
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 1.09207821409742
+INFO  [Thread-15] 2015-06-24 10:38:59,279 repast.simphony.batch.ssh.LocalSession - 0.731440397254824
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.132373433970853and0.939501349447431
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 1.132373433970853
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 0.939501349447431
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 0.7667917233857245
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 1.570802206668949
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7668646170108945and1.1984146296700329
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 0.7668646170108945
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 1.1984146296700329
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 1.1668667315794727
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 0.7215982605546026
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9665167113909442and1.069170457229299
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 0.9665167113909442
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 1.069170457229299
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 1.152370956979215
+INFO  [Thread-15] 2015-06-24 10:38:59,280 repast.simphony.batch.ssh.LocalSession - 0.8719849559331997
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.5197993693210071and1.3591161002656271
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.5197993693210071
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.3591161002656271
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.0644653138930529
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.9699059415597181
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8441213498816045and1.0468177306596866
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.8441213498816045
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.0468177306596866
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.8921648589173969
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.9996180017711908
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2011841169185162and0.6278082785349879
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.2011841169185162
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.6278082785349879
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.432581417411276
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.6814547397191846
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.6737818893110313and1.3796644034720087
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.6737818893110313
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.3796644034720087
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.1890460688594122
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.2312299221357867
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2370776777456665and0.5875236376288031
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 1.2370776777456665
+INFO  [Thread-15] 2015-06-24 10:38:59,281 repast.simphony.batch.ssh.LocalSession - 0.5875236376288031
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 0.9018012565248162
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 0.7727378473164351
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.6884030520413711and1.1599230451604525
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 0.6884030520413711
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 1.1599230451604525
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 1.0935476761388
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 0.8407925005776793
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0383640945620818and0.9162146795238587
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 1.0383640945620818
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 0.9162146795238587
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 0.6586616552229758
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 1.1919177402463095
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1226608845294281and0.7888608169046967
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 1.1226608845294281
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 0.7888608169046967
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 1.0416387417696789
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 0.9564742154722831
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2024385397727102and1.0130792186641622
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 1.2024385397727102
+INFO  [Thread-15] 2015-06-24 10:38:59,282 repast.simphony.batch.ssh.LocalSession - 1.0130792186641622
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.3487076371062672
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.3049359985248736
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9952319219396042and0.9512491091706741
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.9952319219396042
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.9512491091706741
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.7698753411289806
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.8019014833623853
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.052496674474047and1.2018998714887479
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.052496674474047
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.2018998714887479
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.2565954979665719
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.2154205429586953
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.4482059866923371and0.8248921901761361
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.4482059866923371
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.8248921901761361
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.8192962879549945
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.0047938140427148
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.284201704596561and0.8314538958292355
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 1.284201704596561
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.8314538958292355
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.8580103797242906
+INFO  [Thread-15] 2015-06-24 10:38:59,283 repast.simphony.batch.ssh.LocalSession - 0.9174692823179933
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2587699191029704and0.6515650764713548
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.2587699191029704
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.6515650764713548
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.2414477145776246
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.9800735542750406
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8980455556863066and0.867802215748554
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.8980455556863066
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.867802215748554
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.7976251508940356
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.8800270859044699
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2998832964170188and0.9295303038741578
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.2998832964170188
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.9295303038741578
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.0815668204498259
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.5477137098295
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.5815308066046794and0.6236983730165159
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.5815308066046794
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.6236983730165159
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.663567701369535
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.7952398632508437
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.6823810089581839and1.2123286329392597
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.6823810089581839
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.2123286329392597
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.057886223401319
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.91629752251147
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.5311139323891887and0.8043422400393366
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.5311139323891887
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 0.8043422400393366
+INFO  [Thread-15] 2015-06-24 10:38:59,284 repast.simphony.batch.ssh.LocalSession - 1.2397540147844064
+INFO  [Thread-15] 2015-06-24 10:38:59,285 repast.simphony.batch.ssh.LocalSession - 1.1383649885906448
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9027720798008712and1.2137137917136458
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - 0.9027720798008712
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - 1.2137137917136458
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - 0.4740565406189068
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - 0.8191401767644354
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0798984546715484and0.687983265283759
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - 1.0798984546715484
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - 0.687983265283759
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - 0.9929434391425805
+INFO  [Thread-15] 2015-06-24 10:38:59,289 repast.simphony.batch.ssh.LocalSession - 0.9936564706161727
+INFO  [Thread-15] 2015-06-24 10:38:59,445 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8900729166984098and0.738013583998213
+INFO  [Thread-15] 2015-06-24 10:38:59,445 repast.simphony.batch.ssh.LocalSession - 0.8900729166984098
+INFO  [Thread-15] 2015-06-24 10:38:59,445 repast.simphony.batch.ssh.LocalSession - 0.738013583998213
+INFO  [Thread-15] 2015-06-24 10:38:59,445 repast.simphony.batch.ssh.LocalSession - 0.9987650918469559
+INFO  [Thread-15] 2015-06-24 10:38:59,445 repast.simphony.batch.ssh.LocalSession - 1.207525908801802
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.015452098201306and0.7740012272264175
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.015452098201306
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.7740012272264175
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.699627788837355
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.4036780688024948
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3762901922050914and1.0735592179673903
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.3762901922050914
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.0735592179673903
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.019386423714735
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.2030562757008063
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.218772961151579and0.705526151454283
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.218772961151579
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.705526151454283
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.3303960445652443
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.990444788806506
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.4171426525875237and0.7373177011649494
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.4171426525875237
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.7373177011649494
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.6939995147886748
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.2916969181933238
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.097775286981141and0.9151194756966303
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.097775286981141
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.9151194756966303
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.2636665874074466
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.2404925267716493
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.6125845486082744and1.5139339486416907
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.6125845486082744
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.5139339486416907
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.1580248395940813
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.028641885071693
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3175238630674158and0.6566970077361212
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.3175238630674158
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.6566970077361212
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.9748076015201109
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.052644630071597
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8063423162142882and1.2454116135303983
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.8063423162142882
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 1.2454116135303983
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.6990566262491102
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.9533324915317083
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8879923859571259and1.058493183466129
+INFO  [Thread-15] 2015-06-24 10:38:59,446 repast.simphony.batch.ssh.LocalSession - 0.8879923859571259
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.058493183466129
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.7300379477230519
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.5750208099353988
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1266784694668828and0.8944877078094388
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.1266784694668828
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.8944877078094388
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.0361342235696038
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.7945384499465296
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.756693102169364and1.1728994534184705
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.756693102169364
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.1728994534184705
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.8023159261143405
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.9281910315963187
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8456473686383528and0.9891478556039573
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.8456473686383528
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.9891478556039573
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.8451325887972652
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.9365245871451479
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9808908393732617and1.0488784598279317
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.9808908393732617
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.0488784598279317
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.5376253004425082
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.214440854944445
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0744461218163257and0.7056426049311455
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.0744461218163257
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.7056426049311455
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.105664497425055
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.0121298072637999
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0961441008956736and0.7074412281228428
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.0961441008956736
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.7074412281228428
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.0288468239153217
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.9418987794605591
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8863632662367205and1.1283994871160599
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 0.8863632662367205
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.1283994871160599
+INFO  [Thread-15] 2015-06-24 10:38:59,447 repast.simphony.batch.ssh.LocalSession - 1.2543288812219238
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.0781764984649191
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7832407589570378and1.1641607242496026
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 0.7832407589570378
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.1641607242496026
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.3745323208867617
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 0.8518553220045566
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.161825910785414and0.8543460386634918
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.161825910785414
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 0.8543460386634918
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.2311348720212243
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.26274394513011
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9135396105144477and1.2729248591139373
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 0.9135396105144477
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.2729248591139373
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.0598053704870145
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.219346500723481
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1374188074167744and0.745758478063077
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 1.1374188074167744
+INFO  [Thread-15] 2015-06-24 10:38:59,448 repast.simphony.batch.ssh.LocalSession - 0.745758478063077
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.0951815111467345
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.0404922603471138
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.5259432781146147and1.7363982596060208
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.5259432781146147
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.7363982596060208
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.9030754315545086
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.0119016166280046
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2907272319798948and0.8803507902534772
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.2907272319798948
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.8803507902534772
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.5923073168016498
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.19175012370266
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9778591143378648and0.949672359076269
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.9778591143378648
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.949672359076269
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.384289899343413
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.9012712664635717
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1153602904030533and1.0508773638983286
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.1153602904030533
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.0508773638983286
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.3748799967861836
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.231735213945888
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1098671959173316and1.039349187014783
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.1098671959173316
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 1.039349187014783
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.8787160922758342
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.636745256865594
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9756865483150238and0.9513061348287482
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.9756865483150238
+INFO  [Thread-15] 2015-06-24 10:38:59,467 repast.simphony.batch.ssh.LocalSession - 0.9513061348287482
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 0.9043163287320015
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 1.3490412582655635
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3210525642754778and0.8995506507652138
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 1.3210525642754778
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 0.8995506507652138
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 0.7381037428342623
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 0.6892145458602077
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8695613572704088and1.1193511945612575
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 0.8695613572704088
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 1.1193511945612575
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 1.0346538036189272
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 0.597577618590525
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1620233761285645and0.6845964274600801
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 1.1620233761285645
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 0.6845964274600801
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 1.1216544767629806
+INFO  [Thread-15] 2015-06-24 10:38:59,468 repast.simphony.batch.ssh.LocalSession - 0.7578730905387498
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9450630459367401and1.2015649898049996
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 0.9450630459367401
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 1.2015649898049996
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 0.9369858599125855
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 0.9762728629416701
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3991295141196527and0.8108448843380764
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 1.3991295141196527
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 0.8108448843380764
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 0.93932333511205
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 0.7736903406236654
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9234575775224235and0.86476407386339
+INFO  [Thread-15] 2015-06-24 10:38:59,545 repast.simphony.batch.ssh.LocalSession - 0.9234575775224235
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.86476407386339
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.7693354450443073
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.2572856939119388
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9055754281308991and1.0616891031626567
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.9055754281308991
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.0616891031626567
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.5257983408329154
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.060654295935809
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1027296090974892and0.9293340471088296
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.1027296090974892
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.9293340471088296
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.4076629789709338
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.2972771838122268
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.739973709039218and1.2089129471079934
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.739973709039218
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.2089129471079934
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.6508166982167543
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.4948034376267774
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7529020566918013and1.15500914281802
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.7529020566918013
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.15500914281802
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.125474362018027
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.6053899939742773
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9272806674782769and1.0616450230023748
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.9272806674782769
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.0616450230023748
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.6241714232686133
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.2306665925020193
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8919473170338814and1.1137282457346929
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.8919473170338814
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.1137282457346929
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.569980087308645
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.2002004239599582
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.676605369251783and1.379761548319997
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 0.676605369251783
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.379761548319997
+INFO  [Thread-15] 2015-06-24 10:38:59,546 repast.simphony.batch.ssh.LocalSession - 1.4356634924690843
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 1.1275175934502473
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9997798060685985and0.9464901225251586
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 0.9997798060685985
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 0.9464901225251586
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 0.8746943398209639
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 1.330709696531331
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3185310589745685and0.646998065040832
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 1.3185310589745685
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 0.646998065040832
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 0.5921740079309947
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 1.0959975262756918
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.4258663314809927and0.46399993202952894
+INFO  [Thread-15] 2015-06-24 10:38:59,547 repast.simphony.batch.ssh.LocalSession - 1.4258663314809927
+INFO  [Thread-15] 2015-06-24 10:38:59,549 repast.simphony.batch.ssh.LocalSession - 0.46399993202952894
+INFO  [Thread-15] 2015-06-24 10:38:59,549 repast.simphony.batch.ssh.LocalSession - 0.78080227687084
+INFO  [Thread-15] 2015-06-24 10:38:59,549 repast.simphony.batch.ssh.LocalSession - 0.7123780167433771
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3774535616840997and0.4207168581479136
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.3774535616840997
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 0.4207168581479136
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.414133263284096
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.1900861015171786
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7806848033045497and1.0770980992239947
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 0.7806848033045497
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.0770980992239947
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 0.686908875476044
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.1574942127616996
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0162339638389322and0.885410310597442
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.0162339638389322
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 0.885410310597442
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 0.7985547634416764
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.1389138461412038
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9692177795653558and0.893876576698782
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 0.9692177795653558
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 0.893876576698782
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.1044220918815675
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.215434177053036
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1650910233693812and0.9612690663649055
+INFO  [Thread-15] 2015-06-24 10:38:59,551 repast.simphony.batch.ssh.LocalSession - 1.1650910233693812
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.9612690663649055
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.4074228195208411
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.3770531317389834
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3187434198591084and0.40088999264337
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.3187434198591084
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.40088999264337
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.0325077815747596
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.8791296679884154
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1234983565395122and0.8827070635116002
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.1234983565395122
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.8827070635116002
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.8098749117172738
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.6063652573014221
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1182590037960227and1.1227158008144906
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.1182590037960227
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.1227158008144906
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.1666568284021235
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.6792398474391386
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2817520275993255and0.7752840567418762
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.2817520275993255
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.7752840567418762
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.2901857972915016
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.0291210901008443
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1604570669713565and1.2164762368764186
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.1604570669713565
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.2164762368764186
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.1953045779541671
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.2333669164280285
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0194114764227482and1.151730411822336
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.0194114764227482
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.151730411822336
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.2641956729095614
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.9463176387391189
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.073579202086676and0.8942370370302882
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.073579202086676
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.8942370370302882
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.0503160795901125
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.7879648924802634
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.862595427076158and1.0373215246320182
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.862595427076158
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.0373215246320182
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.5691559110016249
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.258955310146836
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.95338176229807and0.819653819805774
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.95338176229807
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.819653819805774
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 0.8801914432666306
+INFO  [Thread-15] 2015-06-24 10:38:59,552 repast.simphony.batch.ssh.LocalSession - 1.2842728187194017
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0939020917250446and0.805898781579445
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 1.0939020917250446
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 0.805898781579445
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 1.3535105040602042
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 1.344980349462753
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.7203116326274797and1.1583368040627557
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 0.7203116326274797
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 1.1583368040627557
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 1.0729599806481613
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 0.7619027660281037
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8992965953873796and1.1784888284289485
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 0.8992965953873796
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 1.1784888284289485
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 1.161297339643723
+INFO  [Thread-15] 2015-06-24 10:38:59,553 repast.simphony.batch.ssh.LocalSession - 0.8276630803351951
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0581864284796731and0.9019360302165169
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.0581864284796731
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.9019360302165169
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.2408612796819039
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.7410239119371063
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3310853535452165and0.6026827334851899
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.3310853535452165
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.6026827334851899
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.0410950785824526
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.893009506340947
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8829490203427668and1.314529191838058
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.8829490203427668
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.314529191838058
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.925850689780473
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.3756212745513987
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1654726552372112and0.7897545216892021
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.1654726552372112
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.7897545216892021
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.8047242829112397
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.2962010009665788
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1964018710793252and1.1008654068368824
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.1964018710793252
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.1008654068368824
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.2092430093505877
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 0.844359574150648
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1114866357432038and0.8539194879955947
+INFO  [Thread-15] 2015-06-24 10:38:59,656 repast.simphony.batch.ssh.LocalSession - 1.1114866357432038
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.8539194879955947
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.9172908265227816
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.2116979991244508
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.44509398794022725and1.4446792677177702
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.44509398794022725
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.4446792677177702
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.1132491426769973
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.692711223104534
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0628127587070455and0.5913819887497443
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.0628127587070455
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.5913819887497443
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.1943082580344253
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.8147365944187869
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.06281540074507and1.0573658430529793
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.06281540074507
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.0573658430529793
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.4298775357456115
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.3017975984146687
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1428032813163924and0.5698314455149056
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.1428032813163924
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.5698314455149056
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.0405860437749745
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.7332865164458486
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0329456101946104and0.9928444202023726
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.0329456101946104
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.9928444202023726
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 0.8956433642138077
+INFO  [Thread-15] 2015-06-24 10:38:59,657 repast.simphony.batch.ssh.LocalSession - 1.1283239759494554
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.2525791083368776and0.7449038115537967
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.2525791083368776
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.7449038115537967
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.288543024013415
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.0142586716336566
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.253499352200205and0.8804276335118412
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.253499352200205
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.8804276335118412
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.8557024252250921
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.188442544810514
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.098567778952606and0.8998107933040995
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.098567778952606
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.8998107933040995
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.2261848306502612
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.7044561258131081
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9160836625735082and1.36151573048449
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.9160836625735082
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.36151573048449
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.9088981742768751
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.2380921237726537
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0344895058375811and0.7966339924183586
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.0344895058375811
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.7966339924183586
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.1128927767304322
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.8330992524078611
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.450516152312947and0.6098429715041322
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.450516152312947
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.6098429715041322
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 1.13510357768103
+INFO  [Thread-15] 2015-06-24 10:38:59,658 repast.simphony.batch.ssh.LocalSession - 0.9347236415437615
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0043518649705048and1.063626334647643
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 1.0043518649705048
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 1.063626334647643
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 1.1523793761547891
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 1.1970068971573486
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0599888079188315and0.9667014809171193
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 1.0599888079188315
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 0.9667014809171193
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 0.8551534307598355
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 0.8559152619096388
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.6102742939833474and0.5756369488870281
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 1.6102742939833474
+INFO  [Thread-15] 2015-06-24 10:38:59,659 repast.simphony.batch.ssh.LocalSession - 0.5756369488870281
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.6103072631070932
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.2392434984655554
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9241033956308872and1.0483950559422626
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.9241033956308872
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.0483950559422626
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.879981934839737
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.5712481074939004
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.1824693108998752and0.7326319901252777
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.1824693108998752
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.7326319901252777
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.790154958353489
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.2206928284362992
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.5457270200919369and0.7349354569783846
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.5457270200919369
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.7349354569783846
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.5841578967176546
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.8706983884290109
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.036113664223095and1.0723267892087711
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.036113664223095
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.0723267892087711
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.028322785954539
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.1783004363668566
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.8581107126179535and1.2690948522480354
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.8581107126179535
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.2690948522480354
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 0.9848690116872016
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.2391217125289304
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.0466310221394908and1.3154000268217012
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.0466310221394908
+INFO  [Thread-15] 2015-06-24 10:38:59,660 repast.simphony.batch.ssh.LocalSession - 1.3154000268217012
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 1.5311640416778247
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.7868239486836113
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.158976206165356and0.7715664212458827
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 1.158976206165356
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.7715664212458827
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 1.4888982378581117
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 1.294991528621201
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:1.3203702920616045and0.961443436814122
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 1.3203702920616045
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.961443436814122
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 1.2158851126645907
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.5500979922377869
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9722890372366446and0.8624069990975324
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.9722890372366446
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.8624069990975324
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.9177137658992598
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.945482668746537
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - correlation: -0.8gives strengtWeight:0.9534043442617545and0.942673806944526
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.9534043442617545
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.942673806944526
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 1.2991479886041373
+INFO  [Thread-15] 2015-06-24 10:38:59,661 repast.simphony.batch.ssh.LocalSession - 0.7827362924266601
+INFO  [pool-5-thread-1] 2015-06-24 10:39:38,454 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1435106308996 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-3] 2015-06-24 10:39:38,455 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,1112
+INFO  [SwingWorker-pool-2-thread-3] 2015-06-24 10:39:38,461 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1435106308996
+INFO  [SwingWorker-pool-2-thread-3] 2015-06-24 10:39:38,467 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-3] 2015-06-24 10:39:38,562 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0018
+INFO  [SwingWorker-pool-2-thread-3] 2015-06-24 10:39:38,562 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,1596
+INFO  [AWT-EventQueue-0] 2015-06-24 10:49:53,065 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\rijk\git\meatSimLuna\meatSim\output\config.props
+INFO  [AWT-EventQueue-0] 2015-06-24 10:49:53,506 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\rijk\git\meatSimLuna\meatSim\batch\batch_params_evaluation.xml to
+	C:\Users\rijk\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:50:37,771 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\rijk\AppData\Local\Temp\rijk_localhost2572729071173797527.zip to 
+C:\Users\rijk\AppData\Local\Temp\simphony_model_1435107035120 ...
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:50:37,849 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:50:37,849 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0455
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:50:37,849 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\rijk\AppData\Local\Temp\simphony_model_1435107035120\rijk_localhost2572729071173797527.zip
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:50:38,286 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-3-thread-1] 2015-06-24 10:51:38,334 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\rijk\AppData\Local\Temp\simphony_model_1435107035120 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:51:38,335 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,0081
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:51:38,446 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\rijk\AppData\Local\Temp\simphony_model_1435107035120
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:51:38,493 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/rijk/git/meatSimLuna/meatSim/output
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:51:39,446 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0185
+INFO  [SwingWorker-pool-2-thread-1] 2015-06-24 10:51:39,446 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,0731
