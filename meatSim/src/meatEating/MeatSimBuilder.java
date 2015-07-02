@@ -27,7 +27,7 @@ public class MeatSimBuilder extends AbstractBuilder {
 	public void addAgents() {
 		int eater1Count = (Integer) params.getValue("eater1Count");
 		for (int i=0; i < eater1Count; i++){
-			Eater1 newAgent=new Eater1(pContexts, grid);
+			Eater1 newAgent=new Eater1(locations, grid);
 			context.add(newAgent);
 			agents.add(newAgent);
 		}

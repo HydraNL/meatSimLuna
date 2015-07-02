@@ -21,8 +21,8 @@ public class VegEatingPractice extends SocialPractice {
 	 */
 	public VegEatingPractice() {
 		super();
-		addAffordance(new PContext(new PhysicalContext(new MixedVenue())));
-		addAffordance(new PContext(new PhysicalContext(new VegVenue())));
+		addAffordance(new PContext(new MixedVenue()));
+		addAffordance(new PContext(new VegVenue()));
 		addPurpose(SelfTranscendence.class);
 	}
 	

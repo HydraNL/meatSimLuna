@@ -39,7 +39,7 @@ import repast.simphony.space.grid.GridPoint;
  */
 public abstract class Agent {
 	private Grid<Object> myGrid;
-	private ArrayList<PContext> candidateContexts; //Consider giving him candidateLocations
+	private ArrayList<Location> candidateLocations; //Consider giving him candidateLocations
 	private PContext myContext;
 	private ArrayList<SocialPractice> mySocialPractices; //check with reseting model
 	private HashMap<Class, Value> myValues;
@@ -61,9 +61,9 @@ public abstract class Agent {
 	
 	
 
-	public Agent(ArrayList<PContext> candidateContexts, Grid<Object> grid) {
+	public Agent(ArrayList<Location> candidateLocations, Grid<Object> grid) {
 		this.myGrid = grid;
-		this.candidateContexts = candidateContexts;
+		this.candidateLocations = candidateLocations;
 		this.ID = CFG.getAgentID(); //for repast
 		
 		mySocialPractices=new ArrayList<SocialPractice>();
@@ -107,12 +107,40 @@ public abstract class Agent {
 	 * Maybe put in Eater instead.
 	 */
 	private void move() {
-		int randomIndex = RandomHelper.nextIntFromTo(0, candidateContexts.size() - 1) ;
+//		if(CFG.chooseContext()){
+//			if(!located){
+//				ArrayList<Agent> diningGroup = new ArrayList<Agent>();
+//				Location chosenRestaurant;
+//				
+//				System.out.print(RandomHelper.nextDouble());
+//				
+//				/*Eat at home*/
+//				if(RandomHelper.nextDoubleFromTo(0, 1) <diningOutRatio){
+//					chosenRestaurant = myHome;
+//					for(int i = 0; i < CFG.nrOfPeople(); i++){
+//						diningGroup.add(socialDefault());
+//					}
+//				}
+//				/*Eat out*/
+//				else{
+//					/*Physical First*/
+//					if(RandomHelper.nextDoubleFromTo(0, 1) <exploreRatio){
+//						chosenRestaurant = physicalDefault();
+//					}
+//					else chosenRestaurant = exploreNew();
+//				}
+//				
+//				
+//			}
+//		}
 		
-		myContext = candidateContexts.get(randomIndex); //How can this work, doesn't this list get infinite.
-														//No the reference to the list is given, and the list cleared everytimestep.
+		//Note that you don't add PContexts to the grid, nor move their location
+		int randomIndex = RandomHelper.nextIntFromTo(0,
+				candidateLocations.size() - 1);
+		Location randomLocation = candidateLocations.get(randomIndex);
+		myContext = (randomLocation.hasContext()) ? randomLocation.getMyContext():new PContext(candidateLocations.get(randomIndex));
 		myContext.addAgent(this);
-		Helper.moveToObject(myGrid, this, myContext);
+		Helper.moveToObject(myGrid, this, randomLocation);
 	}
 	 
 	/**

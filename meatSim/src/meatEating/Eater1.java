@@ -10,6 +10,7 @@ import org.apache.commons.math3.distribution.MultivariateNormalDistribution;
 import repast.simphony.random.RandomHelper;
 import repast.simphony.space.grid.Grid;
 import framework.Agent;
+import framework.Location;
 import framework.PContext;
 import framework.SocialPractice;
 
@@ -25,8 +26,8 @@ public class Eater1 extends Agent {
 	/**
 	 * The constructor.
 	 */
-	public Eater1(ArrayList<PContext> candidateContexts, Grid<Object> grid) {
-		super(candidateContexts, grid);
+	public Eater1(ArrayList<Location> candidateLocations, Grid<Object> grid) {
+		super(candidateLocations, grid);
 		addSocialPractice(new MeatEatingPractice());
 		addSocialPractice(new VegEatingPractice());
 		double[] sampleValues = correlated();

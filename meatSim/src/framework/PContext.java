@@ -23,8 +23,9 @@ public class PContext {
 	/**
 	 * The constructor.
 	 */
-	public PContext(PhysicalContext physical) {
-		this.physical = physical;
+	public PContext(Location location) {
+		this.physical = location.getMyPhysicalContext();
+		location.getMyPhysicalContext().setMyPContext(this);
 	}
 
 

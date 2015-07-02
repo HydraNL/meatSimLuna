@@ -70,9 +70,10 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		context.add(myDataCollector);
 		
 		/*Schedules a performance context task each timestep.*/
-		ISchedule schedule = RunEnvironment.getInstance().getCurrentSchedule();
-		ScheduleParameters params = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.FIRST_PRIORITY);
-		schedule.schedule(params, this, "createPContexts");
+		/* Is not needed because I make the Context now per agent*/
+//		ISchedule schedule = RunEnvironment.getInstance().getCurrentSchedule();
+//		ScheduleParameters params = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.FIRST_PRIORITY);
+//		schedule.schedule(params, this, "createPContexts");
 		
 		/*Specifies simulation endTime*/
 		RunEnvironment.getInstance().endAt(CFG.endTime());
@@ -121,7 +122,7 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		
 		for(int i =0; i < locations.size(); i++){
 			Location location = locations.get(i);
-			PContext newPContext=new PContext(new PhysicalContext(location));
+			PContext newPContext=new PContext(location);
 			pContexts.add(newPContext);
 			context.add(newPContext);
 			Helper.moveToObject(grid, newPContext, location);
