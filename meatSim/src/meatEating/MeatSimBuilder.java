@@ -27,7 +27,7 @@ public class MeatSimBuilder extends AbstractBuilder {
 	public void addAgents() {
 		int eater1Count = (Integer) params.getValue("eater1Count");
 		for (int i=0; i < eater1Count; i++){
-			Eater1 newAgent=new Eater1(locations, grid);
+			Eater1 newAgent=new Eater1(locations, homes, grid);
 			context.add(newAgent);
 			agents.add(newAgent);
 		}
@@ -63,6 +63,15 @@ public class MeatSimBuilder extends AbstractBuilder {
 			VegVenue newVegVenue=new VegVenue(grid);
 			context.add(newVegVenue);
 			locations.add(newVegVenue);
+		}
+		
+		if(CFG.chooseContext()){
+			int homesCount = CFG.getHomesCount();
+			for (int i=0; i < homesCount; i++){
+				Home newHome=new Home(grid);
+				context.add(newHome);
+				homes.add(newHome);
+			}
 		}
 	}
 }

@@ -3,7 +3,10 @@
  *******************************************************************************/
 package main;
 
+import java.util.ArrayList;
+
 import repast.simphony.engine.environment.RunEnvironment;
+import repast.simphony.random.RandomHelper;
 
 // Start of user code (user defined imports)
 
@@ -18,6 +21,9 @@ public class CFG {
 	public static boolean GUI;
 	
 	/*Changes in deliberation*/
+	public static boolean chooseContext(){
+		return RunEnvironment.getInstance().getParameters().getBoolean("chooseContext");
+	}
 	public static boolean isFilteredOnAffordances(){
 		return RunEnvironment.getInstance().getParameters().getBoolean("filterOnAffordances");
 	}
@@ -144,4 +150,39 @@ public class CFG {
 		return RunEnvironment.getInstance().getCurrentSchedule().getTickCount();
 	}
 	
+	//Chooce context para's
+	public static int getHomesCount() {
+		return (int) Math.round(agentCount()/2.5);
+	}
+	
+	public static ArrayList<Double> ratios;
+	public static void createDiningOutDistribution(){
+		ratios=new ArrayList<Double>();
+		int times = (int) Math.round(agentCount()/2.0);
+		add(ratios,times,((double) 1/30));
+		times  = (int) Math.round(agentCount()/3.0);
+		add(ratios,times,((double) 1/7));
+		times  = (int)Math.round( agentCount()/10.0);
+		add(ratios,times,((double) 2.5/7));
+		times  = (int)Math.round(agentCount()/25.0);
+		add(ratios,times,((double) 3/7));
+		times  = (int)Math.round(agentCount()/33.0);
+		add(ratios,times,((double) 4/7));
+		times  = (int)Math.round(agentCount()/50.0);
+		add(ratios,times,((double) 5/7));
+		times  = (int)Math.round(agentCount()/80.0);
+		add(ratios,times,((double) 29/30));
+	}
+	
+	public static double getDiningOutRatio() {
+		int randomIndex = RandomHelper.nextIntFromTo(0, ratios.size()-1);
+		System.out.println("Ratio:" + ratios.get(randomIndex));
+		return ratios.remove(randomIndex);
+	}
+	
+	public static void add(ArrayList<Double> l, int times, double ratio){
+		for(int i =0; i < times; i++){
+			l.add(ratio);
+		}
+	}
 }

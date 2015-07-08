@@ -11,6 +11,10 @@
       <string>repast.simphony.visualization.editedStyle.EditedStyle2D</string>
     </entry>
     <entry>
+      <string>meatEating.Home</string>
+      <string>repast.simphony.visualization.editedStyle.EditedStyle2D</string>
+    </entry>
+    <entry>
       <string>meatEating.Eater1</string>
       <string>meatEating.myAgentStyle</string>
     </entry>
@@ -27,6 +31,10 @@
     <entry>
       <string>meatEating.MeatVenue</string>
       <string>meatEating.MeatVenue.style_0.xml</string>
+    </entry>
+    <entry>
+      <string>meatEating.Home</string>
+      <string>meatEating.Home.style_0.xml</string>
     </entry>
     <entry>
       <string>meatEating.Eater1</string>
@@ -47,7 +55,7 @@
     <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>-2138415708</hashCode>
+    <hashCode>1350951722</hashCode>
   </schedParams>
   <layoutClassName>foo.bar.baz</layoutClassName>
   <layoutProjection>grid</layoutProjection>
@@ -55,19 +63,23 @@
   <layerOrder>
     <entry>
       <string>meatEating.MixedVenue</string>
-      <int>1</int>
+      <int>2</int>
     </entry>
     <entry>
       <string>meatEating.MeatVenue</string>
+      <int>1</int>
+    </entry>
+    <entry>
+      <string>meatEating.Home</string>
       <int>0</int>
     </entry>
     <entry>
       <string>meatEating.Eater1</string>
-      <int>3</int>
+      <int>4</int>
     </entry>
     <entry>
       <string>meatEating.VegVenue</string>
-      <int>2</int>
+      <int>3</int>
     </entry>
   </layerOrder>
   <projections>

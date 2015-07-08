@@ -59,7 +59,7 @@
 									
 		/>
 				<parameter name="isIntentional" displayName="Choose Intentionally (false = choose Random)" type="boolean" 
-						defaultValue="true" 
+						defaultValue="false" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
 									
@@ -99,13 +99,13 @@
 		
 		
 					<parameter name="SELFT_AVG_STRENGTH" displayName="SelfTransendence:  Avarage Strength" type="double" 
-						defaultValue="0.5" 
+						defaultValue="1.0" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
 		/>
 				<parameter name="selfTk" displayName="SelfTransdence: K" type="double" 
-						defaultValue="0.25" 
+						defaultValue="0.5" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
@@ -117,13 +117,13 @@
 									
 		/>
 				<parameter name="SELFE_AVG_STRENGTH" displayName="SelfEnhancement: Avarage Strength" type="double" 
-						defaultValue="0.5" 
+						defaultValue="1.0" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
 		/>
 				<parameter name="selfEk" displayName="SelfEnhanchement: k" type="double" 
-						defaultValue="0.25" 
+						defaultValue="0.5" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									
@@ -152,7 +152,7 @@
 		
 		
 				<parameter name="INTERVENTION_TIME" displayName="Intervention: time" type="double" 
-						defaultValue="150.0" 
+						defaultValue="600.0" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									

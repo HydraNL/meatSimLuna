@@ -44,6 +44,11 @@ public abstract class Agent {
 	private ArrayList<SocialPractice> mySocialPractices; //check with reseting model
 	private HashMap<Class, Value> myValues;
 	
+	//For chosing context
+	private Location myHome;
+	private double diningOutRatio;
+	private boolean isLocated;
+	
 	//For Data Projection
 	private int ID;
 	private SocialPractice myAction;
@@ -57,11 +62,11 @@ public abstract class Agent {
 		NOACTION,
 		RANDOM
 	}
-	private boolean isDiningOut;
+	private boolean isEating;
 	
 	
 
-	public Agent(ArrayList<Location> candidateLocations, Grid<Object> grid) {
+	public Agent(ArrayList<Location> candidateLocations, ArrayList<Location> homes, Grid<Object> grid) {
 		this.myGrid = grid;
 		this.candidateLocations = candidateLocations;
 		this.ID = CFG.getAgentID(); //for repast
@@ -70,6 +75,10 @@ public abstract class Agent {
 		myValues =new HashMap<Class, Value>();
 		frequencies=new HashMap<SocialPractice, Double>();
 		habitStrengths=new HashMap<SocialPractice, Double>();
+		int randomIndex = RandomHelper.nextIntFromTo(0,
+				homes.size() - 1);
+		myHome= homes.get(randomIndex);
+		diningOutRatio = CFG.getDiningOutRatio();
 	}
 	
 	
@@ -77,16 +86,47 @@ public abstract class Agent {
 	 * Description of the method step.
 	 * How is this done per agent?
 	 */
-	@ScheduledMethod(start = 1, interval = 1, priority = 3)
-	public void step1() {
-		isDiningOut = (RandomHelper.nextIntFromTo(0,100) <= CFG.diningOutPercent());
-		if(isDiningOut) move();
-		//Maybe move to another location
+	//This is if you want to let only a percentage of the agents dine out.
+	@ScheduledMethod(start = 1, interval = 1, priority = 6)
+	public void determineIfEating() {
+		isEating = (RandomHelper.nextIntFromTo(0,100) <= CFG.diningOutPercent());
 	}
+	
+	
+//	
+	@ScheduledMethod(start =1, interval = 1, priority = 5)
+	public void diningIn() {
+		if(CFG.chooseContext()){
+			if(RandomHelper.nextDoubleFromTo(0, 1) > diningOutRatio)
+				goTo(myHome);
+		}
+	}
+	
+	public void goTo(Location l){
+		if(!l.hasContext()) new PContext(l);
+		myContext = l.getMyContext();
+		myContext.addAgent(this);
+		Helper.moveToObject(myGrid, this, l);
+		setLocated(true);
+	}
+	
+	@ScheduledMethod(start = 1, interval = 1, priority = 4)
+	public void randomContext() {
+		if(!CFG.chooseContext() && isEating){
+			//Note that you don't add PContexts to the grid, nor move their location
+			//When making a Pcontext the constructer automaticly sets the pcontext of the location.
+			int randomIndex = RandomHelper.nextIntFromTo(0,
+					candidateLocations.size() - 1);
+			Location randomLocation = candidateLocations.get(randomIndex);
+			goTo(randomLocation);
+		}
+	}
+	
+	
 	
 	@ScheduledMethod(start = 1, interval = 1, priority = 2)
 	public void step2() {
-		if(isDiningOut) myAction = chooseAction();
+		if(isEating) myAction = chooseAction();
 		else{
 			myAction = new NoAction(); //Maybe change to just new Social Practice which will not be an instance of either;
 			actionType = ActionType.NOACTION;
@@ -97,7 +137,7 @@ public abstract class Agent {
 	
 	@ScheduledMethod(start = 1, interval = 1, priority = 1)
 	public void step3(){
-		if(isDiningOut) learn();
+		if(isEating) learn();
 	}
 	
 	
@@ -106,7 +146,8 @@ public abstract class Agent {
 	 * Moves agent to random context.
 	 * Maybe put in Eater instead.
 	 */
-	private void move() {
+//	private void randomContext() {
+		
 //		if(CFG.chooseContext()){
 //			if(!located){
 //				ArrayList<Agent> diningGroup = new ArrayList<Agent>();
@@ -134,14 +175,14 @@ public abstract class Agent {
 //			}
 //		}
 		
-		//Note that you don't add PContexts to the grid, nor move their location
-		int randomIndex = RandomHelper.nextIntFromTo(0,
-				candidateLocations.size() - 1);
-		Location randomLocation = candidateLocations.get(randomIndex);
-		myContext = (randomLocation.hasContext()) ? randomLocation.getMyContext():new PContext(candidateLocations.get(randomIndex));
-		myContext.addAgent(this);
-		Helper.moveToObject(myGrid, this, randomLocation);
-	}
+//		//Note that you don't add PContexts to the grid, nor move their location
+//		int randomIndex = RandomHelper.nextIntFromTo(0,
+//				candidateLocations.size() - 1);
+//		Location randomLocation = candidateLocations.get(randomIndex);
+//		myContext = (randomLocation.hasContext()) ? randomLocation.getMyContext():new PContext(candidateLocations.get(randomIndex));
+//		myContext.addAgent(this);
+//		Helper.moveToObject(myGrid, this, randomLocation);
+//	}
 	 
 	/**
 	 * Description of the method chooseAction.
@@ -447,5 +488,15 @@ public abstract class Agent {
 	}
 	public int getID() {
 		return ID;
+	}
+
+
+	public boolean isLocated() {
+		return isLocated;
+	}
+
+
+	public void setLocated(boolean isLocated) {
+		this.isLocated = isLocated;
 	}
 }

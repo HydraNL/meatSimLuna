@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <parameters>
+				
 				<parameter name="endTime" displayName="End Time" type="double" 
 						defaultValue="500.0" 
 						isReadOnly="false" 
@@ -34,7 +35,12 @@
 		/>
 		
 		
-		
+				<parameter name="chooseContext" displayName="Choose Context" type="boolean" 
+						defaultValue="true" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+									
+		/>
 				<parameter name="filterOnAffordances" displayName="Filter On Affordances" type="boolean" 
 						defaultValue="false" 
 						isReadOnly="false" 

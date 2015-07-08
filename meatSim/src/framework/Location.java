@@ -47,5 +47,8 @@ public abstract class Location {
 	public boolean hasContext(){
 		return getMyContext() != null;
 	}
+	public void removePContext() {
+		myPhysicalContext.setMyPContext(null);
+	}
 }
 

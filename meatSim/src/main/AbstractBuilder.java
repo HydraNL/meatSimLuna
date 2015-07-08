@@ -45,6 +45,7 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 	public ArrayList<Location> locations;
 	public ArrayList<PContext>	pContexts; 
 	public DataCollector myDataCollector;
+	public ArrayList<Location> homes;
 	
 	/**
 	 * Description of the method build.
@@ -56,18 +57,27 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		agents=new ArrayList<Agent>();
 		locations=new ArrayList<Location>();
 		pContexts=new ArrayList<PContext>();
+		homes = new ArrayList<Location>(); //Could add it MeatSimBuilder, but scared of not properly cleaning up list
+		
 		RandomHelper.createNormal(1, 0.25);
+		CFG.createDiningOutDistribution();
 
 		setCFG();
 		
 		setID();
 		makeGrid();
-		addAgents();
 		addEnvironment();
+		addAgents();
+		
 		
 		//after making agents
 		myDataCollector=new DataCollector(this);
 		context.add(myDataCollector);
+		
+		//schedule a clean up after each round
+		ISchedule schedule = RunEnvironment.getInstance().getCurrentSchedule();
+		ScheduleParameters params = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.LAST_PRIORITY);
+		schedule.schedule(params, this, "cleanUp");
 		
 		/*Schedules a performance context task each timestep.*/
 		/* Is not needed because I make the Context now per agent*/
@@ -115,6 +125,23 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 	 * Adds it to the list of pContexts and to the Repast context and (thus) grid.
 	 * Moves the pContext to the point in the Grid of the location.
 	 */
+	
+	public void cleanUp(){
+		cleanUpPContext();
+		setAgentsToUnLocated();
+	}
+	
+	public void cleanUpPContext(){
+		for(Location l:locations){
+			l.removePContext();
+		}
+	}
+	
+	public void setAgentsToUnLocated(){
+		for(Agent a:agents){
+			a.setLocated(false);
+		}
+	}
 	
 	//@ScheduledMethod(start = 1, interval = 1)
 	public void createPContexts() {

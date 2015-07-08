@@ -1,9 +1,9 @@
 <repast.simphony.chart2.engine.TimeSeriesChartDescriptor>
-  <name>Action One Agent</name>
-  <dataSet>Individual Eater Data</dataSet>
+  <name>Evaluation Mean</name>
+  <dataSet>Evaluation Aggregate</dataSet>
   <xAxisLabel>Tick Count</xAxisLabel>
-  <yAxisLabel>1A,2H,3I, -V, +M</yAxisLabel>
-  <chartTitle>Action One Agent</chartTitle>
+  <yAxisLabel></yAxisLabel>
+  <chartTitle>Evaluation Mean</chartTitle>
   <type>TIME_SERIES</type>
   <background>
     <red>192</red>
@@ -21,13 +21,37 @@
   <showLegend>true</showLegend>
   <seriesIds>
     <entry>
-      <string>DeliberativeActionType</string>
+      <string>E</string>
       <SeriesData>
-        <label>DeliberativeActionType</label>
+        <label>E</label>
         <color>
           <red>0</red>
           <green>0</green>
           <blue>255</blue>
+          <alpha>255</alpha>
+        </color>
+      </SeriesData>
+    </entry>
+    <entry>
+      <string>V</string>
+      <SeriesData>
+        <label>V</label>
+        <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+          <alpha>255</alpha>
+        </color>
+      </SeriesData>
+    </entry>
+    <entry>
+      <string>M</string>
+      <SeriesData>
+        <label>M</label>
+        <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
           <alpha>255</alpha>
         </color>
       </SeriesData>
