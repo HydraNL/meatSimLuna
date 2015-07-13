@@ -185,4 +185,9 @@ public class CFG {
 			l.add(ratio);
 		}
 	}
+	
+	//TODO: look in paper
+	public static int inviteDistribution() {
+		return 2;
+	}
 }

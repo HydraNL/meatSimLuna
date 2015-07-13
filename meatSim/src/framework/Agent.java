@@ -13,6 +13,7 @@ import java.util.HashSet;
 
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.function.Predicate;
 
 import main.SocialPracticeConverter;
@@ -20,6 +21,7 @@ import main.CFG;
 import main.Helper;
 import meatEating.Conservation;
 import meatEating.MeatEatingPractice;
+import meatEating.MixedVenue;
 import meatEating.SelfEnhancement;
 import meatEating.SelfTranscendence;
 import meatEating.VegEatingPractice;
@@ -39,7 +41,8 @@ import repast.simphony.space.grid.GridPoint;
  */
 public abstract class Agent {
 	private Grid<Object> myGrid;
-	private ArrayList<Location> candidateLocations; //Consider giving him candidateLocations
+	private ArrayList<Agent> agents;
+	private ArrayList<Location> candidateLocations; //Does not include Homes.
 	private PContext myContext;
 	private ArrayList<SocialPractice> mySocialPractices; //check with reseting model
 	private HashMap<Class, Value> myValues;
@@ -48,12 +51,20 @@ public abstract class Agent {
 	private Location myHome;
 	private double diningOutRatio;
 	private boolean isLocated;
+	private double acceptRatio;
 	
 	//For Data Projection
 	private int ID;
 	private SocialPractice myAction;
 	HashMap<SocialPractice, Double> frequencies; //TODO: Might be nicer to put it in the SocialPractice
 	HashMap<SocialPractice, Double> habitStrengths;
+
+	HashMap<Location, Double> frequenciesL;
+	HashMap<Location, Double> habitStrengthsL;
+
+	HashMap<Agent, Double> frequenciesA;
+	HashMap<Agent, Double> habitStrengthsA;
+	
 	ActionType actionType;
 	private enum ActionType{
 		AFFORDED,
@@ -66,19 +77,27 @@ public abstract class Agent {
 	
 	
 
-	public Agent(ArrayList<Location> candidateLocations, ArrayList<Location> homes, Grid<Object> grid) {
+	public Agent(ArrayList<Agent> agents, ArrayList<Location> candidateLocations, ArrayList<Location> homes, Grid<Object> grid) {
 		this.myGrid = grid;
 		this.candidateLocations = candidateLocations;
+		this.agents = agents;
 		this.ID = CFG.getAgentID(); //for repast
 		
 		mySocialPractices=new ArrayList<SocialPractice>();
 		myValues =new HashMap<Class, Value>();
+		
 		frequencies=new HashMap<SocialPractice, Double>();
 		habitStrengths=new HashMap<SocialPractice, Double>();
+		frequenciesL =new HashMap<Location, Double>();
+		habitStrengthsL =new HashMap<Location, Double>();
+		frequenciesA=new HashMap<Agent, Double>();
+		habitStrengthsA =new HashMap<Agent, Double>();
+		
 		int randomIndex = RandomHelper.nextIntFromTo(0,
 				homes.size() - 1);
 		myHome= homes.get(randomIndex);
 		diningOutRatio = CFG.getDiningOutRatio();
+		acceptRatio = 0.5; //TODO: make it a distribution or so
 	}
 	
 	
@@ -93,10 +112,23 @@ public abstract class Agent {
 	}
 	
 	
-//	
+	//Either attribute people randomly to the set of locations.
+	@ScheduledMethod(start = 1, interval = 1, priority = 5)
+	public void randomContext() {
+		if(!CFG.chooseContext() && isEating){
+			//Note that you don't add PContexts to the grid, nor move their location
+			//When making a Pcontext the constructer automaticly sets the pcontext of the location.
+			int randomIndex = RandomHelper.nextIntFromTo(0,
+					candidateLocations.size() - 1);
+			Location randomLocation = candidateLocations.get(randomIndex);
+			goTo(randomLocation);
+		}
+	}
+	
+	//Or let them choose their Context
 	@ScheduledMethod(start =1, interval = 1, priority = 5)
 	public void diningIn() {
-		if(CFG.chooseContext()){
+		if(CFG.chooseContext() &&isEating){
 			if(RandomHelper.nextDoubleFromTo(0, 1) > diningOutRatio)
 				goTo(myHome);
 		}
@@ -110,22 +142,196 @@ public abstract class Agent {
 		setLocated(true);
 	}
 	
-	@ScheduledMethod(start = 1, interval = 1, priority = 4)
-	public void randomContext() {
-		if(!CFG.chooseContext() && isEating){
-			//Note that you don't add PContexts to the grid, nor move their location
-			//When making a Pcontext the constructer automaticly sets the pcontext of the location.
-			int randomIndex = RandomHelper.nextIntFromTo(0,
-					candidateLocations.size() - 1);
-			Location randomLocation = candidateLocations.get(randomIndex);
-			goTo(randomLocation);
+	//Others diningOut
+	@ScheduledMethod(start =1, interval = 1, priority = 4)
+	public void diningOut(){
+		if(CFG.chooseContext() &&isEating && !isLocated){
+			Location chosenLocation;
+			ArrayList<Agent> diningGroup =new ArrayList<Agent>();
+			diningGroup.add(this);
+			
+			boolean chooseOnPhysical = physicalOrSocial();
+			
+			if(chooseOnPhysical){
+				chosenLocation = pickLocation(candidateLocations);
+				for(int i = 0; i < CFG.inviteDistribution(); i++){
+					Agent a = pickEatBuddy();
+					if(a != null && a.acceptInvitation(chosenLocation)) diningGroup.add(a); //If people avariblae and it accepts invitation.
+				}
+			}
+			else{ //chooseOnSocial
+				for(int i = 0; i < CFG.inviteDistribution(); i++){
+					Agent a = pickEatBuddy();
+					if(a != null) diningGroup.add(a); //Everybody accepts!
+				}
+				List<Location> affordedLocations = filterOnGroupsPreference(diningGroup, candidateLocations);
+				chosenLocation = pickLocation(affordedLocations); //Lijst kan leeg zijn als er geen mixed zijn. Je zou dan een willekeurige kunnen pakken ofzo.
+			}
+			
+			for(Agent a:diningGroup){
+				a.goTo(chosenLocation);
+			}
 		}
 	}
 	
 	
+
+	private List<Location> filterOnGroupsPreference(
+			ArrayList<Agent> diningGroup,
+			ArrayList<Location> candidateLocations2) {
+		List<Location> newCandidates=new ArrayList<Location>();
+		
+		for(Location l:candidateLocations2){
+			boolean accepted = true;
+			for(Agent a:diningGroup){
+				accepted = a.acceptInvitation(l); //Geeft vast errors als je geen mixed restaurants, meer hebt, omdat lijst dan leeg is.
+			}
+			if(accepted) newCandidates.add(l);
+		}
+		return newCandidates;
+	}
+
+
+	//Might extend to choice on values.
+	private boolean physicalOrSocial(){
+		return RandomHelper.nextIntFromTo(0, 1) == 1;
+	}
+	
+	private Location pickLocation(List<Location> locations){
+		//You could add an affordance variable for open and close.
+		List<Location> temp =new ArrayList<Location>(locations); 
+		
+		temp = filterOnAffordancesL(temp); //Easier to give a new list back and change ref.
+		List<Location> aFiltered = new ArrayList<Location>(temp);
+		temp = filterOnHabitsL(temp);
+		List<Location> hFiltered = new ArrayList<Location>(temp);
+		if(hFiltered.isEmpty()) temp = aFiltered; //Reroll if empty
+		temp = filterOnIntentionsL(temp);
+		List<Location> iFiltered = new ArrayList<Location>(temp);
+		
+		return pickRandomly(temp);
+	}
+	
+	private List<Location> filterOnAffordancesL(List<Location> temp) {
+		List<Location> newCandidates=new ArrayList<Location>();
+		for(Location l:temp){
+			if(l.isOpen()) newCandidates.add(l);
+		}
+		return newCandidates;
+	}
+	private List<Location> filterOnHabitsL(List<Location> aFiltered) {
+		List<Location> newCandidates=new ArrayList<Location>();
+		frequenciesL.clear();
+		habitStrengthsL.clear();
+		
+		double totalF =0;
+		for(Location l: candidateLocations){
+			double F = 0;
+			for(SocialPractice sp:mySocialPractices){
+				F+= sp.calculateFrequencyL(l);
+			}
+			frequenciesL.put(l, F);
+			totalF += F;
+		}
+		for (Location l: aFiltered) { //notice again cLoc vs aFilt
+			habitStrengthsL.put(l, habitStrength(frequenciesL.get(l), totalF));
+		}
+		for(Location l: aFiltered){
+			if (frequenciesL.get(l) > RandomHelper.nextDoubleFromTo(0, 2)
+					* CFG.HTA()) { // t = 25 -> F = 5
+				if (habitStrengthsL.get(l) > CFG.HTR()) {
+					newCandidates.add(l);
+				}
+			}
+		}
+		return newCandidates;
+	}
+	private List<Location> filterOnIntentionsL(List<Location> hFiltered) {
+		List<Location> newCandidates=new ArrayList<Location>();
+		SocialPractice chosenAction= chooseOnIntentions(mySocialPractices);
+		for(Location l:hFiltered){
+			for (PContext affordance : chosenAction.getAffordances()) {
+				if(l.getClass() == affordance.getMyLocation().getClass()) newCandidates.add(l);
+			}
+		}
+		return newCandidates;
+	}
+	
+	
+	private <T> T pickRandomly(List<T> list){
+		return list.get(RandomHelper.nextIntFromTo(0, list.size()-1));
+	}
+	
+	
+	
+	private Agent pickEatBuddy(){
+		List<Agent> temp =new ArrayList<Agent>(agents); 
+		
+		temp = filterOnAffordancesA(temp); //Easier to give a new list back and change ref.
+		List<Agent> aFiltered = new ArrayList<Agent>(temp);
+		if(aFiltered.isEmpty()) return null; //Niemand available
+		temp = filterOnHabitsA(temp);
+		List<Agent> hFiltered = new ArrayList<Agent>(temp);
+		if(hFiltered.isEmpty()) temp = aFiltered; //Reroll if empty
+		
+		return pickRandomly(temp);
+
+	}
+	private List<Agent> filterOnAffordancesA(List<Agent> temp) {
+		List<Agent> newCandidates=new ArrayList<Agent>();
+		for(Agent a:temp){
+			if(!a.isLocated()) newCandidates.add(a);
+		}
+		return newCandidates;
+	}
+	
+	private List<Agent> filterOnHabitsA(List<Agent> aFiltered) {
+		List<Agent> newCandidates=new ArrayList<Agent>();
+		frequenciesA.clear();
+		habitStrengthsA.clear();
+		
+		double totalF =0;
+		for(Agent a: agents){
+			double F = 0;
+			for(SocialPractice sp:mySocialPractices){
+				F+= sp.calculateFrequencyA(a);
+			}
+			frequenciesA.put(a, F);
+			totalF += F;
+		}
+		for (Agent a: aFiltered) { //notice again cLoc vs aFilt
+			habitStrengthsA.put(a, habitStrength(frequenciesA.get(a), totalF));
+		}
+		for(Agent a: aFiltered){
+			if (frequenciesA.get(a) > RandomHelper.nextDoubleFromTo(0, 2)
+					* CFG.HTA()) { // t = 25 -> F = 5
+				if (habitStrengthsA.get(a) > CFG.HTR()) {
+					newCandidates.add(a);
+				}
+			}
+		}
+		return newCandidates;
+	}
+	
+	private boolean acceptInvitation(Location chosenLocation) {
+		boolean accept = false;
+		for(PContext affordance: chooseOnIntentions(mySocialPractices).getAffordances()){
+			if(chosenLocation.getClass() == affordance.getMyLocation().getClass()) accept = true;
+		}
+		if(!accept){ //Sometimes even accept if it does not cater values
+			if(RandomHelper.nextDoubleFromTo(0, 1) < acceptRatio){
+				accept = true;
+			}
+		}
+		return accept;
+	}
+	
+	
+	
+	
 	
 	@ScheduledMethod(start = 1, interval = 1, priority = 2)
-	public void step2() {
+	public void chooseFood() {
 		if(isEating) myAction = chooseAction();
 		else{
 			myAction = new NoAction(); //Maybe change to just new Social Practice which will not be an instance of either;

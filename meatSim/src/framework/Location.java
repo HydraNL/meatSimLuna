@@ -15,11 +15,13 @@ public abstract class Location {
 	private int ID;
 	private Grid<Object> myGrid;
 	private PhysicalContext myPhysicalContext;
+	private boolean open;
 
 	/**
 	 * The constructor.
 	 */
 	public Location(Grid<Object> grid) {
+		open = true;
 		myGrid = grid;
 		ID = CFG.getLocationID();
 		setMyPhysicalContext(new PhysicalContext(this));
@@ -49,6 +51,9 @@ public abstract class Location {
 	}
 	public void removePContext() {
 		myPhysicalContext.setMyPContext(null);
+	}
+	public boolean isOpen() {
+		return open;
 	}
 }
 

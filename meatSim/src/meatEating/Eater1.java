@@ -26,8 +26,8 @@ public class Eater1 extends Agent {
 	/**
 	 * The constructor.
 	 */
-	public Eater1(ArrayList<Location> candidateLocations, ArrayList<Location> homes, Grid<Object> grid) {
-		super(candidateLocations, homes, grid);
+	public Eater1(ArrayList<Agent> agents, ArrayList<Location> candidateLocations, ArrayList<Location> homes, Grid<Object> grid) {
+		super(agents, candidateLocations, homes, grid);
 		addSocialPractice(new MeatEatingPractice());
 		addSocialPractice(new VegEatingPractice());
 		double[] sampleValues = correlated();

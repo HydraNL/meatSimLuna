@@ -114,7 +114,15 @@ public abstract class SocialPractice {
 		double weightedFrequency = freqInsideContext + CFG.OUTSIDE_CONTEXT() * freqOutsideContext;
 		return weightedFrequency;
 	}
-
+	
+	//For filtering locations on habits.
+	public double calculateFrequencyL(Location l){
+		return performanceHistoryMap.getOrDefault(l, 0.0);
+	}
+	public double calculateFrequencyA(Agent a){
+		return performanceHistoryMap.getOrDefault(a, 0.0);
+	}
+	
 	private double getFreqInsideContext(PContext myContext) {
 		double frequencyLocation = performanceHistoryMap.getOrDefault(myContext.getMyLocation(), 0.0);
 		double frequencyAgents = 0;
