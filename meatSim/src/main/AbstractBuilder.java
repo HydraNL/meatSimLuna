@@ -63,9 +63,10 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		CFG.createDiningOutDistribution();
 
 		setCFG();
-		
 		setID();
 		makeGrid();
+		
+		runBuilder();
 		addEnvironment();
 		addAgents();
 		
@@ -74,10 +75,15 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		myDataCollector=new DataCollector(this);
 		context.add(myDataCollector);
 		
-		//schedule a clean up after each round
+		//schedule a check for change context each round
 		ISchedule schedule = RunEnvironment.getInstance().getCurrentSchedule();
-		ScheduleParameters params = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.LAST_PRIORITY);
-		schedule.schedule(params, this, "cleanUp");
+		ScheduleParameters params = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.FIRST_PRIORITY);
+		schedule.schedule(params, this, "changeContext");
+				
+		//schedule a clean up after each round
+		//TODO: do cleanup schedule to some schedule?
+		ScheduleParameters params2 = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.LAST_PRIORITY);
+		schedule.schedule(params2, this, "cleanUp");
 		
 		/*Schedules a performance context task each timestep.*/
 		/* Is not needed because I make the Context now per agent*/
@@ -108,7 +114,8 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 				new RandomGridAdder<Object>(),
 				true, 50, 50));
 	}	
-	 
+	
+	public abstract void runBuilder();
 	/**
 	 * Description of the method addAgents.
 	 */
@@ -118,6 +125,11 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 	 * Description of the method addEnvironment.
 	 */
 	public abstract void addEnvironment();
+	
+	/**
+	 * If you want to change the context (i.e. locations) during runtime.
+	 */
+	public abstract void changeContext();
 
 	/**
 	 * Removes all previous performanceContexts

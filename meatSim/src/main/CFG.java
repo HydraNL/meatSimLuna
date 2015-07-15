@@ -176,7 +176,7 @@ public class CFG {
 	
 	public static double getDiningOutRatio() {
 		int randomIndex = RandomHelper.nextIntFromTo(0, ratios.size()-1);
-		System.out.println("Ratio:" + ratios.get(randomIndex));
+		//System.out.println("Ratio:" + ratios.get(randomIndex));
 		return ratios.remove(randomIndex);
 	}
 	

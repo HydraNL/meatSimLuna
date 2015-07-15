@@ -31,6 +31,10 @@ import repast.simphony.random.RandomHelper;
 import repast.simphony.space.grid.Grid;
 import repast.simphony.space.grid.GridPoint;
 
+/*
+ * POssible speedincrease:
+ * Only filter on openLocations once per timestep, not twice per agent
+ */
 // End of user code
 
 /**
@@ -118,9 +122,11 @@ public abstract class Agent {
 		if(!CFG.chooseContext() && isEating){
 			//Note that you don't add PContexts to the grid, nor move their location
 			//When making a Pcontext the constructer automaticly sets the pcontext of the location.
+			List<Location> openLocations = new ArrayList<Location>(candidateLocations);
+			openLocations = filterOnAffordancesL(openLocations);
 			int randomIndex = RandomHelper.nextIntFromTo(0,
-					candidateLocations.size() - 1);
-			Location randomLocation = candidateLocations.get(randomIndex);
+					openLocations.size() - 1);
+			Location randomLocation = openLocations.get(randomIndex);
 			goTo(randomLocation);
 		}
 	}
@@ -134,6 +140,7 @@ public abstract class Agent {
 		}
 	}
 	
+	//When you go to something you create or join a Pcontext.
 	public void goTo(Location l){
 		if(!l.hasContext()) new PContext(l);
 		myContext = l.getMyContext();
