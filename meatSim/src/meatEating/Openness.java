@@ -39,6 +39,13 @@ public class Openness extends Value {
 	public double getStrengthAvarage() {
 		return CFG.OPENNESS_AVG_STRENGTH();
 	}
+
+
+	@Override
+	public void updateSatisfactionEvaluative(SocialPractice myAction) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	// End of user code
 

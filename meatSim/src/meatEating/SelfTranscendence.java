@@ -25,6 +25,7 @@ public class SelfTranscendence extends Value {
 		this.weightVegEating = CFG.SELFT_actionWeight();
 	}
 	
+	@Override
 	public void updateSatisfaction(SocialPractice actionDone){
 		double eatenVeg = (actionDone instanceof VegEatingPractice) ? 1:0;
 		double feature1 = weightVegEating * eatenVeg;
@@ -32,7 +33,22 @@ public class SelfTranscendence extends Value {
 		
 		super.updateSatisfactionFunction(connectedFeaturesWeightedSum);
 	}
-
+	
+	@Override
+	public void updateSatisfactionEvaluative(SocialPractice actionDone){
+		double connectedFeaturesWeightedSum;
+		if(actionDone instanceof VegEatingPractice){
+			connectedFeaturesWeightedSum=
+					1 *
+					(actionDone.getLastEvaluation().getGrade() + 0.5)*
+					weightVegEating;
+		}else{
+			connectedFeaturesWeightedSum = 
+					0;
+		}
+		super.updateSatisfactionFunction(connectedFeaturesWeightedSum);
+	}
+	
 	@Override
 	public double getStrengthAvarage() {
 		return CFG.SELFT_AVG_STRENGTH();

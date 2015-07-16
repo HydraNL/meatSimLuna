@@ -61,6 +61,7 @@ public abstract class SocialPractice {
 		updatePerformanceHistoryMap(currentContext);
 	}
 	
+	//Note that you use the last grade not the avarage
 	public void updatePerformanceHistoryEvaluative(PContext currentContext){
 		//performanceHistory.add(currentContext); <- requires space
 		double grade = evaluations.get(evaluations.size() -1).getGrade();
@@ -107,11 +108,11 @@ public abstract class SocialPractice {
 	/*
 	 * Lazy evaluation?
 	 */
-	public double calculateFrequency(PContext myContext) {
+	public double calculateFrequency(PContext myContext, double OCweight) {
 		double totalFrequency = Helper.sumDouble(performanceHistoryMap.values());
 		double freqInsideContext = getFreqInsideContext(myContext);
 		double freqOutsideContext = totalFrequency - freqInsideContext;
-		double weightedFrequency = freqInsideContext + CFG.OUTSIDE_CONTEXT() * freqOutsideContext;
+		double weightedFrequency = freqInsideContext + CFG.OUTSIDE_CONTEXT(OCweight) * freqOutsideContext;
 		return weightedFrequency;
 	}
 	

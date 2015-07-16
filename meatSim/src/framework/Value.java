@@ -60,8 +60,8 @@ public abstract class Value {
 	}
 	
 	public void updateSatisfactionFunction(double connectedFeaturesSum){
-				double increment = Math.tanh( beta * (connectedFeaturesSum - getK()));
-				//System.out.println("Increment: " + this + "by: "+ increment);
+				double increment = Math.tanh( beta/0.05 * (connectedFeaturesSum - getK())) /10; //beta = 0.03 //je kan de 0.05 eigenlijk wegstrepen, en beta wordt dan 1.
+				System.out.println("Increment: " + this + "by: "+ increment +"because of: " +  beta * (connectedFeaturesSum - getK()));
 		 		satisfaction += increment;
 		 		if(satisfaction > 5 * getStrengthAvarage()) satisfaction = 5*getStrengthAvarage();
 		 		if(satisfaction < 0.2 * getStrengthAvarage()) satisfaction = 0.2 * getStrengthAvarage();
@@ -74,6 +74,8 @@ public abstract class Value {
 		
 	//Might give problems later as each value needs its own parameters when updating.
 	public abstract void updateSatisfaction(SocialPractice myAction);
+	
+	public abstract void updateSatisfactionEvaluative(SocialPractice myAction);
 	
 	protected void setBeta(double beta){
 		this.beta = beta;

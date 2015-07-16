@@ -34,6 +34,22 @@ public class SelfEnhancement extends Value {
 		
 		super.updateSatisfactionFunction(connectedFeaturesWeightedSum);
 	}
+	
+	@Override
+	public void updateSatisfactionEvaluative(SocialPractice actionDone){
+		double connectedFeaturesWeightedSum;
+		if(actionDone instanceof MeatEatingPractice){
+			connectedFeaturesWeightedSum=
+					1 *
+					(actionDone.getLastEvaluation().getGrade() + 0.5)*
+					weightMeatEating;
+		}else{
+			connectedFeaturesWeightedSum = 
+					0;
+		}
+		super.updateSatisfactionFunction(connectedFeaturesWeightedSum);
+	}
+	
 
 	@Override
 	public double getStrengthAvarage() {

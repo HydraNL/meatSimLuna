@@ -61,14 +61,14 @@ public class CFG {
 	}
 	
 	/*Habitual Parameters*/
-	public static double HTR(){
-		return RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD_RELATIVE"); //An action has to be done 70% in this context to become habitual.
+	public static double HTR(double habitWeight){
+		return habitWeight * RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD_RELATIVE"); //An action has to be done 70% in this context to become habitual.
 	}
-	public static double OUTSIDE_CONTEXT(){
-		return RunEnvironment.getInstance().getParameters().getDouble("OUTSIDE_CONTEXT");
+	public static double OUTSIDE_CONTEXT(double OCWeight){
+		return OCWeight *RunEnvironment.getInstance().getParameters().getDouble("OUTSIDE_CONTEXT");
 	}
-	public static double HTA() {
-		return RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD_ABSOLUTE");
+	public static double HTA(double habitWeight) {
+		return habitWeight *RunEnvironment.getInstance().getParameters().getDouble("HABIT_THRESHOLD_ABSOLUTE");
 	}
 	
 	/*Value Strength*/

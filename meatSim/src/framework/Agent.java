@@ -51,6 +51,10 @@ public abstract class Agent {
 	private ArrayList<SocialPractice> mySocialPractices; //check with reseting model
 	private HashMap<Class, Value> myValues;
 	
+	//For habits
+	private double habitWeight;
+	private double OCweight;
+	
 	//For chosing context
 	private Location myHome;
 	private double diningOutRatio;
@@ -114,6 +118,7 @@ public abstract class Agent {
 	public void determineIfEating() {
 		isEating = (RandomHelper.nextIntFromTo(0,100) <= CFG.diningOutPercent());
 	}
+	
 	
 	
 	//Either attribute people randomly to the set of locations.
@@ -245,8 +250,8 @@ public abstract class Agent {
 		}
 		for(Location l: aFiltered){
 			if (frequenciesL.get(l) > RandomHelper.nextDoubleFromTo(0, 2)
-					* CFG.HTA()) { // t = 25 -> F = 5
-				if (habitStrengthsL.get(l) > CFG.HTR()) {
+					* CFG.HTA(getHabitWeight())) { // t = 25 -> F = 5
+				if (habitStrengthsL.get(l) > CFG.HTR(getHabitWeight())) {
 					newCandidates.add(l);
 				}
 			}
@@ -311,8 +316,8 @@ public abstract class Agent {
 		}
 		for(Agent a: aFiltered){
 			if (frequenciesA.get(a) > RandomHelper.nextDoubleFromTo(0, 2)
-					* CFG.HTA()) { // t = 25 -> F = 5
-				if (habitStrengthsA.get(a) > CFG.HTR()) {
+					* CFG.HTA(getHabitWeight())) { // t = 25 -> F = 5
+				if (habitStrengthsA.get(a) > CFG.HTR(getHabitWeight())) {
 					newCandidates.add(a);
 				}
 			}
@@ -345,7 +350,6 @@ public abstract class Agent {
 			actionType = ActionType.NOACTION;
 		}
 		act();
-		updateValues();
 	}
 	
 	@ScheduledMethod(start = 1, interval = 1, priority = 1)
@@ -482,7 +486,7 @@ public abstract class Agent {
 
 		double totalF = 0;
 		for (SocialPractice sp : mySocialPractices) {
-			double F = sp.calculateFrequency(myContext);
+			double F = sp.calculateFrequency(myContext, getOCweight());
 			frequencies.put(sp, F);
 			totalF += F;
 		}
@@ -491,8 +495,8 @@ public abstract class Agent {
 		}
 		for (SocialPractice sp : candidateSocialPractices) {
 			if (frequencies.get(sp) > RandomHelper.nextDoubleFromTo(0, 2)
-					* CFG.HTA()) { // t = 25 -> F = 5
-				if (habitStrengths.get(sp) > CFG.HTR()) {
+					* CFG.HTA(getHabitWeight())) { // t = 25 -> F = 5
+				if (habitStrengths.get(sp) > CFG.HTR(getHabitWeight())) {
 					newCandidates.add(sp);
 				}
 			}
@@ -552,15 +556,27 @@ public abstract class Agent {
 	private void learn() {
 		if(CFG.isEvaluated()) evaluate();
 		if(CFG.isUpdatedPerformanceHistory()){
-			if(CFG.isEvaluated()) updateHistoryEvaluative();
+			if(CFG.isEvaluated()){
+				updateHistoryEvaluative(); //Works by just using the grade instead of 1.
+				updateValuesEvaluative();
+			}
 			else{
 				updateHistory();
+				updateValues();
 			}
-			
 		}
 	}
+	private void updateValuesEvaluative() {
+		for(Value val: myValues.values()){
+			val.updateSatisfactionEvaluative(myAction);
+		}
+	}
+
+
 	/**
 	 * Description of the method evaluate.
+	 * 
+	 * Gives all information, but in evaluate it is decided what is used.
 	 */
 	private void evaluate() {
 		double Iweight = myValues.get(SelfEnhancement.class).getStrength();	//SelfEnhancement
@@ -578,6 +594,8 @@ public abstract class Agent {
 		//System.out.print("thisev: " + 0.5 + 0.5 * Math.tanh((x-CFG.a)/CFG.b));
 		return 1 + 0.5 * Math.tanh((x-CFG.a)/CFG.b);
 	}
+	
+	//Strength not need or someting! If need, you have to think about order.
 	private double individualEvaluation() {
 		return myValues.get(myAction.getPurpose()).getStrength();
 	}
@@ -711,5 +729,25 @@ public abstract class Agent {
 
 	public void setLocated(boolean isLocated) {
 		this.isLocated = isLocated;
+	}
+
+
+	public double getOCweight() {
+		return OCweight;
+	}
+
+
+	public void setOCweight(double oCweight) {
+		OCweight = oCweight;
+	}
+
+
+	public double getHabitWeight() {
+		return habitWeight;
+	}
+
+
+	public void setHabitWeight(double habitWeight) {
+		this.habitWeight = habitWeight;
 	}
 }

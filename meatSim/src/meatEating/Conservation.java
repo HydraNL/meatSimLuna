@@ -37,5 +37,11 @@ public class Conservation extends Value {
 		return CFG.CONSERVATION_AVG_STRENGTH();
 	}
 
+	@Override
+	public void updateSatisfactionEvaluative(SocialPractice myAction) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

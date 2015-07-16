@@ -33,10 +33,16 @@ public class Eater1 extends Agent {
 		double[] sampleValues = correlated();
 		addValue(new SelfEnhancement(sampleValues[0])); //ND, 1, 0.25 (maybe higher sigma?)
 		addValue(new SelfTranscendence(sampleValues[1]));
-		addValue(new Openness(RandomHelper.getNormal().nextDouble()));
+		addValue(new Openness(RandomHelper.getNormal().nextDouble())); //ND defined in abstractbuilder as 1,0.25
 		addValue(new Conservation(RandomHelper.getNormal().nextDouble()));
+		
+		RandomHelper.createNormal(1, 0.1);
+		setHabitWeight(RandomHelper.getNormal().nextDouble());
+		setOCweight(RandomHelper.getNormal().nextDouble());
+		RandomHelper.createNormal(1, 0.25);
 	}
 	
+
 	public double[] correlated(){
 		double[] means = {1,1};
 		double variance = 0.0625;
