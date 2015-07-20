@@ -5,11 +5,18 @@ package main;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.stream.Stream;
 
+import repast.simphony.random.RandomHelper;
 import repast.simphony.space.grid.Grid;
 import repast.simphony.space.grid.GridPoint;
+import framework.Agent;
 import framework.Location;
 import framework.PContext;
 import framework.SocialPractice;
@@ -47,9 +54,25 @@ public class Helper {
 	public static void moveToObject(Grid<Object> grid, Object movingObject,
 			Object targetObject) {
 		GridPoint pt = grid.getLocation(targetObject);
-		grid.moveTo(movingObject, pt.getX(), pt.getY());
+		
+		Helper.moveTo(grid, movingObject, pt.getX(), pt.getY());
 	}
 	
+	public static void moveTo(Grid<Object> grid, Object movingObject, int x, int y){
+		Iterator<Object> iter = grid.getObjectsAt(x,y).iterator();
+		boolean hasAgent = false;
+		int dx = 0;
+		int dy = 0;
+		while(iter.hasNext()){
+			Object obje = iter.next();
+			if(obje instanceof Agent) hasAgent = true;
+		}
+		if(hasAgent){
+			moveTo(grid, movingObject, x+1,y); //Maybe getNeighbor or something?
+		}else{
+			grid.moveTo(movingObject, x,y);
+		}
+	}
 	/**
 	 * Move one object to the same location as another on the grid.
 	 * 
@@ -91,6 +114,23 @@ public class Helper {
 		}
 		return sum;
 	}
+	
+	public static double avarageDouble(Collection<Double> values) {
+		return sumDouble(values)/values.size();
+	}
+	
+	public static <K, V extends Comparable<? super V>> Map<K, V> 
+    sortByValue( Map<K, V> map )
+{
+      Map<K,V> result = new LinkedHashMap<>();
+     Stream <Entry<K,V>> st = map.entrySet().stream();
+
+     st.sorted(Comparator.comparing(e -> e.getValue()))
+          .forEach(e ->result.put(e.getKey(),e.getValue()));
+//Doesn't work yet
+     return result;
+}
+	
 	
 	//Wrapper
 	public static void mapAdd(HashMap<Object, Double> map,

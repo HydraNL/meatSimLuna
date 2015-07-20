@@ -26,6 +26,7 @@ public class MeatEatingPractice extends SocialPractice {
 		super();
 		addAffordance(new PContext(new MeatVenue()));
 		addAffordance(new PContext(new MixedVenue()));
+		addAffordance(new PContext(new Home()));
 		addPurpose(SelfEnhancement.class);
 	}
 	

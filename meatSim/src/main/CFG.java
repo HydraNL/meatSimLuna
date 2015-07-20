@@ -18,7 +18,9 @@ import repast.simphony.random.RandomHelper;
  * @author rijk
  */
 public class CFG {
-	public static boolean GUI;
+	public static boolean GUI(){
+		return RunEnvironment.getInstance().getParameters().getBoolean("GUI");
+	}
 	
 	/*Changes in deliberation*/
 	public static boolean chooseContext(){
@@ -152,6 +154,7 @@ public class CFG {
 	
 	//Chooce context para's
 	public static int getHomesCount() {
+		//http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/3236.0Main%20Features42011%20to%202036?opendocument&tabname=Summary&prodno=3236.0&issue=2011%20to%202036&num=&view=
 		return (int) Math.round(agentCount()/2.5);
 	}
 	
@@ -188,6 +191,13 @@ public class CFG {
 	
 	//TODO: look in paper
 	public static int inviteDistribution() {
-		return 2;
+		int x=RandomHelper.getPoisson().nextInt();
+		if(x==0){
+			x=RandomHelper.getPoisson().nextInt();
+		}
+		
+		
+		//System.out.println(x);
+		return x;
 	}
 }

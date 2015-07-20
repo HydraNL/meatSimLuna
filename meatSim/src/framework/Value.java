@@ -61,7 +61,7 @@ public abstract class Value {
 	
 	public void updateSatisfactionFunction(double connectedFeaturesSum){
 				double increment = Math.tanh( beta/0.05 * (connectedFeaturesSum - getK())) /10; //beta = 0.03 //je kan de 0.05 eigenlijk wegstrepen, en beta wordt dan 1.
-				System.out.println("Increment: " + this + "by: "+ increment +"because of: " +  beta * (connectedFeaturesSum - getK()));
+				//System.out.println("Increment: " + this + "by: "+ increment +"because of: " +  beta * (connectedFeaturesSum - getK()));
 		 		satisfaction += increment;
 		 		if(satisfaction > 5 * getStrengthAvarage()) satisfaction = 5*getStrengthAvarage();
 		 		if(satisfaction < 0.2 * getStrengthAvarage()) satisfaction = 0.2 * getStrengthAvarage();

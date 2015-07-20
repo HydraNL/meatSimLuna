@@ -60,8 +60,9 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		homes = new ArrayList<Location>(); //Could add it MeatSimBuilder, but scared of not properly cleaning up list
 		
 		RandomHelper.createNormal(1, 0.25);
+		RandomHelper.createPoisson(2);
 		CFG.createDiningOutDistribution();
-
+		
 		setCFG();
 		setID();
 		makeGrid();

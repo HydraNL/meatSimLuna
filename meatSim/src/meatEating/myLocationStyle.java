@@ -22,11 +22,11 @@ public class myLocationStyle extends DefaultStyleOGL2D {
 				return Color.BLACK;
 			else{
 				if (l instanceof MeatVenue)	
-					return Color.RED;
+					return Color.ORANGE;
 				else if(l instanceof MixedVenue)
 					return Color.BLUE;
 				else 
-					return Color.GREEN;
+					return Color.MAGENTA;
 			}
 		}
 }

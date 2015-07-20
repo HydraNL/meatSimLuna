@@ -3,6 +3,7 @@
  *******************************************************************************/
 package framework;
 
+import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -14,7 +15,12 @@ import java.util.HashSet;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.function.Predicate;
+
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
 
 import main.SocialPracticeConverter;
 import main.CFG;
@@ -150,7 +156,7 @@ public abstract class Agent {
 		if(!l.hasContext()) new PContext(l);
 		myContext = l.getMyContext();
 		myContext.addAgent(this);
-		Helper.moveToObject(myGrid, this, l);
+		if(CFG.GUI()) Helper.moveToObject(myGrid, this, l);
 		setLocated(true);
 	}
 	
@@ -193,6 +199,8 @@ public abstract class Agent {
 			ArrayList<Location> candidateLocations2) {
 		List<Location> newCandidates=new ArrayList<Location>();
 		
+		//De kans dat iedereen in de groep een veg restaurant accept is erg laag
+		//Al helemaal als we niet op intenties filteren, i.e. je gewoon per agent 50% kans hebt dat die accepteert.
 		for(Location l:candidateLocations2){
 			boolean accepted = true;
 			for(Agent a:diningGroup){
@@ -209,17 +217,34 @@ public abstract class Agent {
 		return RandomHelper.nextIntFromTo(0, 1) == 1;
 	}
 	
+	private boolean isHomogenous(List<Location> list){
+		boolean homogenous = true;
+		Location proto = list.get(0);
+		for(Location l:list){
+			if(proto.getClass() != l.getClass()) homogenous = false;
+		}
+		return homogenous;
+	}
+	
 	private Location pickLocation(List<Location> locations){
 		//You could add an affordance variable for open and close.
 		List<Location> temp =new ArrayList<Location>(locations); 
 		
 		temp = filterOnAffordancesL(temp); //Easier to give a new list back and change ref.
 		List<Location> aFiltered = new ArrayList<Location>(temp);
+		if(isHomogenous(aFiltered)) return pickRandomly(temp);
+		
+		if(CFG.isFilteredOnHabits()){
 		temp = filterOnHabitsL(temp);
 		List<Location> hFiltered = new ArrayList<Location>(temp);
 		if(hFiltered.isEmpty()) temp = aFiltered; //Reroll if empty
+		else if(isHomogenous(hFiltered)) return pickRandomly(temp);
+		}
+		
+		if(CFG.isIntentional()){
 		temp = filterOnIntentionsL(temp);
 		List<Location> iFiltered = new ArrayList<Location>(temp);
+		}
 		
 		return pickRandomly(temp);
 	}
@@ -248,12 +273,10 @@ public abstract class Agent {
 		for (Location l: aFiltered) { //notice again cLoc vs aFilt
 			habitStrengthsL.put(l, habitStrength(frequenciesL.get(l), totalF));
 		}
-		for(Location l: aFiltered){
-			if (frequenciesL.get(l) > RandomHelper.nextDoubleFromTo(0, 2)
-					* CFG.HTA(getHabitWeight())) { // t = 25 -> F = 5
-				if (habitStrengthsL.get(l) > CFG.HTR(getHabitWeight())) {
-					newCandidates.add(l);
-				}
+		if(totalF > RandomHelper.nextDoubleFromTo(0, 2) * CFG.HTA(getHabitWeight())){
+			Entry<ArrayList<Location>, Double> pair = relativeHabitFilter(habitStrengthsL);
+			if(pair.getValue() > CFG.HTR(getHabitWeight())){
+				newCandidates = pair.getKey();
 			}
 		}
 		return newCandidates;
@@ -282,9 +305,12 @@ public abstract class Agent {
 		temp = filterOnAffordancesA(temp); //Easier to give a new list back and change ref.
 		List<Agent> aFiltered = new ArrayList<Agent>(temp);
 		if(aFiltered.isEmpty()) return null; //Niemand available
+		
+		if(CFG.isFilteredOnHabits()){
 		temp = filterOnHabitsA(temp);
 		List<Agent> hFiltered = new ArrayList<Agent>(temp);
 		if(hFiltered.isEmpty()) temp = aFiltered; //Reroll if empty
+		}
 		
 		return pickRandomly(temp);
 
@@ -311,15 +337,15 @@ public abstract class Agent {
 			frequenciesA.put(a, F);
 			totalF += F;
 		}
+		
+		//Outside the IF for statistic purposes
 		for (Agent a: aFiltered) { //notice again cLoc vs aFilt
 			habitStrengthsA.put(a, habitStrength(frequenciesA.get(a), totalF));
 		}
-		for(Agent a: aFiltered){
-			if (frequenciesA.get(a) > RandomHelper.nextDoubleFromTo(0, 2)
-					* CFG.HTA(getHabitWeight())) { // t = 25 -> F = 5
-				if (habitStrengthsA.get(a) > CFG.HTR(getHabitWeight())) {
-					newCandidates.add(a);
-				}
+		if(totalF > RandomHelper.nextDoubleFromTo(0, 2) * CFG.HTA(getHabitWeight())){
+			Entry<ArrayList<Agent>, Double> pair = relativeHabitFilter(habitStrengthsA);
+			if(pair.getValue() > CFG.HTR(getHabitWeight())){
+				newCandidates = pair.getKey();
 			}
 		}
 		return newCandidates;
@@ -327,12 +353,23 @@ public abstract class Agent {
 	
 	private boolean acceptInvitation(Location chosenLocation) {
 		boolean accept = false;
-		for(PContext affordance: chooseOnIntentions(mySocialPractices).getAffordances()){
-			if(chosenLocation.getClass() == affordance.getMyLocation().getClass()) accept = true;
+		if (chosenLocation instanceof MixedVenue){
+			accept = true;
 		}
-		if(!accept){ //Sometimes even accept if it does not cater values
-			if(RandomHelper.nextDoubleFromTo(0, 1) < acceptRatio){
-				accept = true;
+		else{
+			SocialPractice temp;
+			temp = (CFG.isIntentional()) ? //Get a random practice if intentions aren't used.
+					chooseOnIntentions(mySocialPractices):
+					(RandomHelper.nextIntFromTo(0, 1) ==1) ?
+							new MeatEatingPractice():
+							new VegEatingPractice();
+			for(PContext affordance: temp.getAffordances()){
+				if(chosenLocation.getClass() == affordance.getMyLocation().getClass()) accept = true;
+			}
+			if(!accept){ //Sometimes even accept if it does not cater values
+				if(RandomHelper.nextDoubleFromTo(0, 1) < acceptRatio){
+					accept = true;
+				}
 			}
 		}
 		return accept;
@@ -349,6 +386,7 @@ public abstract class Agent {
 			myAction = new NoAction(); //Maybe change to just new Social Practice which will not be an instance of either;
 			actionType = ActionType.NOACTION;
 		}
+		if(myAction == null) System.out.println("No action is chosen");
 		act();
 	}
 	
@@ -493,17 +531,58 @@ public abstract class Agent {
 		for (SocialPractice sp : candidateSocialPractices) {
 			habitStrengths.put(sp, habitStrength(frequencies.get(sp), totalF));
 		}
-		for (SocialPractice sp : candidateSocialPractices) {
-			if (frequencies.get(sp) > RandomHelper.nextDoubleFromTo(0, 2)
-					* CFG.HTA(getHabitWeight())) { // t = 25 -> F = 5
-				if (habitStrengths.get(sp) > CFG.HTR(getHabitWeight())) {
-					newCandidates.add(sp);
-				}
+		if(totalF > RandomHelper.nextDoubleFromTo(0, 2) * CFG.HTA(getHabitWeight())){
+			Entry<ArrayList<SocialPractice>, Double> pair = relativeHabitFilter(habitStrengths);
+			//System.out.print(pair.getValue() + "and" + CFG.HTR(getHabitWeight()));
+			if(pair.getValue() > CFG.HTR(getHabitWeight())){
+				//System.out.print("found some habits!");
+				newCandidates = pair.getKey();
 			}
 		}
 		return newCandidates;
 	}
 	
+	//Maybe errors if list is size 1;
+	//Only makes subsets seperating high from low.
+	public static <T> Pair<ArrayList<T>, Double> relativeHabitFilter(Map<T, Double> habitStrength){
+		System.out.print("rHabitFilter is called on size:" + habitStrength.size());
+		Map<T, Double> sorted= Helper.sortByValue(habitStrength);
+		ArrayList<T> keys =new ArrayList<T>(sorted.keySet());
+		
+		//System.out.println(habitStrength);
+		//System.out.println(sorted);
+		
+		double bestDifference = 0;
+		double bestSplit = 0;
+		for(int i = 0; i < keys.size()-1; i++){
+			Map<T, Double> left = new HashMap<T, Double>();
+			Map<T, Double> right =new HashMap<T, Double>(habitStrength);
+			for(int j =0; j <= i; j++){ //Fill maps left and right
+				T key = keys.get(j);
+				left.put(key, sorted.get(key));
+				right.remove(key);
+				//System.out.print("loopmakemaps");
+			}
+			
+			
+			double difference = Helper.avarageDouble(right.values()) - Helper.avarageDouble(left.values());
+			if(difference > bestDifference){
+				bestDifference = difference;
+				bestSplit = i;
+			}
+			//System.out.print("loopfindbest");
+		}
+		
+		ArrayList<T> newCandidates =new ArrayList<T>();
+		for(int j = keys.size()-1; j > bestSplit; j--){
+			newCandidates.add(keys.get(j));
+			//System.out.print("loophere");
+		}
+		
+		//System.out.println("I made it! Difference:" + bestDifference + "newCandidates" + newCandidates);
+		
+		return new ImmutablePair<ArrayList<T>, Double>(newCandidates, bestDifference);
+	}
 	/*
 	 * 
 	 * If the practice has never been done before return 1.
