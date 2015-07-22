@@ -31,8 +31,8 @@ public class Eater1 extends Agent {
 		addSocialPractice(new MeatEatingPractice());
 		addSocialPractice(new VegEatingPractice());
 		double[] sampleValues = correlated();
-		addValue(new SelfEnhancement(sampleValues[0])); //ND, 1, 0.25 (maybe higher sigma?)
-		addValue(new SelfTranscendence(sampleValues[1]));
+		addValue(new SelfEnhancement(sampleValues[0], this)); //ND, 1, 0.25 (maybe higher sigma?)
+		addValue(new SelfTranscendence(sampleValues[1], this));
 		addValue(new Openness(RandomHelper.getNormal().nextDouble())); //ND defined in abstractbuilder as 1,0.25
 		addValue(new Conservation(RandomHelper.getNormal().nextDouble()));
 		

@@ -55,6 +55,9 @@ public abstract class Agent {
 	private ArrayList<Location> candidateLocations; //Does not include Homes.
 	private PContext myContext;
 	private ArrayList<SocialPractice> mySocialPractices; //check with reseting model
+	
+
+
 	private HashMap<Class, Value> myValues;
 	
 	//For habits
@@ -601,7 +604,7 @@ public abstract class Agent {
 		SocialPractice chosenAction = null; //temp
 		HashMap<SocialPractice, Double> needs=new HashMap<SocialPractice, Double>();
 		for(SocialPractice sp: candidateSocialPractices){
-			needs.put(sp, myValues.get(sp.getPurpose()).getNeed()); 
+			needs.put(sp, myValues.get(sp.getPurpose()).getNeed(myContext)); 
 		}
 		double totalNeed = Helper.sumDouble(needs.values()); //satisfaction can get <0, so need as well, so maybe not getting in while loop
 		double randomDeterminer = RandomHelper.nextDoubleFromTo(0, totalNeed);
@@ -625,7 +628,7 @@ public abstract class Agent {
 	
 	private void updateValues(){
 		for(Value val: myValues.values()){
-			val.updateSatisfaction(myAction);
+			val.updateSatisfaction(myContext, myAction);
 		}
 	}
 	 
@@ -633,23 +636,18 @@ public abstract class Agent {
 	 * Description of the method learn.
 	 */
 	private void learn() {
-		if(CFG.isEvaluated()) evaluate();
+		updateValues();
 		if(CFG.isUpdatedPerformanceHistory()){
-			if(CFG.isEvaluated()){
-				updateHistoryEvaluative(); //Works by just using the grade instead of 1.
-				updateValuesEvaluative();
-			}
-			else{
-				updateHistory();
-				updateValues();
-			}
+			updateHistory();
 		}
+		if(CFG.isEvaluated()) evaluate();
 	}
-	private void updateValuesEvaluative() {
-		for(Value val: myValues.values()){
-			val.updateSatisfactionEvaluative(myAction);
-		}
-	}
+	//Dunno if still needed
+	//private void updateValuesEvaluative() {
+	//	for(Value val: myValues.values()){
+	//		val.updateSatisfactionEvaluative(myAction);
+	//	}
+	//}
 
 
 	/**
@@ -657,10 +655,10 @@ public abstract class Agent {
 	 * 
 	 * Gives all information, but in evaluate it is decided what is used.
 	 */
-	private void evaluate() {
-		double Iweight = myValues.get(SelfEnhancement.class).getStrength();	//SelfEnhancement
-		double Sweight = (myValues.get(Conservation.class).getStrength() + myValues.get(SelfTranscendence.class).getStrength()) /2; //Conservation + selfTranscendence
-		//System.out.println("Evaluation :" + Iweight + " " + individualEvaluation() + " " + Sweight + " " + socialEvaluation());
+	private void evaluate() { //All factors are avarage 1
+		double Iweight = myValues.get(SelfEnhancement.class).getStrength(myContext);	//1 ND
+		double Sweight = (myValues.get(Conservation.class).getStrength(myContext) + myValues.get(SelfTranscendence.class).getStrength(myContext)) /2; //Conservation + selfTranscendence, dus 1 ND, meer var
+		System.out.println("Evaluation :" + Iweight + " " + individualEvaluation() + " " + Sweight + " " + socialEvaluation());
 		myAction.addEvaluation(new Evaluation(Iweight, individualEvaluation(), Sweight, socialEvaluation(), myContext));
 	}
 	private double socialEvaluation() {
@@ -670,21 +668,21 @@ public abstract class Agent {
 		}
 		double dissimAgents = myContext.getMyAgents().size() - simAgents; //amount of dissimilar agents
 		double x = simAgents - dissimAgents;
-		//System.out.print("thisev: " + 0.5 + 0.5 * Math.tanh((x-CFG.a)/CFG.b));
+		System.out.print("thisev: "+ x);
 		return 1 + 0.5 * Math.tanh((x-CFG.a)/CFG.b);
 	}
 	
 	//Strength not need or someting! If need, you have to think about order.
 	private double individualEvaluation() {
-		return myValues.get(myAction.getPurpose()).getStrength();
+		return myValues.get(myAction.getPurpose()).getStrength(myContext);
 	}
 	public void updateHistory(){
 			myAction.updatePerformanceHistory(myContext);
 	}
-	private void updateHistoryEvaluative() {
-		myAction.updatePerformanceHistoryEvaluative(myContext);
-		
-	}
+//	private void updateHistoryEvaluative() {
+//		myAction.updatePerformanceHistoryEvaluative(myContext);
+//		
+//	}
 	protected void addSocialPractice(SocialPractice sp){
 		mySocialPractices.add(sp);
 	}
@@ -776,11 +774,11 @@ public abstract class Agent {
 	
 	/*Intentional Params*/
 	public double dataNeed(Class spClass){
-		double need = myValues.get(spClass).getNeed();
+		double need = myValues.get(spClass).getNeed(myContext);
 		return (need<100) ? need:100;
 	}
 	public double dataThreshold(Class spClass){
-		return myValues.get(spClass).getThreshold();
+		return myValues.get(spClass).getThreshold(myContext);
 	}
 	public double dataSatisfaction(Class spClass){
 		return myValues.get(spClass).getSatisfaction();
@@ -822,11 +820,30 @@ public abstract class Agent {
 
 
 	public double getHabitWeight() {
-		return habitWeight;
+		double evInContext = 0;
+		for(SocialPractice sp: getMySocialPractices()){
+			evInContext+= sp.calculateEvaluation(myContext, CFG.OUTSIDE_CONTEXT(getOCweight()));
+		}
+		evInContext = evInContext/getMySocialPractices().size();
+		return evInContext* habitWeight;
 	}
 
 
 	public void setHabitWeight(double habitWeight) {
 		this.habitWeight = habitWeight;
+	}
+	public ArrayList<SocialPractice> getMySocialPractices() {
+		return mySocialPractices;
+	}
+
+
+	public void setMySocialPractices(ArrayList<SocialPractice> mySocialPractices) {
+		this.mySocialPractices = mySocialPractices;
+	}
+
+
+	public void setContext(PContext newContext) {
+		this.myContext = null;
+		
 	}
 }

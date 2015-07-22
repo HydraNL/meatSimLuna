@@ -80,7 +80,8 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		ISchedule schedule = RunEnvironment.getInstance().getCurrentSchedule();
 		ScheduleParameters params = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.FIRST_PRIORITY);
 		schedule.schedule(params, this, "changeContext");
-				
+		schedule.schedule(params, this, "cleanUpContext");
+		
 		//schedule a clean up after each round
 		//TODO: do cleanup schedule to some schedule?
 		ScheduleParameters params2 = ScheduleParameters.createRepeating(1, 1, ScheduleParameters.LAST_PRIORITY);
@@ -155,7 +156,13 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 			a.setLocated(false);
 		}
 	}
-	
+	//Do this first so it doesnt mess with possible data.
+	//But at the same point agents dont have a context before they do something.
+	public void cleanUpContext(){
+		for(Agent a:agents){
+			a.setContext(null);
+		}
+	}
 	//@ScheduledMethod(start = 1, interval = 1)
 	public void createPContexts() {
 		pContexts.clear(); //List doesn't become infinite, there are new pContexts every time step.

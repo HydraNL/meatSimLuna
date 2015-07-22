@@ -111,6 +111,12 @@ public class CFG {
 		return RunEnvironment.getInstance().getParameters().getDouble("weightMeatEatingAction");
 	}
 	
+	//Evaluation parameters
+	//Could make it degrading over time as they get older.
+	public static double LEARN_RATE() {
+		return RunEnvironment.getInstance().getParameters().getDouble("LEARN_RATE");
+	}
+	
 	//SocialEvaluation
 	public static double a;
 	public static double b; 
@@ -200,4 +206,6 @@ public class CFG {
 		//System.out.println(x);
 		return x;
 	}
+
+	
 }

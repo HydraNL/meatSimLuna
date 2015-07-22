@@ -4,6 +4,7 @@
 package meatEating;
 
 import main.CFG;
+import framework.PContext;
 import framework.SocialPractice;
 import framework.Value;
 
@@ -26,19 +27,28 @@ public class Conservation extends Value {
 		super(strengthWeight, 0, 0);
 	}
 
-	@Override
-	public void updateSatisfaction(SocialPractice myAction) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public double getStrengthAvarage() {
 		return CFG.CONSERVATION_AVG_STRENGTH();
 	}
 
+
 	@Override
-	public void updateSatisfactionEvaluative(SocialPractice myAction) {
+	public double getMyEvaluation(PContext myContext) {
+		// TODO Auto-generated method stub
+		return 1;
+	}
+
+	@Override
+	public void updateSatisfaction(PContext myContext, SocialPractice myAction) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateSatisfactionEvaluative(PContext myContext,
+			SocialPractice myAction) {
 		// TODO Auto-generated method stub
 		
 	}

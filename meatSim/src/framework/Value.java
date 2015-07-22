@@ -28,27 +28,30 @@ public abstract class Value {
 	 */
 	public Value(double strengthWeight, double beta, double k){
 		//System.out.println(strengthWeight);
-		this.strengthWeight = strengthWeight;
-		this.satisfaction = RandomHelper.getNormal().nextDouble() * getThreshold();
+		this.strengthWeight = strengthWeight; //ND and correlated over 1, 0.25
+		this.satisfaction = RandomHelper.getNormal().nextDouble() * strengthWeight *getStrengthAvarage(); //take original strength
 		this.beta = beta;
 		this.k = k;
 	}
 	
-	public abstract double getStrengthAvarage();
+	public abstract double getStrengthAvarage(); //Normally also 1
 	
-	public double getStrength() {
-		return strengthWeight * getStrengthAvarage();
+	public abstract double getMyEvaluation(PContext myContext);
+	
+	public double getStrength(PContext myContext) {
+		System.out.println("Evaluation in context is"+ getMyEvaluation(myContext));
+		return strengthWeight * getStrengthAvarage() *getMyEvaluation(myContext);
 	}
 	
-	public double getThreshold(){
-		return getStrength();		
+	public double getThreshold(PContext myContext){
+		return getStrength(myContext);		
 	}
 
 	/**
 	 * Description of the method getNeed.
 	 */
-	public double getNeed() {
-		return getThreshold()/satisfaction;  //only works if satisfaction stays positive, else the Needs get lower when satisfaction gets lower
+	public double getNeed(PContext myContext) {
+		return getThreshold(myContext)/satisfaction;  //only works if satisfaction stays positive, else the Needs get lower when satisfaction gets lower
 	}
 	
 	/**
@@ -59,23 +62,22 @@ public abstract class Value {
 		// End of user code
 	}
 	
-	public void updateSatisfactionFunction(double connectedFeaturesSum){
-				double increment = Math.tanh( beta/0.05 * (connectedFeaturesSum - getK())) /10; //beta = 0.03 //je kan de 0.05 eigenlijk wegstrepen, en beta wordt dan 1.
+	public void updateSatisfactionFunction(double connectedFeaturesSum, PContext myContext){
+				double increment = Math.tanh( beta/0.05 * (connectedFeaturesSum - getK(myContext))) /10; //beta = 0.03 //je kan de 0.05 eigenlijk wegstrepen, en beta wordt dan 1.
 				//System.out.println("Increment: " + this + "by: "+ increment +"because of: " +  beta * (connectedFeaturesSum - getK()));
 		 		satisfaction += increment;
 		 		if(satisfaction > 5 * getStrengthAvarage()) satisfaction = 5*getStrengthAvarage();
 		 		if(satisfaction < 0.2 * getStrengthAvarage()) satisfaction = 0.2 * getStrengthAvarage();
 		 	}
 		 	
-			private double getK() {
-				double modifier = getStrength();
-				return getStrength() * k;
+			private double getK(PContext myContext) {
+				return getStrength(myContext) * k;
 			}
 		
 	//Might give problems later as each value needs its own parameters when updating.
-	public abstract void updateSatisfaction(SocialPractice myAction);
+	public abstract void updateSatisfaction(PContext myContext, SocialPractice myAction);
 	
-	public abstract void updateSatisfactionEvaluative(SocialPractice myAction);
+	public abstract void updateSatisfactionEvaluative(PContext myContext, SocialPractice myAction);
 	
 	protected void setBeta(double beta){
 		this.beta = beta;
