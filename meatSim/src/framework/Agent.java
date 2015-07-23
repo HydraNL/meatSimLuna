@@ -28,6 +28,7 @@ import main.Helper;
 import meatEating.Conservation;
 import meatEating.MeatEatingPractice;
 import meatEating.MixedVenue;
+import meatEating.Openness;
 import meatEating.SelfEnhancement;
 import meatEating.SelfTranscendence;
 import meatEating.VegEatingPractice;
@@ -38,6 +39,7 @@ import repast.simphony.space.grid.Grid;
 import repast.simphony.space.grid.GridPoint;
 
 /*
+ * 
  * POssible speedincrease:
  * Only filter on openLocations once per timestep, not twice per agent
  */
@@ -55,7 +57,7 @@ public abstract class Agent {
 	private ArrayList<Location> candidateLocations; //Does not include Homes.
 	private PContext myContext;
 	private ArrayList<SocialPractice> mySocialPractices; //check with reseting model
-	
+	int i =0;
 
 
 	private HashMap<Class, Value> myValues;
@@ -68,7 +70,14 @@ public abstract class Agent {
 	private Location myHome;
 	private double diningOutRatio;
 	private boolean isLocated;
-	private double acceptRatio;
+	private double acceptRatio(){
+		if(
+		myValues.get(SelfTranscendence.class).getStrength(null) +
+		myValues.get(Openness.class).getStrength(null) >
+		myValues.get(SelfEnhancement.class).getStrength(null) +
+		myValues.get(Conservation.class).getStrength(null)) return 1;
+		else return 0;
+	}
 	
 	//For Data Projection
 	private int ID;
@@ -114,7 +123,6 @@ public abstract class Agent {
 				homes.size() - 1);
 		myHome= homes.get(randomIndex);
 		diningOutRatio = CFG.getDiningOutRatio();
-		acceptRatio = 0.5; //TODO: make it a distribution or so
 	}
 	
 	
@@ -148,6 +156,7 @@ public abstract class Agent {
 	//Or let them choose their Context
 	@ScheduledMethod(start =1, interval = 1, priority = 5)
 	public void diningIn() {
+		//i = 0;
 		if(CFG.chooseContext() &&isEating){
 			if(RandomHelper.nextDoubleFromTo(0, 1) > diningOutRatio)
 				goTo(myHome);
@@ -156,6 +165,7 @@ public abstract class Agent {
 	
 	//When you go to something you create or join a Pcontext.
 	public void goTo(Location l){
+		//System.out.println("Agents:" + i++);
 		if(!l.hasContext()) new PContext(l);
 		myContext = l.getMyContext();
 		myContext.addAgent(this);
@@ -169,21 +179,30 @@ public abstract class Agent {
 		if(CFG.chooseContext() &&isEating && !isLocated){
 			Location chosenLocation;
 			ArrayList<Agent> diningGroup =new ArrayList<Agent>();
-			diningGroup.add(this);
+			List<Agent> candidateAgents=new ArrayList<Agent>(agents);
+			candidateAgents = filterOnAffordancesA(candidateAgents);
 			
+			diningGroup.add(this);
+			candidateAgents.remove(this);
 			boolean chooseOnPhysical = physicalOrSocial();
 			
 			if(chooseOnPhysical){
 				chosenLocation = pickLocation(candidateLocations);
 				for(int i = 0; i < CFG.inviteDistribution(); i++){
-					Agent a = pickEatBuddy();
-					if(a != null && a.acceptInvitation(chosenLocation)) diningGroup.add(a); //If people avariblae and it accepts invitation.
+					Agent a = pickEatBuddy(candidateAgents); //TODO: maakt lijst van eetbuddies elke keer opnieuw, pak een lijst, maak op, pak nieuw lijst
+					if(a != null){
+						candidateAgents.remove(a); //Remove from candidates!
+						if(a.acceptInvitation(chosenLocation)) diningGroup.add(a); 
+					}
 				}
 			}
 			else{ //chooseOnSocial
 				for(int i = 0; i < CFG.inviteDistribution(); i++){
-					Agent a = pickEatBuddy();
-					if(a != null) diningGroup.add(a); //Everybody accepts!
+					Agent a = pickEatBuddy(candidateAgents);
+					if(a != null){
+						candidateAgents.remove(a);
+						diningGroup.add(a); //Everybody accepts!
+					}
 				}
 				List<Location> affordedLocations = filterOnGroupsPreference(diningGroup, candidateLocations);
 				chosenLocation = pickLocation(affordedLocations); //Lijst kan leeg zijn als er geen mixed zijn. Je zou dan een willekeurige kunnen pakken ofzo.
@@ -207,7 +226,7 @@ public abstract class Agent {
 		for(Location l:candidateLocations2){
 			boolean accepted = true;
 			for(Agent a:diningGroup){
-				accepted = a.acceptInvitation(l); //Geeft vast errors als je geen mixed restaurants, meer hebt, omdat lijst dan leeg is.
+				accepted &= a.acceptInvitation(l); //Geeft vast errors als je geen mixed restaurants, meer hebt, omdat lijst dan leeg is.
 			}
 			if(accepted) newCandidates.add(l);
 		}
@@ -217,9 +236,14 @@ public abstract class Agent {
 
 	//Might extend to choice on values.
 	private boolean physicalOrSocial(){
-		return RandomHelper.nextIntFromTo(0, 1) == 1;
+		if(getEnhanceStrength() >0 ) return true;
+		else return false;
 	}
 	
+	private double getEnhanceStrength(){
+		return myValues.get(SelfEnhancement.class).getStrength(null)-
+		myValues.get(SelfTranscendence.class).getStrength(null);
+	}
 	private boolean isHomogenous(List<Location> list){
 		boolean homogenous = true;
 		Location proto = list.get(0);
@@ -302,17 +326,18 @@ public abstract class Agent {
 	
 	
 	
-	private Agent pickEatBuddy(){
-		List<Agent> temp =new ArrayList<Agent>(agents); 
-		
-		temp = filterOnAffordancesA(temp); //Easier to give a new list back and change ref.
-		List<Agent> aFiltered = new ArrayList<Agent>(temp);
-		if(aFiltered.isEmpty()) return null; //Niemand available
+	private Agent pickEatBuddy(List<Agent> candidateAgents){
+		if(candidateAgents.isEmpty()) return null;
+		List<Agent> temp =new ArrayList<Agent>(candidateAgents); 
+		List<Agent> original=new ArrayList<Agent>(candidateAgents);
+		//temp = filterOnAffordancesA(temp); //Easier to give a new list back and change ref.
+		//List<Agent> aFiltered = new ArrayList<Agent>(temp);
+		//if(aFiltered.isEmpty()) return null; //Niemand available (van de candidates)
 		
 		if(CFG.isFilteredOnHabits()){
 		temp = filterOnHabitsA(temp);
 		List<Agent> hFiltered = new ArrayList<Agent>(temp);
-		if(hFiltered.isEmpty()) temp = aFiltered; //Reroll if empty
+		if(hFiltered.isEmpty()) temp = original; //Reroll if empty
 		}
 		
 		return pickRandomly(temp);
@@ -370,7 +395,7 @@ public abstract class Agent {
 				if(chosenLocation.getClass() == affordance.getMyLocation().getClass()) accept = true;
 			}
 			if(!accept){ //Sometimes even accept if it does not cater values
-				if(RandomHelper.nextDoubleFromTo(0, 1) < acceptRatio){
+				if(RandomHelper.nextDoubleFromTo(0, 1) < acceptRatio()){
 					accept = true;
 				}
 			}
@@ -608,7 +633,8 @@ public abstract class Agent {
 		}
 		double totalNeed = Helper.sumDouble(needs.values()); //satisfaction can get <0, so need as well, so maybe not getting in while loop
 		double randomDeterminer = RandomHelper.nextDoubleFromTo(0, totalNeed);
-		//System.out.println("Needs:" + needs);
+		System.out.println(myContext);
+		System.out.println("Needs:" + needs);
 		
 		Iterator it = needs.entrySet().iterator();
 		while(randomDeterminer > 0) {
@@ -656,10 +682,12 @@ public abstract class Agent {
 	 * Gives all information, but in evaluate it is decided what is used.
 	 */
 	private void evaluate() { //All factors are avarage 1
-		double Iweight = myValues.get(SelfEnhancement.class).getStrength(myContext);	//1 ND
-		double Sweight = (myValues.get(Conservation.class).getStrength(myContext) + myValues.get(SelfTranscendence.class).getStrength(myContext)) /2; //Conservation + selfTranscendence, dus 1 ND, meer var
-		System.out.println("Evaluation :" + Iweight + " " + individualEvaluation() + " " + Sweight + " " + socialEvaluation());
-		myAction.addEvaluation(new Evaluation(Iweight, individualEvaluation(), Sweight, socialEvaluation(), myContext));
+		double Iweight = myValues.get(SelfEnhancement.class).getStrength(null);	//1 ND
+		double Sweight = (myValues.get(Conservation.class).getStrength(null) + myValues.get(SelfTranscendence.class).getStrength(null)) /2; //Conservation + selfTranscendence, dus 1 ND, meer var
+	//	System.out.println("Evaluation :" + Iweight + " " + individualEvaluation() + " " + Sweight + " " + socialEvaluation());
+		double open = (myValues.get(Openness.class).getStrength(null) -(myValues.get(Conservation.class).getStrength(null)));
+		double learnWeight = 0.5 + (open+2)/4;
+		myAction.addEvaluation(new Evaluation(Iweight, individualEvaluation(), Sweight, socialEvaluation(), myContext), learnWeight);
 	}
 	private double socialEvaluation() {
 		double simAgents = 0;	//amount of similar agents
@@ -668,7 +696,7 @@ public abstract class Agent {
 		}
 		double dissimAgents = myContext.getMyAgents().size() - simAgents; //amount of dissimilar agents
 		double x = simAgents - dissimAgents;
-		System.out.print("thisev: "+ x);
+	//	System.out.print("thisev: "+ x);
 		return 1 + 0.5 * Math.tanh((x-CFG.a)/CFG.b);
 	}
 	

@@ -67,13 +67,13 @@ public abstract class SocialPractice {
 		updatePerformanceHistoryMap(currentContext);
 	}
 	
-	public void updateEvaluationHistoryMap(PContext currentContext, double grade) {
-		Helper.mapLearn(evaluationHistoryMap, currentContext.getMyLocation(), grade);
+	public void updateEvaluationHistoryMap(PContext currentContext, double grade, double learnWeight) {
+		Helper.mapLearn(evaluationHistoryMap, currentContext.getMyLocation(), grade, learnWeight);
 
 		ArrayList<Agent> agents = currentContext.getMyAgents(); //Something wrong with adding?
 		double add = grade; //agents.size()?
 		for(Agent a: agents){
-			Helper.mapLearn(evaluationHistoryMap, a, add);
+			Helper.mapLearn(evaluationHistoryMap, a, add, learnWeight);
 		}	
 	}
 	
@@ -151,7 +151,7 @@ public abstract class SocialPractice {
 
 	public double calculateEvaluation(PContext myContext, double OCweight){
 		if(myContext == null){
-			System.out.println("Called without context");
+		//	System.out.println("Called without context");
 			return getEvaluationAvarage(); //Abstraheer over context als je er geen hebt.
 		}
 		
@@ -191,11 +191,11 @@ public abstract class SocialPractice {
 	}
 	
 	//Don't know if these our neccessary. Maybe for data or something.
-	public void addEvaluation(Evaluation ev) {
+	public void addEvaluation(Evaluation ev, double learnWeight) {
 		//System.out.println("Evaluation: "+ev.getGrade());
 		lastEvaluation = ev; 
-		evaluationAvarage = (1 - CFG.LEARN_RATE()) *evaluationAvarage + CFG.LEARN_RATE() * ev.getGrade();
-		updateEvaluationHistoryMap(ev.getContext(),ev.getGrade());
+		evaluationAvarage = (1 - CFG.LEARN_RATE(learnWeight)) *evaluationAvarage + CFG.LEARN_RATE(learnWeight) * ev.getGrade();
+		updateEvaluationHistoryMap(ev.getContext(),ev.getGrade(), learnWeight);
 	}
 
 	public double getEvaluationAvarage(){

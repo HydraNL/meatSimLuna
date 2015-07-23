@@ -39,7 +39,7 @@ public abstract class Value {
 	public abstract double getMyEvaluation(PContext myContext);
 	
 	public double getStrength(PContext myContext) {
-		System.out.println("Evaluation in context is"+ getMyEvaluation(myContext));
+		//System.out.println("Evaluation in context is"+ getMyEvaluation(myContext));
 		return strengthWeight * getStrengthAvarage() *getMyEvaluation(myContext);
 	}
 	

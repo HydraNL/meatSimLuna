@@ -154,13 +154,13 @@ public class Helper {
 	}
 	
 	public static void mapLearn(HashMap<Object, Double> map,
-			Object key, double newValue) {
+			Object key, double newValue, double learnWeight) {
 		Double nextValue;
 		Double currentValue = map.get(key);
 		if(currentValue == null){		//no Entry yet
 			currentValue = 1.0;
 		}
-		nextValue =  (1.0-CFG.LEARN_RATE()) * currentValue + CFG.LEARN_RATE() * newValue;
+		nextValue =  (1.0-CFG.LEARN_RATE(learnWeight)) * currentValue + CFG.LEARN_RATE(learnWeight) * newValue;
 		map.put(key, nextValue);
 	}
 	

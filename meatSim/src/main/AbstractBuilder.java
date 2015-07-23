@@ -149,6 +149,9 @@ public abstract class AbstractBuilder implements ContextBuilder<Object> {
 		for(Location l:locations){
 			l.removePContext();
 		}
+		for(Location l:homes){
+			l.removePContext();
+		}
 	}
 	
 	public void setAgentsToUnLocated(){

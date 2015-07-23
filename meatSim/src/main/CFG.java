@@ -113,8 +113,8 @@ public class CFG {
 	
 	//Evaluation parameters
 	//Could make it degrading over time as they get older.
-	public static double LEARN_RATE() {
-		return RunEnvironment.getInstance().getParameters().getDouble("LEARN_RATE");
+	public static double LEARN_RATE(double learnWeight) {
+		return learnWeight *RunEnvironment.getInstance().getParameters().getDouble("LEARN_RATE");
 	}
 	
 	//SocialEvaluation

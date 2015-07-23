@@ -41,7 +41,7 @@ public class Evaluation {
 	}
 
 	public double getGrade() {
-		System.out.println(grade);
+	//	System.out.println(grade);
 		return grade;
 	}
 
